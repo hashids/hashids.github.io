@@ -1,0 +1,24 @@
+
+.hidden { display: none !important; }
+
+p {
+	margin: 0 0 10px 0;
+}
+
+a {
+	@extend %border-radius;
+	color: $link-color;
+	text-decoration: none;
+	
+	&:hover {
+		@extend %color-transition;
+		color: darken($link-color, 5%);
+		text-decoration: underline;
+	}
+	
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
+}

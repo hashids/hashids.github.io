@@ -1,0 +1,14 @@
+
+@import 'normalize';
+@import 'functions';
+
+$page-width: 720px;
+$footer-height: 140px;
+
+$link-color: #6598cc;
+$text-color: #333;
+
+@import 'body';
+@import 'common';
+@import 'section';
+@import 'footer';

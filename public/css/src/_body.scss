@@ -1,0 +1,38 @@
+
+* {	margin: 0; padding: 0; border: 0; }
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 20px;
+	color: $text-color;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrap {
+	min-height: 100%;
+	width: $page-width;
+	margin: 0 auto;
+	
+	.wrap-inner {
+		overflow: auto;
+		padding-bottom: $footer-height;
+		text-align: left;
+	}
+	
+}
+
+.footer {
+	position: relative;
+	margin: ($footer-height * -1) auto 0;
+}

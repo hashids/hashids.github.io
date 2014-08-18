@@ -1,0 +1,178 @@
+{
+	"javascript": {
+		"implementation": {
+			"abbr": "javascript",
+			"language": "JavaScript"
+		},
+		"author": {
+			"name": "Ivan Akimov",
+			"twitter": "ivanakimov",
+			"github": "ivanakimov"
+		}
+	},
+	"ruby": {
+		"implementation": {
+			"abbr": "ruby",
+			"language": "Ruby"
+		},
+		"author": {
+			"name": "Peter Hellberg",
+			"twitter": "peterhellberg",
+			"github": "peterhellberg"
+		}
+	},
+	"python": {
+		"implementation": {
+			"abbr": "python",
+			"language": "Python"
+		},
+		"author": {
+			"name": "David Aurelio",
+			"twitter": "void_0",
+			"github": "davidaurelio"
+		}
+	},
+	"java": {
+		"implementation": {
+			"abbr": "java",
+			"language": "Java"
+		},
+		"author": {
+			"name": "fanweixiao",
+			"twitter": "fanweixiao",
+			"github": "fanweixiao"
+		}
+	},
+	"php": {
+		"implementation": {
+			"abbr": "php",
+			"language": "PHP"
+		},
+		"author": {
+			"name": "Ivan Akimov",
+			"twitter": "ivanakimov",
+			"github": "ivanakimov"
+		}
+	},
+	"perl": {
+		"implementation": {
+			"abbr": "perl",
+			"language": "Perl"
+		},
+		"author": {
+			"name": "Zak B. Elep",
+			"twitter": "zakame",
+			"github": "zakame"
+		}
+	},
+	"coffeescript": {
+		"implementation": {
+			"abbr": "coffeescript",
+			"language": "CoffeeScript"
+		},
+		"author": {
+			"name": "Ivan Akimov",
+			"twitter": "ivanakimov",
+			"github": "ivanakimov"
+		}
+	},
+	"objective-c": {
+		"implementation": {
+			"abbr": "objective-c",
+			"language": "Objective-C"
+		},
+		"author": {
+			"name": "Jofell Gallardo",
+			"twitter": "jofell",
+			"github": "jofell"
+		}
+	},
+	"cpp": {
+		"implementation": {
+			"abbr": "cpp",
+			"language": "C++11"
+		},
+		"author": {
+			"name": "Toon Schoenmakers",
+			"twitter": "Schoentoon",
+			"github": "schoentoon"
+		}
+	},
+	"go": {
+		"implementation": {
+			"abbr": "go",
+			"language": "Go"
+		},
+		"author": {
+			"name": "Remi Gillig",
+			"twitter": "remigillig",
+			"github": "speps"
+		}
+	},
+	"lua": {
+		"implementation": {
+			"abbr": "lua",
+			"language": "Lua"
+		},
+		"author": {
+			"name": "Leif Högberg",
+			"twitter": "leihog",
+			"github": "leihog"
+		}
+	},
+	"elixir": {
+		"implementation": {
+			"abbr": "elixir",
+			"language": "Elixir"
+		},
+		"author": {
+			"name": "Alexei Sholik",
+			"twitter": "true_droid",
+			"github": "alco"
+		}
+	},
+	"coldfusion": {
+		"implementation": {
+			"abbr": "coldfusion",
+			"language": "ColdFusion"
+		},
+		"author": {
+			"name": "Dan G. Switzer, II",
+			"twitter": "dswitzer2",
+			"github": "dswitzer"
+		}
+	},
+	"groovy": {
+		"implementation": {
+			"abbr": "groovy",
+			"language": "Groovy"
+		},
+		"author": {
+			"name": "Chad Maron",
+			"twitter": "chadmaron",
+			"github": "Apploi"
+		}
+	},
+	"node-js": {
+		"implementation": {
+			"abbr": "node-js",
+			"language": "Node.js"
+		},
+		"author": {
+			"name": "Ivan Akimov",
+			"twitter": "ivanakimov",
+			"github": "ivanakimov"
+		}
+	},
+	"net": {
+		"implementation": {
+			"abbr": "net",
+			"language": ".NET"
+		},
+		"author": {
+			"name": "Markus Ullmark",
+			"twitter": "ullmark",
+			"github": "ullmark"
+		}
+	}
+}

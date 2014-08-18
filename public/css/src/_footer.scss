@@ -1,0 +1,22 @@
+
+.copyleft {
+	display: inline-block;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.footer {
+	color: #999;
+	font-size: 13px;
+	text-align: center;
+	
+	p {
+		margin: 0;
+		&:first-child { padding-top: 20px; }
+	}
+	
+}

@@ -1,0 +1,7 @@
+
+$(function() {
+	
+	console.log('hi');
+	
+});
+
