@@ -8,8 +8,11 @@ section {
 		font-size: 26px;
 		text-transform: lowercase;
 		font-weight: normal;
-		color: #999;
-		margin: 0 0 5px;
+		color: #5A5A5A;
+		border-bottom: 1px solid #D8D8D8;
+		margin-bottom: 15px;
+		padding-bottom: 5px;
+		box-shadow: 0 1px 0 #f8f8f8;
 	}
 	
 	& > div {
