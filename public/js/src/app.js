@@ -12,6 +12,7 @@ $(function() {
 		newText = text
 			.replace(/o/gi, '0')
 			.replace(/l/g, '1')
+			.replace(/\+/i, '-')
 			.replace(/s/gi, '5')
 			.replace(/t/gi, '7')
 			.replace(/i/gi, '1')
@@ -28,5 +29,7 @@ $(function() {
 		$el.text(text);
 		
 	});
+	
+	hljs.initHighlightingOnLoad();
 	
 });

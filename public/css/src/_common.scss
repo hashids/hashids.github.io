@@ -3,14 +3,14 @@
 	display: none !important;
 }
 
-p {
-	margin: 0 0 10px 0;
+pre, ul, ol, p {
+	margin: 0 0 20px 0;
 }
 
 a {
 	@extend %border-radius;
 	font-family: $font-family-monospace;
-	font-size: 90%;
+	font-size: 95%;
 	letter-spacing: -0.07em;
 	color: $link-color;
 	text-decoration: none;
@@ -38,4 +38,31 @@ hr {
 	background: #eee;
 	height: 1px;
 	border: 0;
+}
+
+ol {
+	
+	li {
+		margin-left: 30px;
+	}
+	
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+code.inline {
+	@extend %border-radius;
+	background: #f8f8f8;
+	display: inline;
+	padding: 0 2px;
+}
+
+em.highlight {
+	letter-spacing: 0.1em;
+	span {
+		@extend %border-radius;
+		background: rgba(72, 160, 51, 0.36);
+	}
 }

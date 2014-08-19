@@ -3,15 +3,23 @@ section {
 	margin: 0 0 30px;
 	
 	& > h2 {
-		line-height: 34px;
+		line-height: 36px;
 		letter-spacing: -0.02em;
-		font-size: 22px;
+		font-size: 26px;
 		text-transform: lowercase;
 		font-weight: normal;
+		color: #999;
+		margin: 0 0 5px;
 	}
 	
 	& > div {
 		@extend .clearfix;
+		width: 100%;
+		
+		p:last-child {
+			margin: 0;
+		}
+		
 	}
 	
 }

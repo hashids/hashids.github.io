@@ -1,8 +1,15 @@
 
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
 %color-transition {
 	transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 %border-radius {
-	border-radius: 3px;
+	@include border-radius(3px);
 }
