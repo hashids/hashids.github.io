@@ -35,6 +35,7 @@
 		<!--[if lt IE 10]><link href="/public/css/lib/retarded.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
 		<link href="//fonts.googleapis.com/css?family=Fira+Mono:400,700|Leckerli+One" rel="stylesheet" type="text/css" media="screen" />
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		
 	</head>
 	<body spellcheck="false" class="lang-{{implementation.abbr}}">
@@ -43,7 +44,7 @@
 			<div class="wrap-inner">
 				
 				<section class="header">
-					<h2><a href="/">hashids</a></h2>
+					<h2><a href="/" class="no-effect">hashids</a></h2>
 					<div>
 						<p class="description">Generate short obfuscated strings from integers</p>
 						<hr>
@@ -82,7 +83,7 @@
 					</div>
 				</section>
 				
-				<section id="features">
+				<section id="repo">
 					<h2>{{implementation.language}} version</h2>
 					<div>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -99,7 +100,144 @@
 				<section id="compatibility">
 					<h2>Compatibility table</h2>
 					<div>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<p>Versions are tagged as &lt;<em>major</em>&gt;.&lt;<em>minor</em>&gt;.&lt;<em>patch</em>&gt;. Current stable version across implementations is <em>1.0</em>:</p>
+						<ul class="iterate">
+							<li><em>Major</em> version is incremented when interface functions/parameters change.</li>
+							<li><em>Minor</em> version is incremented when the algorithm changes (ids change).</li>
+							<li><em>Patch</em> version is incremented when individual implementation do minor adjustments.</li>
+						</ul>
+						<p>As usual, check the CHANGELOG of each implementation. Since produced ids might differ on library update, be sure to include <em>exact version</em> of Hashids you want when using package managers, so ids don't change on you suddenly. For example for <a href="https://www.npmjs.org/">npm</a>:</p>
+						<pre><span>JSON</span><code class="json">"dependencies": {
+  "hashids": "1.0.0"
+}</pre>
+						<p>And not: <del>"hashids": "~1.0.0"</del></p>
+						<ul class="table-list">
+							<li class="table-header">
+								<div class="table-list-cell table-list-cell-header vertical-text table-list-cell-large"></div>
+								<div class="table-list-cell table-list-cell-header vertical-text">JavaScript</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">Ruby</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">Python</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">Java</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">PHP</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">Perl</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">CoffeeScript</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">Objective-C</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">C++11</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">Go</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">Lua</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">Elixir</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">ColdFusion</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">Groovy</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">Node.js</div>
+								<div class="table-list-cell table-list-cell-header vertical-text">.Net</div>
+							</li>
+							<li>
+								<div class="table-list-cell table-list-cell-large">
+									<em>1.0.*</em> <i>(current stable)</i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/ivanakimov/hashids.js" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/ivanakimov/hashids.php" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/ivanakimov/hashids.coffee" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/ivanakimov/hashids.node.js" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+							</li>
+							<li>
+								<div class="table-list-cell table-list-cell-large">
+									<em>0.3.*</em> <i>(old release)</i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/peterhellberg/hashids.rb" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/davidaurelio/hashids-python" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/jiecao-fm/hashids-java" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/zakame/hashids.pm" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/jofell/hashids-objc" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/schoentoon/hashidsxx" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/speps/go-hashids" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/leihog/hashids.lua" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/alco/saltie" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/dswitzer/hashids.coldfusion" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/Apploi/hashids-groovy" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a href="https://github.com/ullmark/hashids.net" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</section>
 				
@@ -112,7 +250,7 @@
 							<li>The alphabet is also shuffled based on salt.</li>
 						</ol>
 						<p>This is a JavaScript snippet that shows regular conversion of integers to hex (that's right, you don't see do...while that often). And if you actually look at the Hashids JavaScript implementation, this function is from there (but simplified for this example):</p>
-						<pre><code>function toHex(input) {
+						<pre><span>JavaScript</span><code class="javascript">function toHex(input) {
   
   var hash = "",
     alphabet = "0123456789abcdef",
@@ -128,7 +266,7 @@
 }</code></pre>
 						<p>So, if we do <code class="inline">toHex(1234)</code>, we will get back <em>4d2</em> which is that integer's hex value. If we increase the alphabet to <code class="inline">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</code>, our output will now be shorter because there's more characters to work with now &mdash; so it becomes <em>t5</em>.</p>
 						<p>If we take it one step further and shuffle the alphabet before encoding, we will get a different value. But how could we shuffle the alphabet consistently, so that with every "shuffle string" the alphabet characters would be ordered the same every time? That's where Hashids uses a variation of <a href="http://en.wikipedia.org/wiki/Fisher-Yates_shuffle">Fisher-Yates algorithm</a>:</p>
-						<pre><code>function consistentShuffle(alphabet, salt) {
+						<pre><span>JavaScript</span><code class="javascript">function consistentShuffle(alphabet, salt) {
   
   var integer, j, temp, i, v, p;
   
@@ -177,9 +315,19 @@
 				<section id="cursing">
 					<h2>Curse words</h2>
 					<div>
-						<p>This library was written with the intent of placing generated ids in visible places - like the URL. Therefore, the algorithm tries to avoid generating most common English curse words by never placing the following letters next to each other:</p>
-						<p><code class="inline">c,C,s,S,f,F,h,H,u,U,i,I,t,T</code></p>
-						<p>This is done by using them as <i>separators</i> (refer to <a href="#how-does-it-work">how hashids works</a>)</p>
+						<div class="octocat-split octocat-split-left">
+							<div>
+								<img src="https://octodex.github.com/images/bouncercat.png" />
+								<span class="subtext">codercat awesomed by <a href="https://octodex.github.com/">octodex</a></span>
+							</div>
+							<div>
+								<p>This library was written with the intent of placing generated ids in visible places - like the URL. Therefore, the algorithm tries to avoid generating most common English curse words by never placing the following letters next to each other:</p>
+								<p><code class="inline">c,C,s,S,f,F,h,H,u,U,i,I,t,T</code></p>
+								<p>This is done by using them as <i>separators</i> (refer to <a href="#how-does-it-work">how hashids works</a>).</p>
+								<p>So, since letters like <em>F</em> and <em>U</em> cannot be next to each other in an output id, the f-bomb is not possible no matter your salt value.</p>
+								<p>You can use your imagination to check the rest.</p>
+							</div>
+						</div>
 					</div>
 				</section>
 				
@@ -189,23 +337,23 @@
 						<p>Yes, there are a few and you're encouraged to pick the most appropriate. Hashids is not a perfect solution to everything.</p>
 						<ol>
 							<li>
-								<em>base64 encode</em>. This is the most straightforward approach &mdash; most languages have these functions. If you don't need all the fancy extras Hashids includes, this method will work just fine. It'll be faster too. <a href="http://en.wikipedia.org/wiki/Base64">Read more</a>.
+								<em>Base64 encode</em>. This is the most straightforward approach &mdash; most languages have these functions. If you don't need all the fancy extras Hashids includes, this method will work just fine. It'll be faster too. <a href="http://en.wikipedia.org/wiki/Base64">Read more</a>.
 							</li>
 							<li>
-								<em>Generate ids based on timestamp</em>. If you can afford certain degree of collisions, you could compose an id that's built on the fly. Use a counter (if you have one) + timestamp (even better if in milliseconds) + some system value (either an IP address or some machine id) + a random integer. Many big companies implement this approach because it does not require keeping track of a single incremental value (and it's faster). Theses ids are generated independently of each other and the risk of collisions is so tiny it's ignored.
+								<em>Generate ids based on timestamp</em>. If you can afford certain degree of collisions, you could compose an id that's built on the fly. Use a counter (if you have one) + timestamp (even better if in milliseconds) + some system value (either an IP address or some machine id) + a random integer. Many big companies implement this approach because it works well in distributed systems. These ids are generated independently of each other and the risk of collisions is <a href="http://en.wikipedia.org/wiki/Universally_unique_identifier#Random_UUID_probability_of_duplicates">so tiny</a> it can be ignored.
 							</li>
 							<li>
-								<em>Check out how others do it</em>.
+								<em>Check out how others do it:</em>
 								<p>- <a href="http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram">How does Instagram generate ids?</a></p>
 							</li>
 							<li>
-								<i>Another method?</i> Tell me <a href="https://twitter.com/IvanAkimov">@IvanAkimov</a>.
+								<i>Know of another method?</i> Tell me <a href="https://twitter.com/IvanAkimov">@IvanAkimov</a>.
 							</li>
 						</ol>
 					</div>
 				</section>
 				
-				<section id="alternatives">
+				<section id="what-not-to-do">
 					<h2>What not to do</h2>
 					<div>
 						<ol>
@@ -223,7 +371,7 @@
 					<h2>Collisions</h2>
 					<div>
 						<p>There is no collisions because the method is based off of integer to hex conversion. As long as you don't change constructor arguments midway, the generated output will stay unique to your salt.</p>
-						<p>If you're still feeling uneasy, do a quick test - generate a bunch of ids and test for collisions. Be sure to account for your alphabet - with default alphabet Hashids is <i>case-sensitive</i> (<em>aaa</em> is a different id than <em>AAA</em>).</p>
+						<p>If you're still feeling uneasy, do a quick test &mdash; pre-generate a billion ids and test for collisions. Be sure to account for your alphabet - with default alphabet Hashids is <i>case-sensitive</i> (<em>aaa</em> is a different id than <em>AAA</em>).</p>
 					</div>
 				</section>
 				
@@ -231,24 +379,55 @@
 					<h2>How to decode</h2>
 					<div>
 						<p>There is no way to decode the output without knowing the salt (refer to <a href="#how-does-it-work">how hashids works</a>).</p>
-						<p>The only way to try and gain access is by running a <a href="http://en.wikipedia.org/wiki/Brute-force_attack">brute-force attack</a>. These ids are short by design, so with a semi-modern computer it's possible to make some progress if an attacker has too much time on their hands and nothing better to do.</p>
-						<p>But even if that's successful, the disadvantage is obvious &mdash; the integers don't really hold any real value for the attacker. They are usually just primary database ids. At worst, an attacker can find out how many users you have.</p>
+						<p>The only known way to try and gain access is by running a <a href="http://en.wikipedia.org/wiki/Brute-force_attack">brute-force attack</a>. These ids are short by design, so with a semi-modern computer it's possible to make some progress if an attacker has too much time on their hands and nothing better to do.</p>
+						<p>But the outcome is obvious &mdash; the integers don't really hold any real value for the attacker. They are usually just primary database ids anyway. At worst, an attacker can find out how many users you have. Also refer to <a href="#what-not-to-do">what not to do</a>.</p>
 					</div>
 				</section>
 				
 				<section id="contributing">
 					<h2>How to contribute</h2>
 					<div>
-						<p>If you've found a bug, please open a github issue in the <em>appropriate repository</em>. Bonus points if you submit a pull request with it.</p>
-						<p>If an implementation in your favorite language does not exist, feel free to port it over from one of the existing versions. There's still plenty languages to contribute in: <a href="#">C</a>, <a href="#">D</a>, <a href="#">Swift</a>, <a href="#">Rust</a>, <a href="#">Erlang</a>, <a href="#">Haskell</a>, <a href="#">Scheme</a>, <a href="#">Tcl</a>, <a href="#">Lolcode</a>, whatever...</p>
-						<p>If you see an outdated version in an existing implementation, please open a github issue in that repository &mdash; show your demand for that library to be updated.</p>
+						<div class="octocat-split octocat-split-right">
+							<div>
+								<p>If you've found a bug, please open a github issue in the <a href="#repo">appropriate repository</a>. Bonus points if you submit a pull request with it.</p>
+								<p>If an implementation in your favorite language is missing, feel free to port it over from one of the existing versions. There's still plenty of languages to contribute in: <a href="http://en.wikipedia.org/wiki/C_(programming_language)">C</a>, <a href="http://dlang.org/">D</a>, <a href="https://developer.apple.com/swift/">Swift</a>, <a href="http://www.rust-lang.org/">Rust</a>, <a href="http://julialang.org/">Julia</a>, <a href="http://www.erlang.org/">Erlang</a>, <a href="http://www.haskell.org/haskellwiki/Haskell">Haskell</a>, <a href="http://en.wikipedia.org/wiki/Scheme_(programming_language)">Scheme</a>, <a href="http://www.tcl.tk/">Tcl</a>, <a href="http://lolcode.org/">Lolcode?</a></p>
+								<p>We try to keep the library versions compatible. If you see an outdated version in an existing implementation, please open a github issue in that repository &mdash; show your +1 for that library to be updated.</p>
+							</div>
+							<div>
+								<img src="https://octodex.github.com/images/codercat.jpg" />
+								<span class="subtext">codercat awesomed by <a href="https://octodex.github.com/">octodex</a></span>
+							</div>
+						</div>
 					</div>
 				</section>
 				
 				<section id="contributors">
 					<h2>Contributors</h2>
 					<div>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<p>Many thanks to the numerous folks that have implemented the different versions, plugins, extensions as well as to those that have contributed general improvements. Implementation developers are:</p>
+						<ul class="people">
+							<li>
+								<a href="#" class="no-effect">
+									<img src="https://avatars.githubusercontent.com/speps" width="75" height="75" />
+									<h2>Remi Gillig</h2>
+									<span>Go</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="no-effect">
+									<img src="https://avatars.githubusercontent.com/peterhellberg" width="75" height="75" />
+									<h2>Peter Hellberg</h2>
+									<span>Ruby</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="no-effect">
+									<img src="https://avatars.githubusercontent.com/ivanakimov" width="75" height="75" />
+									<h2>Ivan Akimov</h2>
+									<span>JavaScript, Node.js, PHP, CoffeeScript</span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</section>
 				

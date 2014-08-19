@@ -1,7 +1,7 @@
 
 $(function() {
 	
-	$('a').hover(function(event) {
+	$('a:not(.no-effect)').hover(function(event) {
 		
 		var newText,
 			$el = $(this),

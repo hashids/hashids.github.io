@@ -28,3 +28,5 @@ Google Fonts
 
 Mouapp
 https://highlightjs.org/
+font awesome
+octodex

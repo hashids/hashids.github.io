@@ -1,0 +1,45 @@
+
+.people {
+	@extend .clearfix;
+	
+	& > li {
+		float: left;
+	}
+	
+	a {
+		@extend %border-radius;
+		text-decoration: none;
+		color: #333;
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-align: center;
+		display: inline-block;
+		width: 140px;
+		white-space: normal;
+		padding: 10px 5px;
+		
+		&:hover {
+			background: #f8f8f8;
+		}
+		
+	}
+	
+	img {
+		@include border-radius(100px);
+		border: 5px solid #fff;
+	}
+	
+	h2 {
+		margin: 5px 0;
+		font-weight: normal;
+	}
+	
+	span {
+		line-height: 1.4em;
+		color: #777;
+		display: inline-block;
+		letter-spacing: 0;
+		font-size: 80%;
+		vertical-align: top;
+	}
+	
+}

@@ -1,0 +1,55 @@
+
+.octocat-split {
+	position: relative;
+	@extend .clearfix;
+	
+	& > div {
+		float: left;
+		position: relative;
+	}
+	
+	&.octocat-split-left {
+		& > div:first-child { width: 40%; }
+		& > div:last-child {
+			width: 57%;
+			padding-left: 3%;
+		}
+	}
+	
+	&.octocat-split-right {
+		& > div:first-child {
+			width: 57%;
+			padding-right: 3%;
+		}
+		& > div:last-child { width: 40%; }
+	}
+	
+	img {
+		position: relative;
+		width: 320px;
+		top: -15px;
+	}
+	
+	span {
+		font-size: 80%;
+		color: #999;
+		display: block;
+		bottom: 10px;
+		position: absolute;
+		width: 320px;
+		text-align: center;
+	}
+	
+	&.octocat-split-left {
+		left: 0;
+	}
+	
+	&.octocat-split-right {
+		right: 0;
+	}
+	
+	p:last-child {
+		margin: 0;
+	}
+	
+}

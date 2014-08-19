@@ -40,6 +40,12 @@ hr {
 	border: 0;
 }
 
+ul {
+	li {
+		list-style-type: none;
+	}
+}
+
 ol {
 	
 	li {
@@ -65,4 +71,57 @@ em.highlight {
 		@extend %border-radius;
 		background: rgba(72, 160, 51, 0.36);
 	}
+}
+
+pre {
+	position: relative;
+	
+	& > span {
+		position: absolute;
+		right: 10px;
+		top: 5px;
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 80%;
+		color: #aaa;
+		text-shadow: 0 1px 0 #fff;
+		text-transform: lowercase;
+	}
+	
+}
+
+ul.iterate {
+	@extend .clearfix;
+	position: relative;
+	margin: 0 0 20px;
+	
+	li {
+		float: left;
+		margin: 0;
+		padding: 5px 1.5%;
+		border-top: 1px solid #eee;
+		font-size: 90%;
+		width: 30%;
+		min-height: 75px;
+		border-bottom: 1px solid #eee;
+		
+		&:nth-child(odd) { background: #f8f8f8; }
+		
+	}
+	
+}
+
+.vertical-text {
+	transform: rotate(-80deg);
+	white-space: nowrap;
+}
+
+.fa-check {
+	color: green;
+	&:hover {
+		color: darken(green, 5%);
+	}
+}
+
+.fa-times {
+	color: #aaa;
 }

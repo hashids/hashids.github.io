@@ -19,7 +19,7 @@ section {
 		@extend .clearfix;
 		width: 100%;
 		
-		p:last-child {
+		& > *:last-child {
 			margin: 0;
 		}
 		
