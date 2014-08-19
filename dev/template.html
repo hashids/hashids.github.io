@@ -33,7 +33,7 @@
 		
 		<link href="/public/css/lib/app-{{website.version}}.min.css" rel="stylesheet" type="text/css" media="screen" />
 		<!--[if lt IE 10]><link href="/public/css/lib/retarded.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
-		<link href="//fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet" type="text/css" media="screen" />
+		<link href="//fonts.googleapis.com/css?family=Fira+Mono:400,700|Leckerli+One" rel="stylesheet" type="text/css" media="screen" />
 		
 	</head>
 	<body spellcheck="false" class="lang-{{implementation.abbr}}">
@@ -42,11 +42,12 @@
 			<div class="wrap-inner">
 				
 				<section class="header">
-					<h2>hashids</h2>
+					<h2><a href="/">hashids</a></h2>
 					<div>
-						<p>Generate short obfuscated strings from integers.</p>
-						<p>
-							Available in
+						<p class="description">Generate short obfuscated strings from integers</p>
+						<hr>
+						<p class="available">
+							available in
 							<a class="javascript" href="/javascript">JavaScript</a>,
 							<a class="ruby" href="/ruby">Ruby</a>,
 							<a class="python" href="/python">Python</a>,
@@ -70,6 +71,18 @@
 				
 				<section id="uses">
 					<h2>Uses</h2>
+					<div>
+						<img src="/public/img/screenshot1.png" class="float-right" />
+						<p>
+							Hashids started from a need to have short unguessable ids.<br/>
+							<em>md5</em> wasn't cutting it because it was too long. <em>base64</em> was guessable. Hence, the hashids library was born.
+						</p>
+						<p>Today it's used in url shorteners, navigating to the right shard from decoded ids, or simply as short unique identifiers.</p>
+					</div>
+				</section>
+				
+				<section id="features">
+					<h2>{{implementation.language}} version</h2>
 					<div>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</div>
@@ -120,14 +133,18 @@
 				<section id="decoding">
 					<h2>How to decode</h2>
 					<div>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<p>There is no way to decode the output without knowing the salt (refer to <a href="#">How does it work?</a>).</p>
+						<p>The only way to try and gain access is by running a <a href="http://en.wikipedia.org/wiki/Brute-force_attack">brute-force attack</a>. These ids are short by design, so with a semi-modern computer it's possible to make some progress if an attacker has too much time on their hands and nothing better to do.</p>
+						<p>But even if that's successful, the disadvantage is obvious &mdash; the integers don't really hold any real value for the attacker. They are usually just primary database ids.</p>
 					</div>
 				</section>
 				
 				<section id="contributing">
 					<h2>How to contribute</h2>
 					<div>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<p>If you've found a bug, please open a github issue in the <em>appropriate repository</em>. Bonus points if you submit a pull request with it.</p>
+						<p>If an implementation in your favorite language does not exist, feel free to port it over from one of the existing versions. There's still plenty languages to contribute in: <a href="#">C</a>, <a href="#">D</a>, <a href="#">Swift</a>, <a href="#">Rust</a>, <a href="#">Erlang</a>, <a href="#">Haskell</a>, <a href="#">Scheme</a>, <a href="#">Tcl</a>, <a href="#">Lolcode</a>, whatever...</p>
+						<p>If you see an outdated version in an existing implementation, please open a github issue in that repository &mdash; show your demand for that library to be updated.</p>
 					</div>
 				</section>
 				
@@ -141,7 +158,7 @@
 				<section id="license">
 					<h2>License</h2>
 					<div>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						All hashids libraries are under <a href="http://opensource.org/licenses/MIT">MIT license</a>. You can use them in open source projects and commercial products. Don't break the Internet. Kthxbye.
 					</div>
 				</section>
 				

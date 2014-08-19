@@ -37,8 +37,7 @@ module.exports = function(grunt) {
 		uglify: {
 			watch: {
 				options: {
-					beautify: true,
-					mangle: false,
+					mangle: true,
 					preserveComments: false,
 					compress: true
 				},

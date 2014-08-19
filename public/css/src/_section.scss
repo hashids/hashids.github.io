@@ -11,57 +11,7 @@ section {
 	}
 	
 	& > div {
-		
+		@extend .clearfix;
 	}
 	
-}
-
-/* header section is a special case */
-
-section.header {
-	text-align: center;
-	margin: 0 auto 40px;
-	width: 75%;
-	
-	h2 {
-		font-size: 72px;
-		margin: 20px 0;
-		line-height: 1;
-		font-weight: bold;
-	}
-	
-	div {
-		font-size: 22px;
-		line-height: 30px;
-		color: #666;
-	}
-	
-	p:last-child {
-		font-size: 18px;
-		line-height: 26px;
-	}
-	
-}
-
-/* highlighted implementation */
-
-body.lang-javascript .header .javascript,
-body.lang-ruby .header .ruby,
-body.lang-python .header .python,
-body.lang-java .header .java,
-body.lang-php .header .php,
-body.lang-perl .header .perl,
-body.lang-coffeescript .header .coffeescript,
-body.lang-objective-c .header .objective-c,
-body.lang-cpp .header .cpp,
-body.lang-go .header .go,
-body.lang-lua .header .lua,
-body.lang-elixir .header .elixir,
-body.lang-coldfusion .header .coldfusion,
-body.lang-groovy .header .groovy,
-body.lang-node-js .header .node-js,
-body.lang-net .header .net {
-	color: #000;
-	background: #fff;
-	font-weight: bold;
 }

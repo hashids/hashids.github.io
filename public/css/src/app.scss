@@ -2,13 +2,19 @@
 @import 'normalize';
 @import 'functions';
 
-$page-width: 720px;
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-cursive: "Leckerli One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-monospace: "Fira Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$page-width: 800px;
 $footer-height: 140px;
 
 $link-color: #6598cc;
 $text-color: #333;
 
+@import 'clearfix';
 @import 'body';
 @import 'common';
 @import 'section';
+@import 'section-header';
 @import 'footer';

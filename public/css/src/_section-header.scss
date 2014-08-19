@@ -1,0 +1,64 @@
+
+/* header section is a special case */
+
+section.header {
+	text-align: center;
+	margin: 40px auto;
+	width: 65%;
+	
+	h2 {
+		font-size: 100px;
+		margin: 20px 0;
+		line-height: 1;
+		
+		a {
+			font-family: $font-family-cursive;
+			letter-spacing: -0.01em;
+			color: #333;
+			text-shadow: 1px 5px 0 #aaa;
+			text-decoration: none;
+		}
+		
+	}
+	
+	div {
+		font-size: 22px;
+		line-height: 30px;
+		color: #666;
+	}
+	
+	.description {
+		margin-bottom: 10px;
+	}
+	
+	.available {
+		font-size: 20px;
+		line-height: 26px;
+		margin-top: 10px;
+		color: #999;
+	}
+	
+}
+
+/* highlighted implementation */
+
+body.lang-javascript .header .javascript,
+body.lang-ruby .header .ruby,
+body.lang-python .header .python,
+body.lang-java .header .java,
+body.lang-php .header .php,
+body.lang-perl .header .perl,
+body.lang-coffeescript .header .coffeescript,
+body.lang-objective-c .header .objective-c,
+body.lang-cpp .header .cpp,
+body.lang-go .header .go,
+body.lang-lua .header .lua,
+body.lang-elixir .header .elixir,
+body.lang-coldfusion .header .coldfusion,
+body.lang-groovy .header .groovy,
+body.lang-node-js .header .node-js,
+body.lang-net .header .net {
+	color: #666;
+	background: #fff;
+	font-weight: bold;
+}
