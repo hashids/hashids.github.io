@@ -1,0 +1,66 @@
+
+/* color mixin */
+
+@mixin button-color($background-color, $text-color: #666, $text-shadow: null) {
+	color: $text-color;
+	
+	@if $background-color {
+		
+		background: $background-color;
+		@if $text-shadow == null {
+			text-shadow: 0 1px 1px darken($background-color, 15%);
+		} @else {
+			text-shadow: 0 1px 1px $text-shadow;
+		}
+		
+		&:hover:not([disabled]),
+		&:active:not([disabled]) {
+			background: darken($background-color, 7%);
+		}
+		
+	} @else {
+		
+		$background-color: #ddd;
+		
+		background: $background-color;
+		text-shadow: 0 1px 1px #fff;
+		
+		&:hover:not([disabled]),
+		&:active:not([disabled]) {
+			background: darken($background-color, 3%);
+		}
+		
+	}
+	
+}
+
+/* the main button */
+
+button, .button {
+	font-family: $font-family;
+	@extend %rounded-corners, %color-transition;
+	@include button-color(false);
+	
+	position: relative;
+	display: inline-block;
+	text-shadow: 0 1px 1px #fff;
+	cursor: pointer;
+	padding: 7px 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-decoration: none !important;
+	border: 0;
+	margin: 0; /* a little weird: sometimes <button> needs the margin reset to zero */
+	letter-spacing: 0;
+	
+	.fa {
+		font-size: 110%;
+		position: relative;
+		top: 1px;
+	}
+	
+	/* colors */
+	
+	&.button-blue { @include button-color(#2d92e0, #fff); }
+	
+}

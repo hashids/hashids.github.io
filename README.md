@@ -30,3 +30,4 @@ Mouapp
 https://highlightjs.org/
 font awesome
 octodex
+https://github.com/woothemes/FlexSlider

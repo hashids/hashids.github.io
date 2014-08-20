@@ -1,6 +1,10 @@
 
 code.hljs {
-	@extend %border-radius;
+	@extend %rounded-corners;
 	background: #f8f8f8;
 	font-size: 16px;
+}
+
+.flex-control-nav {
+	bottom: 0 !important;
 }

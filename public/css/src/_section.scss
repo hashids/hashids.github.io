@@ -8,7 +8,7 @@ section {
 		font-size: 26px;
 		text-transform: lowercase;
 		font-weight: normal;
-		color: #5A5A5A;
+		color: #000;
 		border-bottom: 1px solid #D8D8D8;
 		margin-bottom: 15px;
 		padding-bottom: 5px;
@@ -21,6 +21,25 @@ section {
 		
 		& > *:last-child {
 			margin: 0;
+		}
+		
+	}
+	
+	&#uses > div {
+		@extend .clearfix;
+		position: relative;
+		
+		& > div {
+			float: left;
+			
+			&:first-child { width: $page-width - 340px; }
+			&:last-child { width: 340px; }
+			
+		}
+		
+		.in-use {
+			position: relative;
+			width: 340px;
 		}
 		
 	}

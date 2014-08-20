@@ -32,4 +32,22 @@ $(function() {
 	
 	hljs.initHighlightingOnLoad();
 	
+	$('.in-use').flexslider({
+		animation: 'slide',
+		animationLoop: true,
+		itemWidth: 340,
+		itemMargin: 1,
+		animationSpeed: 1500
+	});
+	
+	$('.read-more').click(function(event) {
+		
+		var $el = $(this),
+			$target = $('.'+$el.data('target'));
+		
+		$el.remove();
+		$target.removeClass('hidden');
+		
+	});
+	
 });
