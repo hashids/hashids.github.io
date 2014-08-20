@@ -1,6 +1,4 @@
 
-/* color mixin */
-
 @mixin button-color($background-color, $text-color: #666, $text-shadow: null) {
 	color: $text-color;
 	
@@ -34,8 +32,6 @@
 	
 }
 
-/* the main button */
-
 button, .button {
 	font-family: $font-family;
 	@extend %rounded-corners, %color-transition;
@@ -58,8 +54,6 @@ button, .button {
 		position: relative;
 		top: 1px;
 	}
-	
-	/* colors */
 	
 	&.button-blue { @include button-color(#2d92e0, #fff); }
 	

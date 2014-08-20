@@ -1,33 +1,50 @@
-## How to update this website
+## [Hashids website](http://hashids.org)
 
-Hashids website consists of static pages that are auto-generated with [Grunt](http://gruntjs.com/) as you edit. It's not build with Jekyll or Hexo. It's a tiny `Gruntfile.js` script that does just what it needs to.
+Website documentation for Hashids.
 
-**Are you simply editing a section?**
+## How to update
 
-sdfg
+Get [Node.js](http://nodejs.org/), [Grunt](http://gruntjs.com/). Be sure you have [Sass](http://sass-lang.com/) and [Handlebars.js](http://handlebarsjs.com/) installed.
 
-**Are you editing an existing implementation?**
+This is a static website that auto-generates pages for different implementations. There's two main files to update:
 
-sdfg
+	dev/data.json
+	dev/template.html
+	
+`data.json` contains majority of the implementation data that populates the site. `template.html` is the template.
 
-**Are you adding a new implementation?**
+Run the following in your git repo:
+	
+	grunt
 
-sdfg
+This will keep watching your files for changes and updating whatever's needed. When done, `git push` your changes.
 
-## Software shoutouts
+## Shoutouts
 
 Hashids website either uses or is built with the following. Muchas gracias to their respective creators for making these:
 
-[Node](http://nodejs.org/)
-npm
-Grunt
-Sass
-Google Fonts
-  - https://www.google.com/fonts/specimen/Leckerli+One
-  - http://www.google.com/fonts/specimen/Fira+Mono
+[Node](http://nodejs.org/) - Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 
-Mouapp
-https://highlightjs.org/
-font awesome
-octodex
-https://github.com/woothemes/FlexSlider
+[npm](https://www.npmjs.org/) - Node.js package manager
+
+[Grunt](http://gruntjs.com/) - The JavaScript Task Runner
+
+[Handlebars.js](http://handlebarsjs.com/) - Minimal Templating on Steroids
+
+[Sass](http://sass-lang.com/) - Syntactically Awesome Style Sheets
+
+[Mouapp](http://mouapp.com/) - The missing Markdown editor for web developers
+
+[highlight.js](https://highlightjs.org/) - Syntax highlighting for the Web
+
+[Font Awesome](http://fortawesome.github.io/Font-Awesome/) - The iconic font and CSS toolkit
+
+[Octodex](https://octodex.github.com/) - Github octocats
+
+[FlexSlider](https://github.com/woothemes/FlexSlider) - An awesome, fully responsive jQuery slider toolkit
+
+[Google Fonts](https://www.google.com/fonts) used:
+
+1. [Leckerli One](https://www.google.com/fonts/specimen/Leckerli+One)
+	
+2. [Fira Mono](http://www.google.com/fonts/specimen/Fira+Mono)

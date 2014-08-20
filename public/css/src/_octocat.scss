@@ -9,19 +9,23 @@
 	}
 	
 	&.octocat-split-left {
+		
 		& > div:first-child { width: 40%; }
 		& > div:last-child {
 			width: 57%;
 			padding-left: 3%;
 		}
+		
 	}
 	
 	&.octocat-split-right {
+		
 		& > div:first-child {
 			width: 57%;
 			padding-right: 3%;
 		}
 		& > div:last-child { width: 40%; }
+		
 	}
 	
 	img {
@@ -40,13 +44,8 @@
 		text-align: center;
 	}
 	
-	&.octocat-split-left {
-		left: 0;
-	}
-	
-	&.octocat-split-right {
-		right: 0;
-	}
+	&.octocat-split-left { left: 0; }
+	&.octocat-split-right { right: 0; }
 	
 	p:last-child {
 		margin: 0;

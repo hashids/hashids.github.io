@@ -3,7 +3,8 @@ $(function() {
 	
 	/* hashids logo effect */
 	
-	var hashids = new Hashids(':)', 7),
+	var startTimer = 10000,
+		hashids = new Hashids(':)', 7),
 		timeouts = [2000, 1700, 1400, 1100, 750, 750, 500, 400, 300, 300, 300, 200, 150, 130, 120, 110, 100, 100, 100, 100, 80, 70, 60, 50, 40, 30],
 		logo = function(isOriginal) {
 			
@@ -30,12 +31,12 @@ $(function() {
 				
 			} else {
 				logo(true);
-				setTimeout(loopLogo, 40000);
+				setTimeout(loopLogo, startTimer);
 			}
 			
 		};
 	
-	setTimeout(loopLogo, 10000);
+	setTimeout(loopLogo, startTimer);
 	
 	/* the mad h4x0r effect for links */
 	

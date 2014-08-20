@@ -82,10 +82,10 @@
 						<div>
 							<p>
 								Hashids started from a need to have short unguessable ids.
-								<i>md5</i> hashes are too long and <i>base64</i> is guessable. Hence, the hashids library was born.
+								<i>md5</i> hashes are too long and <i>base64</i> is guessable. So, we made Hashids.
 							</p>
 							<p>Today it's used in url shortening, bundling integers into a short id, or simply as unique identifiers.</p>
-							<p><i class="fa fa-jsfiddle"></i> Check out the <a href="#">jsfiddle</a>.</p>
+							<p><i class="fa fa-jsfiddle"></i> Check out the <a href="http://jsfiddle.net/ivanakimov/8z6d8o94/">jsfiddle</a>.</p>
 						</div>
 						<div class="in-use">
 							<ul class="slides">
@@ -154,10 +154,10 @@
 								Creates short unique ids.
 							</li>
 							<li>
-								Allows custom alphabet as well as salt, so ids are unique only to you.
+								Allows custom alphabet as well as salt &mdash; so ids are unique only to you.
 							</li>
 							<li>
-								Ids (as well as incremental integers) are unguessable.
+								Incremental input is mangled to stay unguessable.
 							</li>
 							<li>
 								Code is about 300 lines, fast and does not depend on external libraries.
@@ -169,13 +169,13 @@
 				<section id="compatibility">
 					<h2>Compatibility table</h2>
 					<div>
-						<p>Versions are tagged as &lt;<em>major</em>&gt;.&lt;<em>minor</em>&gt;.&lt;<em>patch</em>&gt;. Current stable version across implementations is <em>1.0</em>:</p>
+						<p>Current stable version across implementations is <em>1.0</em>.<br/>Versions are tagged as &lt;<em>major</em>&gt;.&lt;<em>minor</em>&gt;.&lt;<em>patch</em>&gt;:</p>
 						<ul class="iterate">
 							<li><em>Major</em> version is incremented when interface functions/parameters change.</li>
-							<li><em>Minor</em> version is incremented when the algorithm changes (ids change).</li>
-							<li><em>Patch</em> version is incremented when individual implementation do minor adjustments.</li>
+							<li><em>Minor</em> is incremented when the algorithm changes (ids change).</li>
+							<li><em>Patch</em> is incremented when individual implementation has minor adjustments.</li>
 						</ul>
-						<p>As usual, check the CHANGELOG of each implementation. Since produced ids might differ on library update, be sure to include <em>exact version</em> of Hashids you want when using package managers, so ids don't change on you suddenly. For example for <a href="https://www.npmjs.org/">npm</a>:</p>
+						<p>As usual, be sure to check the changelog of each implementation. Since produced ids might differ after updates, be sure to include <em>exact version</em> of Hashids, so you are don't unknowingly change your existing ids. For example for <a href="https://www.npmjs.org/">npm</a>:</p>
 						<pre><span>JSON</span><code class="json">"dependencies": {
   "hashids": "1.0.0"
 }</pre>
@@ -318,7 +318,7 @@
 							<li>The alphabet is not base16, but base base62 by default.</li>
 							<li>The alphabet is also shuffled based on salt.</li>
 						</ol>
-						<p>This is a JavaScript snippet that shows regular conversion of integers to hex (that's right, you don't see do...while that often). And if you actually look at the Hashids JavaScript implementation, this function is from there (but simplified for this example):</p>
+						<p>This JavaScript function shows regular conversion of integers to hex. It's part of Hashids (although this is a modified example):</p>
 						<pre><span>JavaScript</span><code class="javascript">function toHex(input) {
   
   var hash = "",
@@ -335,8 +335,10 @@
 }</code></pre>
 						<center><button class="read-more" data-target="how-it-works-more">read more</button></center>
 						<div class="how-it-works-more hidden">
-							<p>So, if we do <code class="inline">toHex(1234)</code>, we will get back <em>4d2</em> which is that integer's hex value. If we increase the alphabet to <code class="inline">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</code>, our output will now be shorter because there's more characters to work with now &mdash; so it becomes <em>t5</em>.</p>
-							<p>If we take it one step further and shuffle the alphabet before encoding, we will get a different value. But how could we shuffle the alphabet consistently, so that with every "shuffle string" the alphabet characters would be ordered the same every time? That's where Hashids uses a variation of <a href="http://en.wikipedia.org/wiki/Fisher-Yates_shuffle">Fisher-Yates algorithm</a>:</p>
+							<p>If we try to convert to hex with <code class="inline">toHex(1234)</code>, we will get back "4d2" which is that integer's hex value.</p>
+							<p>If we increase the alphabet to <code class="inline">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</code>, our output will now be shorter because there's more characters to work with now &mdash; so it becomes "t5".</p>
+							<p>If we take it one step further and shuffle the alphabet before encoding, we will get a different value. But how could we shuffle the alphabet consistently, so that with every shuffle the characters would keep the same order?</p>
+							<p>That's where Hashids uses a variation of <a href="http://en.wikipedia.org/wiki/Fisher-Yates_shuffle">Fisher-Yates algorithm</a>:</p>
 							<pre><span>JavaScript</span><code class="javascript">function consistentShuffle(alphabet, salt) {
   
   var integer, j, temp, i, v, p;
@@ -356,13 +358,13 @@
   return alphabet;
   
 }</code></pre>	
-							<p>It's fast and simple, and most importantly it does exactly what we need &mdash; shuffles the alphabet based on user's input (their salt value).</p>
-							<p>That way when user A passes the salt value <em>abc1</em> our alphabet becomes <code class="inline">cUpI6isqCa0brWZnJA8wNTzDHEtLXOYgh5fQm2uRj4deM91oB7FkSGKxvyVP3l</code></p>
-							<p>And when user B passes the salt value <em>abc2</em>, the alphabet becomes <code class="inline">tRvkhHx0ZefcF46YuaAqGLDKgM1W5Vp2T8n9s7BSoCjiQOdrEbJmUINywzXP3l</code></p>
-							<p>You can see that the shuffle is pretty good even when salt value is not that much different. This is what makes the base of Hashids work. Now we are able to encode one integer based on the salt value we provide.</p>
-							<p>But Hashids is able to encode several integers into one id. This is done by reserving a few characters from the alphabet as <em>separators</em>. These characters are then not used in encoding, but instead do the job of purely separating the real encoded values.</p>
-							<p>Let's take an example input <em>1,2,3</em> and encode it with Hashids without salt: <em>o2fXhV</em>. The actual values in this output are highlighted: <em class="highlight">o<span>2</span>f<span>X</span>h<span>V</span></em>. Letters <em>f</em> and <em>h</em> are simply used as separators.</p>
-							<p>Letter <em>o</em> is reserved for another type of job - it acts as a "lottery" character to randomize incremental input. Currently if we encode numbers as we increment them, the output is somewhat predictable:</p>
+							<p>The code above might look complicated, but it does one simple thing &mdash; shuffles the alphabet based on user's salt.</p>
+							<p>That way when one user passes the salt "abc1", our alphabet becomes <code class="inline">cUpI6isqCa0brWZnJA8wNTzDHEtLXOYgh5fQm2uRj4deM91oB7FkSGKxvyVP3l</code></p>
+							<p>And when another user passes "abc2", the alphabet becomes <code class="inline">tRvkhHx0ZefcF46YuaAqGLDKgM1W5Vp2T8n9s7BSoCjiQOdrEbJmUINywzXP3l</code></p>
+							<p>You can see that the shuffle is pretty good even when salt value is not that much different. This is what makes the base of Hashids work. Now we are able to encode one integer based on the salt value the user provides.</p>
+							<p>But Hashids is able to encode several integers into one id. This is done by reserving a few characters from the alphabet as <i>separators</i>. These characters are not used in encoding, but instead do the job of purely separating the real encoded values.</p>
+							<p>Let's say we encoded <em>1, 2, 3</em> without the salt and got "o2fXhV". Actual values in this output are highlighted: <em class="highlight">o<span>2</span>f<span>X</span>h<span>V</span></em>. Letters "f" and "h" are simply used as separators.</p>
+							<p>Letter "o" in this case is reserved for another type of job - it acts as a <i>lottery</i> character to randomize incremental input. Currently if we encode numbers as we increment them, the output is somewhat predictable:</p>
 							<table>
 								<thead>
 									<tr><td>Input</td><td>Output</td></tr>
@@ -375,7 +377,7 @@
 									<tr><td>1, 2, 7</td><td>o2fXhR</td></tr>
 								</tbody>
 							</table>
-							<p>So the lottery character is used to do another iteration of consistent shuffle, before starting the actual encoding so the numbers end up looking like this. A lot less predictable, with a disadvantage of having an extra character:</p>
+							<p>So the lottery character is used to do another iteration of consistent shuffle, before starting the actual encoding. The ids then end up looking more random (with a tiny disadvantage of having that extra lottery character):</p>
 							<table>
 								<thead>
 									<tr><td>Input</td><td>Output</td></tr>
@@ -389,7 +391,7 @@
 								</tbody>
 							</table>
 							<p>This is a quick overview of how Hashids is structured. Decoding is done the same way but in reverse &mdash; of course in order for that to work, Hashids itself needs the salt value from you in order to decode ids correctly.</p>
-							<p>If you give Hashids the wrong salt value and it just so happens that it decodes back to some random integers, Hashids does a quick check by encoding those integers to be sure the initial id matches. If it does not, the integers are discarded.</p>
+							<p>If you give Hashids the wrong salt and it just so happens that it decodes back to some random integers, Hashids does a quick check by encoding those integers to be sure the initial id matches. If it does not, the integers are discarded.</p>
 						</div>
 					</div>
 				</section>
@@ -403,7 +405,7 @@
 								<span class="subtext">bouncercat awesomed by <a href="https://github.com/cameronmcefee">cameronmcefee</a></span>
 							</div>
 							<div>
-								<p>This library was written with the intent of placing generated ids in visible places - like the URL. Therefore, the algorithm tries to avoid generating most common English curse words by never placing the following letters next to each other:</p>
+								<p>We need ids to be nice and friendly especially if they end up being in the URL. Therefore, the algorithm tries to avoid generating most common English curse words by never placing the following letters next to each other:</p>
 								<p><code class="inline">c,C,s,S,f,F,h,H,u,U,i,I,t,T</code></p>
 								<p>This is done by using them as <a href="#how-does-it-work">separators</a>.</p>
 								<p>So, since letters like <em>F</em> and <em>U</em> cannot be next to each other in a generated id, the f-bomb is not possible (no matter what your salt value is).</p>
@@ -452,14 +454,14 @@
 					<h2>Collisions</h2>
 					<div>
 						<p>There is no collisions because the method is based off of integer to hex conversion. As long as you don't change constructor arguments midway, the generated output will stay unique to your salt.</p>
-						<p>You can also test this by generating a billion ids and checking for collisions. Be sure to account for your alphabet, since default Hashids alphabet is <i>case-sensitive</i> (<em>aaa</em> is a different id than <em>AAA</em>).</p>
+						<p>You can also test this by generating a billion ids and checking for collisions. Be sure to account for your alphabet, since default alphabet is <i>case-sensitive</i> (<em>aaa</em> is different than <em>AAA</em>).</p>
 					</div>
 				</section>
 				
 				<section id="decoding">
 					<h2>How to decode</h2>
 					<div>
-						<p>There is no way to decode the output without knowing the salt (refer to <a href="#how-does-it-work">how hashids works</a>). The only known way is to use a <a href="http://en.wikipedia.org/wiki/Brute-force_attack">brute-force attack</a>. However, since integers behind the ids are of so little value to an outsider, there's not much reason to try and extract them in the first place.</p>
+						<p>There is no way to decode the output without knowing the salt (refer to <a href="#how-does-it-work">how hashids works</a>). The only known way is to use a <a href="http://en.wikipedia.org/wiki/Brute-force_attack">brute-force attack</a>. However, since integers behind the ids are of so little value to an attacker, there's not much reason to try and extract them in the first place.</p>
 					</div>
 				</section>
 				

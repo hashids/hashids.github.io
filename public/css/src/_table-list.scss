@@ -17,6 +17,7 @@
 		&.table-list-cell-header {
 			border: 0;
 		}
+		
 	}
 	
 	.table-list-cell-padding {
@@ -35,11 +36,6 @@
 			vertical-align: middle;
 			padding: 15px 0;
 			border-bottom: 1px solid #dde7ee;
-			
-			&.table-list-cell-header {
-				
-			}
-			
 		}
 		
 		&:last-child .table-list-cell {
@@ -50,7 +46,6 @@
 		
 		&.table-header .table-list-cell {
 			border-top: 0;
-			//border-bottom: 1px solid #ccc;
 			vertical-align: bottom;
 		}
 		

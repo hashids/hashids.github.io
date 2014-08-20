@@ -40,22 +40,16 @@ hr {
 	border: 0;
 }
 
-ul {
-	li {
-		list-style-type: none;
-	}
-}
-
-ol {
-	
-	li {
-		margin-left: 30px;
-	}
-	
-}
-
 li {
 	margin-bottom: 10px;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+ol li {
+	margin-left: 30px;
 }
 
 code.inline {
@@ -68,14 +62,16 @@ code.inline {
 em.highlight {
 	letter-spacing: 0.1em;
 	font-weight: normal;
+	
 	span {
+		@include box-shadow(1px 1px 0 rgba(238, 238, 238, 0.36));
+		@include border-radius(1px);
 		background: rgba(233, 233, 99, 0.36);
 		padding: 0 1px 1px 2px;
-		border-radius: 1px;
 		border: 1px solid rgba(160, 160, 51, 0.16);
-		box-shadow: 1px 1px 0 rgba(238, 238, 238, 0.36);
 		font-weight: bold;
 	}
+	
 }
 
 pre {
@@ -141,7 +137,6 @@ ul.iterate {
 	color: #aaa;
 }
 
-
 /* special cases */
 
 .float {
@@ -157,4 +152,3 @@ ul.iterate {
 	}
 	
 }
-

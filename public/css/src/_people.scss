@@ -11,7 +11,7 @@
 		@extend %rounded-corners;
 		text-decoration: none;
 		color: #333;
-		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-family: $font-family;
 		text-align: center;
 		display: inline-block;
 		width: 140px;
