@@ -8,8 +8,8 @@ Get [Node.js](http://nodejs.org/), [Grunt](http://gruntjs.com/). Be sure you hav
 
 This is a static website that auto-generates pages for different implementations. There's two main files to update:
 
-	dev/data.json
-	dev/template.html
+	src/data.json
+	src/template.html
 	
 `data.json` contains majority of the implementation data that populates the site. `template.html` is the template.
 

@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 				tasks: 'sass'
 			},
 			html: {
-				files: ['dev/**/*'],
+				files: ['src/**/*'],
 				tasks: 'templates'
 			}
 		}
@@ -78,8 +78,8 @@ module.exports = function(grunt) {
 			done = this.async(),
 			Handlebars = require('handlebars'),
 			minifier = require('html-minifier').minify,
-			data = grunt.file.readJSON('dev/data.json'),
-			source = grunt.file.read('dev/template.html'),
+			data = grunt.file.readJSON('src/data.json'),
+			source = grunt.file.read('src/template.html'),
 			template = Handlebars.compile(source),
 			getHtml = function(data, implementation, isHomepage) {
 				

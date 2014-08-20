@@ -91,7 +91,7 @@
 				"twitter": "peterhellberg",
 				"github": "peterhellberg"
 			},
-			"example": "hashids = Hashids.new \"this is my salt\"\nhash = hashids.encrypt 1, 2, 3\nnumbers = hashids.decrypt hash"
+			"example": "hashids = Hashids.new \"this is my salt\"\nid = hashids.encrypt 1, 2, 3\nnumbers = hashids.decrypt id"
 		},
 		"python": {
 			"lib": {
@@ -310,7 +310,7 @@
 				"twitter": "chadmaron",
 				"github": "cmaron"
 			},
-			"example": "Hashids hashids = new Hashids(\"this is my salt\")\nString hash = hashids.encrypt(1, 2, 3)\nList<Long> numbers = hashids.decrypt(hash)"
+			"example": "Hashids hashids = new Hashids(\"this is my salt\")\nString id = hashids.encrypt(1, 2, 3)\nList<Long> numbers = hashids.decrypt(id)"
 		},
 		"node-js": {
 			"lib": {
