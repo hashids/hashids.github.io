@@ -74,51 +74,62 @@ module.exports = function(grunt) {
 	
 	grunt.registerTask('templates', 'Compiles html templates for all implementations.', function() {
 		
-		var implementation, content, html,
+		var implementation, html,
 			done = this.async(),
 			Handlebars = require('handlebars'),
 			minifier = require('html-minifier').minify,
 			data = grunt.file.readJSON('dev/data.json'),
 			source = grunt.file.read('dev/template.html'),
-			template = Handlebars.compile(source);
+			template = Handlebars.compile(source),
+			getHtml = function(data, implementation, isHomepage) {
+				
+				var html;
+				
+				data._implementation = data.implementations[implementation];
+				data._isHomepage = isHomepage;
+				data._website = {
+					version: grunt.config.data.pkg.version
+				};
+				
+				//data._implementation.example = data._implementation.example.join(
+				
+				html = template(data);
+				
+				/* try to minify */
+				
+				try {
+					
+					html = minifier(html, {
+						removeComments: true,
+						collapseWhitespace: true
+					});
+					
+				} catch (err) {
+					grunt.warn('Could not minify "'+implementation+'"');
+				}
+				
+				return html;
+				
+			};
 		
 		grunt.log.writeln('Compiling templates...');
 		
 		/* for each implementation, create a folder with an index.html in it */
 		
-		for (implementation in data) {
+		for (implementation in data.implementations) {
 			
-			/* produce html */
+			/* produce html for the implementation */
 			
-			content = data[implementation];
-			content.website = {
-				version: grunt.config.data.pkg.version
-			};
-			
-			html = template(content);
-			
-			/* try to minify */
-			
-			try {
-				
-				html = minifier(html, {
-					removeComments: true,
-					collapseWhitespace: true
-				});
-				
-			} catch (err) {
-				grunt.warn('Could not minify "'+implementation+'"');
-			}
-			
-			/* finally write the file to the right folder */
-			
+			html = getHtml(data, implementation, false);
 			grunt.file.write(implementation+'/index.html', html);
 			
 			/* also create the main `index.html` for the root directory (from javascript version) */
 			
 			if (implementation === 'javascript') {
-				content.title = 'Hashids';
+				
+				html = getHtml(data, implementation, true);
 				grunt.file.write('index.html', html);
+				
 			}
 			
 		}

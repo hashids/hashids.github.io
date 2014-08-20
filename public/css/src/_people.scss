@@ -4,6 +4,7 @@
 	
 	& > li {
 		float: left;
+		width: 160px;
 	}
 	
 	a {
@@ -24,13 +25,15 @@
 	}
 	
 	img {
-		@include border-radius(100px);
+		@include border-radius(40px);
 		border: 5px solid #fff;
 	}
 	
 	h2 {
 		margin: 5px 0;
 		font-weight: normal;
+		font-size: 120%;
+		white-space: nowrap;
 	}
 	
 	span {

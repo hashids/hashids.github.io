@@ -1,178 +1,363 @@
 {
-	"javascript": {
-		"implementation": {
-			"abbr": "javascript",
-			"language": "JavaScript"
-		},
-		"author": {
-			"name": "Ivan Akimov",
-			"twitter": "ivanakimov",
-			"github": "ivanakimov"
-		}
-	},
-	"ruby": {
-		"implementation": {
-			"abbr": "ruby",
-			"language": "Ruby"
-		},
-		"author": {
-			"name": "Peter Hellberg",
-			"twitter": "peterhellberg",
-			"github": "peterhellberg"
-		}
-	},
-	"python": {
-		"implementation": {
-			"abbr": "python",
-			"language": "Python"
-		},
-		"author": {
-			"name": "David Aurelio",
-			"twitter": "void_0",
-			"github": "davidaurelio"
-		}
-	},
-	"java": {
-		"implementation": {
-			"abbr": "java",
-			"language": "Java"
-		},
-		"author": {
-			"name": "fanweixiao",
-			"twitter": "fanweixiao",
-			"github": "fanweixiao"
-		}
-	},
-	"php": {
-		"implementation": {
-			"abbr": "php",
-			"language": "PHP"
-		},
-		"author": {
-			"name": "Ivan Akimov",
-			"twitter": "ivanakimov",
-			"github": "ivanakimov"
-		}
-	},
-	"perl": {
-		"implementation": {
-			"abbr": "perl",
-			"language": "Perl"
-		},
-		"author": {
-			"name": "Zak B. Elep",
-			"twitter": "zakame",
-			"github": "zakame"
-		}
-	},
-	"coffeescript": {
-		"implementation": {
-			"abbr": "coffeescript",
-			"language": "CoffeeScript"
-		},
-		"author": {
-			"name": "Ivan Akimov",
-			"twitter": "ivanakimov",
-			"github": "ivanakimov"
-		}
-	},
-	"objective-c": {
-		"implementation": {
-			"abbr": "objective-c",
-			"language": "Objective-C"
-		},
-		"author": {
-			"name": "Jofell Gallardo",
-			"twitter": "jofell",
-			"github": "jofell"
-		}
-	},
-	"cpp": {
-		"implementation": {
-			"abbr": "cpp",
-			"language": "C++11"
-		},
-		"author": {
-			"name": "Toon Schoenmakers",
-			"twitter": "Schoentoon",
-			"github": "schoentoon"
-		}
-	},
-	"go": {
-		"implementation": {
-			"abbr": "go",
-			"language": "Go"
-		},
-		"author": {
+	"contributors": [
+		{
 			"name": "Remi Gillig",
-			"twitter": "remigillig",
-			"github": "speps"
-		}
-	},
-	"lua": {
-		"implementation": {
-			"abbr": "lua",
-			"language": "Lua"
-		},
-		"author": {
-			"name": "Leif Högberg",
-			"twitter": "leihog",
-			"github": "leihog"
-		}
-	},
-	"elixir": {
-		"implementation": {
-			"abbr": "elixir",
-			"language": "Elixir"
-		},
-		"author": {
-			"name": "Alexei Sholik",
-			"twitter": "true_droid",
-			"github": "alco"
-		}
-	},
-	"coldfusion": {
-		"implementation": {
-			"abbr": "coldfusion",
-			"language": "ColdFusion"
-		},
-		"author": {
-			"name": "Dan G. Switzer, II",
-			"twitter": "dswitzer2",
-			"github": "dswitzer"
-		}
-	},
-	"groovy": {
-		"implementation": {
-			"abbr": "groovy",
-			"language": "Groovy"
-		},
-		"author": {
-			"name": "Chad Maron",
-			"twitter": "chadmaron",
-			"github": "Apploi"
-		}
-	},
-	"node-js": {
-		"implementation": {
-			"abbr": "node-js",
-			"language": "Node.js"
-		},
-		"author": {
-			"name": "Ivan Akimov",
-			"twitter": "ivanakimov",
-			"github": "ivanakimov"
-		}
-	},
-	"net": {
-		"implementation": {
-			"abbr": "net",
-			"language": ".NET"
-		},
-		"author": {
+			"github": "speps",
+			"implementations": "Go"
+		}, {
+			"name": "Peter Hellberg",
+			"github": "peterhellberg",
+			"implementations": "Ruby"
+		}, {
+			"name": "David Aurelio",
+			"github": "davidaurelio",
+			"implementations": "Python"
+		}, {
 			"name": "Markus Ullmark",
-			"twitter": "ullmark",
-			"github": "ullmark"
+			"github": "ullmark",
+			"implementations": ".NET"
+		}, {
+			"name": "Jofell Gallardo",
+			"github": "jofell",
+			"implementations": "Objective-C"
+		}, {
+			"name": "Zak B. Elep",
+			"github": "zakame",
+			"implementations": "Perl"
+		}, {
+			"name": "Leif Högberg",
+			"github": "leihog",
+			"implementations": "Lua"
+		}, {
+			"name": "fanweixiao",
+			"github": "fanweixiao",
+			"implementations": "Java"
+		}, {
+			"name": "Alexei Sholik",
+			"github": "alco",
+			"implementations": "Elixir"
+		}, {
+			"name": "Dan G. Switzer, II",
+			"github": "dswitzer",
+			"implementations": "ColdFusion"
+		}, {
+			"name": "Toon Schoenmakers",
+			"github": "schoentoon",
+			"implementations": "C++11"
+		}, {
+			"name": "Chad Maron",
+			"github": "cmaron",
+			"implementations": "Groovy"
+		}, {
+			"name": "Ivan Akimov",
+			"github": "ivanakimov",
+			"implementations": "JavaScript, Node.js, CoffeeScript, PHP"
+		}
+	],
+	"implementations": {
+		"javascript": {
+			"lib": {
+				"abbr": "javascript",
+				"language": "JavaScript",
+				"url": "https://github.com/ivanakimov/hashids.js",
+				"links": [
+					{
+						"title": "Bower package",
+						"url": "http://bower.io/search/?q=hashids"
+					}
+				]
+			},
+			"author": {
+				"name": "Ivan Akimov",
+				"twitter": "ivanakimov",
+				"github": "ivanakimov"
+			},
+			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encrypt(1, 2, 3),\n  numbers = hashids.decrypt(id);"
+		},
+		"ruby": {
+			"lib": {
+				"abbr": "ruby",
+				"language": "Ruby",
+				"url": "https://github.com/peterhellberg/hashids.rb",
+				"links": [
+					{
+						"title": "Ruby gem",
+						"url": "http://rubygems.org/gems/hashids"
+					}
+				]
+			},
+			"author": {
+				"name": "Peter Hellberg",
+				"twitter": "peterhellberg",
+				"github": "peterhellberg"
+			},
+			"example": "hashids = Hashids.new \"this is my salt\"\nhash = hashids.encrypt 1, 2, 3\nnumbers = hashids.decrypt hash"
+		},
+		"python": {
+			"lib": {
+				"abbr": "python",
+				"language": "Python",
+				"url": "https://github.com/davidaurelio/hashids-python",
+				"links": [
+					{
+						"title": "Python package",
+						"url": "https://pypi.python.org/pypi/hashids/"
+					}
+				]
+			},
+			"author": {
+				"name": "David Aurelio",
+				"twitter": "void_0",
+				"github": "davidaurelio"
+			},
+			"example": "hashids = Hashids(salt=\"this is my salt\")\nid = hashids.encrypt(1, 2, 3)\nnumbers = hashids.decrypt(id)"
+		},
+		"java": {
+			"lib": {
+				"abbr": "java",
+				"language": "Java",
+				"url": "https://github.com/jiecao-fm/hashids-java",
+				"links": [
+					{
+						"title": "Hashids v0.1.4",
+						"url": "https://github.com/peet/hashids.java"
+					}
+				]
+			},
+			"author": {
+				"name": "fanweixiao",
+				"twitter": "fanweixiao",
+				"github": "fanweixiao"
+			},
+			"example": "Hashids hashids = new Hashids(\"this is my salt\");\nString id = hashids.encrypt(1, 2, 3);\nlong[] numbers = hashids.decrypt(id);"
+		},
+		"php": {
+			"lib": {
+				"abbr": "php",
+				"language": "PHP",
+				"url": "https://github.com/ivanakimov/hashids.php",
+				"links": [
+					{
+						"title": "Composer package",
+						"url": "https://packagist.org/packages/hashids/hashids"
+					}, {
+						"title": "Laravel bundle",
+						"url": "http://bundles.laravel.com/bundle/hashids"
+					}, {
+						"title": "CodeIgniter spark",
+						"url": "http://getsparks.org/packages/sk-hashids/versions/HEAD/show"
+					}, {
+						"title": "Symfony bundle",
+						"url": "https://github.com/neoshadybeat/hashidsBundle"
+					}, {
+						"title": "Kohana module",
+						"url": "http://kohana-modules.com/modules/pocesar/hashids-kohana"
+					}, {
+						"title": "Wordpress plugin",
+						"url": "http://wordpress.org/support/plugin/wp-hashed-ids"
+					}, {
+						"title": "CakePHP component",
+						"url": "https://github.com/FinalDevStudio/cakephp-hashids"
+					}, {
+						"title": "Silex package",
+						"url": "https://packagist.org/packages/redpanda/hashids-service-provider"
+					}
+				]
+			},
+			"author": {
+				"name": "Ivan Akimov",
+				"twitter": "ivanakimov",
+				"github": "ivanakimov"
+			},
+			"example": "$hashids = new Hashids\\Hashids('this is my salt');\n$id = $hashids->encrypt(1, 2, 3);\n$numbers = $hashids->decrypt($id);"
+		},
+		"perl": {
+			"lib": {
+				"abbr": "perl",
+				"language": "Perl",
+				"url": "https://github.com/zakame/hashids.pm",
+				"links": [
+					{
+						"title": "CPAN module",
+						"url": "https://metacpan.org/module/Hashids"
+					}
+				]
+			},
+			"author": {
+				"name": "Zak B. Elep",
+				"twitter": "zakame",
+				"github": "zakame"
+			},
+			"example": "my $hashids = Hashids->new('this is my salt');\nmy $id = $hashids->encrypt(1, 2, 3);\nmy $numbers = $hashids->decrypt($id);"
+		},
+		"coffeescript": {
+			"lib": {
+				"abbr": "coffeescript",
+				"language": "CoffeeScript",
+				"url": "https://github.com/ivanakimov/hashids.coffee",
+				"links": []
+			},
+			"author": {
+				"name": "Ivan Akimov",
+				"twitter": "ivanakimov",
+				"github": "ivanakimov"
+			},
+			"example": "hashids = new Hashids \"this is my salt\"\nid = hashids.encrypt 1, 2, 3\nnumbers = hashids.decrypt id"
+		},
+		"objective-c": {
+			"lib": {
+				"abbr": "objective-c",
+				"language": "Objective-C",
+				"url": "https://github.com/jofell/hashids-objc",
+				"links": []
+			},
+			"author": {
+				"name": "Jofell Gallardo",
+				"twitter": "jofell",
+				"github": "jofell"
+			},
+			"example": "Hashids *hashids = [Hashids hashidWithSalt:@\"this is my salt\"];\nNSString *id = [hashids encrypt:@1, @2, @3, nil];\nNSLog(@\"%@\", id);\nNSLog(@\"%@\", [hashids decrypt:id]);"
+		},
+		"cpp": {
+			"lib": {
+				"abbr": "cpp",
+				"language": "C++11",
+				"url": "https://github.com/schoentoon/hashidsxx",
+				"links": []
+			},
+			"author": {
+				"name": "Toon Schoenmakers",
+				"twitter": "Schoentoon",
+				"github": "schoentoon"
+			},
+			"example": "hashidsxx::Hashids hash(\"this is my salt\");\nstd::string id = hash.encrypt({1, 2, 3});\nstd::vector<uint32_t> numbers = hash.decrypt(id);"
+		},
+		"go": {
+			"lib": {
+				"abbr": "go",
+				"language": "Go",
+				"url": "https://github.com/speps/go-hashids",
+				"links": [
+					{
+						"title": "Go doc",
+						"url": "http://godoc.org/github.com/speps/go-hashids"
+					}
+				]
+			},
+			"author": {
+				"name": "Remi Gillig",
+				"twitter": "remigillig",
+				"github": "speps"
+			},
+			"example": "h := hashids.New()\nh.Salt = \"this is my salt\"\nid := h.Encrypt([]int{1, 2, 3})\nnumbers := h.Decrypt(id)"
+		},
+		"lua": {
+			"lib": {
+				"abbr": "lua",
+				"language": "Lua",
+				"url": "https://github.com/leihog/hashids.lua",
+				"links": []
+			},
+			"author": {
+				"name": "Leif Högberg",
+				"twitter": "leihog",
+				"github": "leihog"
+			},
+			"example": "local h = hashids.new(\"this is my salt\");\nlocal id = h:encrypt(1, 2, 3);\nlocal numbers = h:decrypt(id);"
+		},
+		"elixir": {
+			"lib": {
+				"abbr": "elixir",
+				"language": "Elixir",
+				"url": "https://github.com/alco/saltie",
+				"links": [
+					{
+						"title": "Hex.pm package",
+						"url": "https://hex.pm/packages/saltie"
+					}
+				]
+			},
+			"author": {
+				"name": "Alexei Sholik",
+				"twitter": "true_droid",
+				"github": "alco"
+			},
+			"example": "saltie = Saltie.new([ key: 'this is my salt' ])\nid = Saltie.encrypt(saltie, [1, 2, 3])\nnumbers = Saltie.decrypt(saltie, id)"
+		},
+		"coldfusion": {
+			"lib": {
+				"abbr": "coldfusion",
+				"language": "ColdFusion",
+				"url": "https://github.com/dswitzer/hashids.coldfusion",
+				"links": []
+			},
+			"author": {
+				"name": "Dan G. Switzer, II",
+				"twitter": "dswitzer2",
+				"github": "dswitzer"
+			},
+			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.encrypt(1, 2, 3);\nvar numbers = hashids.decrypt(id);"
+		},
+		"groovy": {
+			"lib": {
+				"abbr": "groovy",
+				"language": "Groovy",
+				"url": "https://github.com/Apploi/hashids-groovy",
+				"links": []
+			},
+			"author": {
+				"name": "Chad Maron",
+				"twitter": "chadmaron",
+				"github": "cmaron"
+			},
+			"example": "Hashids hashids = new Hashids(\"this is my salt\")\nString hash = hashids.encrypt(1, 2, 3)\nList<Long> numbers = hashids.decrypt(hash)"
+		},
+		"node-js": {
+			"lib": {
+				"abbr": "node-js",
+				"language": "Node.js",
+				"url": "https://github.com/ivanakimov/hashids.node.js",
+				"links": [
+					{
+						"title": "npm package",
+						"url": "https://npmjs.org/package/hashids"
+					},	{
+						"title": "Meteor package",
+						"url": "https://github.com/crapthings/meteor-hashids"
+					}, {
+						"title": "Node.js tutorial",
+						"url": "http://nodeexamples.com/2012/09/28/hashing-numbers-using-the-hashids-module-in-node-js/"
+					}
+				]
+			},
+			"author": {
+				"name": "Ivan Akimov",
+				"twitter": "ivanakimov",
+				"github": "ivanakimov"
+			},
+			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encrypt(1, 2, 3),\n  numbers = hashids.decrypt(id);"
+		},
+		"net": {
+			"lib": {
+				"abbr": "net",
+				"language": ".NET",
+				"url": "https://github.com/ullmark/hashids.net",
+				"links": [
+					{
+						"title": "NuGet package",
+						"url": "http://nuget.org/packages/Hashids.net/"
+					}, {
+						"title": "Hashids v0.3.0",
+						"url": "https://github.com/Mindflash/hashids.net"
+					}
+				]
+			},
+			"author": {
+				"name": "Markus Ullmark",
+				"twitter": "ullmark",
+				"github": "ullmark"
+			},
+			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.Encrypt(1, 2, 3);\nvar numbers = hashids.Decrypt(id);"
 		}
 	}
 }
