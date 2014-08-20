@@ -29,17 +29,29 @@ section {
 		@extend .clearfix;
 		position: relative;
 		
+		$image-size: 400px;
+		
 		& > div {
 			float: left;
 			
-			&:first-child { width: $page-width - 340px; }
-			&:last-child { width: 340px; }
+			&:first-child {
+				width: $page-width - $image-size;
+				
+				p { padding-right: 15px; }
+				
+			}
+			&:last-child { width: $image-size; }
 			
 		}
 		
 		.in-use {
 			position: relative;
-			width: 340px;
+			width: $image-size;
+			
+			img {
+				width: $image-size;
+			}
+			
 		}
 		
 	}

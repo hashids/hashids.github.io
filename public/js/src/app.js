@@ -1,6 +1,44 @@
 
 $(function() {
 	
+	/* hashids logo effect */
+	
+	var hashids = new Hashids(':)', 7),
+		timeouts = [2000, 1700, 1400, 1100, 750, 750, 500, 400, 300, 300, 300, 200, 150, 130, 120, 110, 100, 100, 100, 100, 80, 70, 60, 50, 40, 30],
+		logo = function(isOriginal) {
+			
+			var id,
+				$logo = $('.header h2 a');
+			
+			if (isOriginal) {
+				$logo.text('hashids');
+			} else {
+				id = hashids.encrypt(Math.floor(Math.random() * 1000));
+				$logo.text(id);
+			}
+			
+		},
+		loopLogo = function(i) {
+			
+			i = i || 0;
+			if (timeouts[i]) {
+				
+				logo();
+				setTimeout(function() {
+					loopLogo(++i);
+				}, timeouts[i]);
+				
+			} else {
+				logo(true);
+				setTimeout(loopLogo, 40000);
+			}
+			
+		};
+	
+	setTimeout(loopLogo, 10000);
+	
+	/* the mad h4x0r effect for links */
+	
 	$('a:not(.no-effect)').hover(function(event) {
 		
 		var newText,
@@ -30,15 +68,21 @@ $(function() {
 		
 	});
 	
+	/* highlight code */
+	
 	hljs.initHighlightingOnLoad();
+	
+	/* slider thingy for use cases */
 	
 	$('.in-use').flexslider({
 		animation: 'slide',
 		animationLoop: true,
-		itemWidth: 340,
+		itemWidth: 400,
 		itemMargin: 1,
-		animationSpeed: 1500
+		animationSpeed: 750
 	});
+	
+	/* read more button -- how does it work section */
 	
 	$('.read-more').click(function(event) {
 		

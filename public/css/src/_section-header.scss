@@ -4,7 +4,7 @@
 section.header {
 	text-align: center;
 	margin: 40px auto;
-	width: 65%;
+	width: 85%;
 	
 	h2 {
 		font-size: 100px;
@@ -31,10 +31,13 @@ section.header {
 	
 	.description {
 		margin-bottom: 10px;
+		font-size: 30px;
+		text-transform: lowercase;
+		margin-top: 10px;
 	}
 	
 	.available {
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 26px;
 		margin-top: 10px;
 		color: #999;

@@ -46,7 +46,7 @@
 				<section class="header">
 					<h2><a href="/" class="no-effect">hashids</a></h2>
 					<div>
-						<p class="description">Generate short obfuscated strings from integers</p>
+						<p class="description">Generate short obfuscated ids from integers</p>
 						<hr>
 						<p class="available">
 							available in
@@ -72,29 +72,40 @@
 				</section>
 				
 				<section id="uses">
-					<h2>Uses</h2>
 					<div>
 						<div>
 							<p>
-								Hashids started from a need to have short unguessable ids.<br/>
-								<em>md5</em> wasn't cutting it because it was too long, <em>base64</em> was guessable. Hence, the hashids library was born.
+								Hashids started from a need to have short unguessable ids.
+								<i>md5</i> hashes are too long and <i>base64</i> is guessable. Hence, the hashids library was born.
 							</p>
-							<p>Today it's used in url shorteners, keeping several integers together in single id, or simply as short unique identifiers.</p>
+							<p>Today it's used in url shortening, keeping several integers in a single id, or simply as short unique identifiers.</p>
 							<p><i class="fa fa-jsfiddle"></i> Check out the <a href="#">jsfiddle</a>.</p>
 						</div>
 						<div class="in-use">
 							<ul class="slides">
 								<li>
-									<a href="#" class="no-effect"><img src="/public/img/screenshot1.png" /></a>
+									<a href="http://www.bemyeyes.org/" class="no-effect"><img src="/public/img/screenshot1.png" /></a>
 								</li>
 								<li>
-									<a href="#" class="no-effect"><img src="/public/img/screenshot1.png" /></a>
+									<a href="http://hiresync.io/" class="no-effect"><img src="/public/img/screenshot2.png" /></a>
 								</li>
 								<li>
-									<a href="#" class="no-effect"><img src="/public/img/screenshot1.png" /></a>
+									<a href="http://pathbrite.com/" class="no-effect"><img src="/public/img/screenshot3.png" /></a>
 								</li>
 								<li>
-									<a href="#" class="no-effect"><img src="/public/img/screenshot1.png" /></a>
+									<a href="http://laravel.fr/" class="no-effect"><img src="/public/img/screenshot4.png" /></a>
+								</li>
+								<li>
+									<a href="https://www.uscscia.com/" class="no-effect"><img src="/public/img/screenshot5.png" /></a>
+								</li>
+								<li>
+									<a href="http://htmlmuncher.com/" class="no-effect"><img src="/public/img/screenshot6.png" /></a>
+								</li>
+								<li>
+									<a href="http://laravel.io/bin" class="no-effect"><img src="/public/img/screenshot7.png" /></a>
+								</li>
+								<li>
+									<a href="http://digestif.me/" class="no-effect"><img src="/public/img/screenshot8.png" /></a>
 								</li>
 							</ul>
 						</div>
@@ -128,7 +139,7 @@
 					<div>
 						<ol>
 							<li>
-								Creates short unique ids. Duh.
+								Creates short unique ids.
 							</li>
 							<li>
 								Allows custom alphabet as well as salt, so ids are unique only to you.
@@ -340,21 +351,31 @@
 							<p>But Hashids is able to encode several integers into one id. This is done by reserving a few characters from the alphabet as <em>separators</em>. These characters are then not used in encoding, but instead do the job of purely separating the real encoded values.</p>
 							<p>Let's take an example input <em>1,2,3</em> and encode it with Hashids without salt: <em>o2fXhV</em>. The actual values in this output are highlighted: <em class="highlight">o<span>2</span>f<span>X</span>h<span>V</span></em>. Letters <em>f</em> and <em>h</em> are simply used as separators.</p>
 							<p>Letter <em>o</em> is reserved for another type of job - it acts as a "lottery" character to randomize incremental input. Currently if we encode numbers as we increment them, the output is somewhat predictable:</p>
-							<ul>
-								<li>1,2,3 = <em>o2fXhV</em></li>
-								<li>1,2,4 = <em>o2fXhd</em></li>
-								<li>1,2,5 = <em>o2fXh6</em></li>
-								<li>1,2,6 = <em>o2fXhz</em></li>
-								<li>1,2,7 = <em>o2fXhR</em></li>
-							</ul>
+							<table>
+								<thead>
+									<tr><td>Input</td><td>Output</td></tr>
+								</thead>
+								<tbody>
+									<tr><td>1, 2, 3</td><td>o2fXhV</td></tr>
+									<tr><td>1, 2, 4</td><td>o2fXhd</td></tr>
+									<tr><td>1, 2, 5</td><td>o2fXh6</td></tr>
+									<tr><td>1, 2, 6</td><td>o2fXhz</td></tr>
+									<tr><td>1, 2, 7</td><td>o2fXhR</td></tr>
+								</tbody>
+							</table>
 							<p>So the lottery character is used to do another iteration of consistent shuffle, before starting the actual encoding so the numbers end up looking like this. A lot less predictable, with a disadvantage of having an extra character:</p>
-							<ul>
-								<li>1,2,3 = <em>o2fXhV</em></li>
-								<li>1,2,4 = <em>pYfzhG</em></li>
-								<li>1,2,5 = <em>qxfOhN</em></li>
-								<li>1,2,6 = <em>rkfAhN</em></li>
-								<li>1,2,7 = <em>v2fWhy</em></li>
-							</ul>
+							<table>
+								<thead>
+									<tr><td>Input</td><td>Output</td></tr>
+								</thead>
+								<tbody>
+									<tr><td>1, 2, 3</td><td>o2fXhV</td></tr>
+									<tr><td>1, 2, 4</td><td>pYfzhG</td></tr>
+									<tr><td>1, 2, 5</td><td>qxfOhN</td></tr>
+									<tr><td>1, 2, 6</td><td>rkfAhN</td></tr>
+									<tr><td>1, 2, 7</td><td>v2fWhy</td></tr>
+								</tbody>
+							</table>
 							<p>This is a quick overview of how Hashids is structured. Decoding is done the same way but in reverse &mdash; of course in order for that to work, Hashids itself needs the salt value from you in order to decode ids correctly.</p>
 							<p>If you give Hashids the wrong salt value and it just so happens that it decodes back to some random integers, Hashids does a quick check by encoding those integers to be sure the initial id matches. If it does not, the integers are discarded.</p>
 						</div>
@@ -366,7 +387,7 @@
 					<div>
 						<div class="octocat-split octocat-split-left">
 							<div>
-								<a href="https://octodex.github.com/" class="no-effect"><img src="https://octodex.github.com/images/bouncercat.png" /></a>
+								<a href="https://octodex.github.com/" class="no-effect"><img src="/public/img/bouncercat.png" /></a>
 								<span class="subtext">bouncercat awesomed by <a href="https://github.com/cameronmcefee">cameronmcefee</a></span>
 							</div>
 							<div>
@@ -382,7 +403,7 @@
 				<section id="alternatives">
 					<h2>Are there any alternatives?</h2>
 					<div>
-						<p>Yes, there are a few and you're encouraged to pick the most appropriate. Hashids is not a perfect solution to everything.</p>
+						<p>Yes, there are a few and you should pick the most appropriate for the job. Hashids is not a perfect solution to everything.</p>
 						<ol>
 							<li>
 								<em>Base64 encode</em>. This is the most straightforward approach &mdash; most languages have these functions. If you don't need all the fancy extras Hashids offers, this method will work just fine. It's faster too. <a href="http://en.wikipedia.org/wiki/Base64">Read more</a>.
@@ -441,7 +462,7 @@
 								<p>If you have a new library, plugin or extension please ping <a href="https://twitter.com/IvanAkimov">@IvanAkimov</a></p>
 							</div>
 							<div>
-								<a href="https://octodex.github.com/" class="no-effect"><img src="https://octodex.github.com/images/codercat.jpg" /></a>
+								<a href="https://octodex.github.com/" class="no-effect"><img src="/public/img/codercat.jpg" /></a>
 								<span class="subtext">codercat awesomed by <a href="https://github.com/cameronmcefee">cameronmcefee</a></span>
 							</div>
 						</div>
@@ -489,13 +510,25 @@
 		</div>
 		
 		<div class="footer">
-			<p><a href="https://github.com/hashids/hashids.github.io">this website</a> <span class="copyleft">&copy;</span> 2014</p>
+			<div class="social-buttons">
+				
+				<!-- twitter button -->
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://hashids.org" data-text="Hashids" data-count="none" data-hashtags="hashids" data-dnt="true">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				
+				<!-- facebook button -->
+				<div class="fb-like" data-href="http://hashids.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+				
+			</div>
+			<p>Hashids is under <a href="http://opensource.org/licenses/MIT">MIT license</a></p>
+			<p>Website <span class="copyleft">&copy;</span> 2014 &middot; <a href="https://github.com/hashids/hashids.github.io">Github</a> &middot; <a href="https://github.com/hashids/hashids.github.io/issues">Issues</a></p>
 		</div>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 		<script src="/public/js/lib/highlight-pack-1.0.0.min.js"></script>
-		<script src="/public/js/lib/app-{{website.version}}.min.js"></script>
 		<script src="/public/js/lib/jquery.flexslider-min.js"></script>
+		<script src="/public/js/lib/hashids.min.js"></script>
+		<script src="/public/js/lib/app-{{website.version}}.min.js"></script>
 		
 		<!-- facebook og -->
 		

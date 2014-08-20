@@ -13,10 +13,35 @@
 	color: #999;
 	font-size: 13px;
 	text-align: center;
+	border-top: 1px solid #ddd;
 	
 	p {
 		margin: 0;
 		&:first-child { padding-top: 20px; }
+	}
+	
+}
+
+.social-buttons {
+	@extend %rounded-corners;
+	display: inline-block;
+	background: #fff;
+	padding: 6px 5px 0;
+	margin: 15px 0;
+	
+	& > a, & > div {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	/* overwrites */
+	
+	.twitter-share-button {
+		margin-right: 5px;
+	}
+	
+	.fb-like span {
+		top: -2px;
 	}
 	
 }

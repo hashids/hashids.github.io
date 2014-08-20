@@ -27,7 +27,7 @@ html, body {
 	
 	.wrap-inner {
 		overflow: auto;
-		padding-bottom: $footer-height;
+		padding-bottom: $footer-height + 100px;
 		text-align: left;
 	}
 	

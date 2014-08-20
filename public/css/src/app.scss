@@ -7,7 +7,7 @@ $font-family-cursive: "Leckerli One", "Helvetica Neue", Helvetica, Arial, sans-s
 $font-family-monospace: "Fira Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $page-width: 800px;
-$footer-height: 140px;
+$footer-height: 160px;
 
 $link-color: #6598cc;
 $text-color: #333;
@@ -22,6 +22,7 @@ $text-color: #333;
 @import 'table-list';
 @import 'button';
 @import 'taglets';
+@import 'table';
 @import 'footer';
 
 @import 'flexslider';
