@@ -364,17 +364,17 @@
 							<p>You can see that the shuffle is pretty good even when salt value is not that much different. This is what makes the base of Hashids work. Now we are able to encode one integer based on the salt value the user provides.</p>
 							<p>But Hashids is able to encode several integers into one id. This is done by reserving a few characters from the alphabet as <i>separators</i>. These characters are not used in encoding, but instead do the job of purely separating the real encoded values.</p>
 							<p>Let's say we encoded <em>1, 2, 3</em> without the salt and got "o2fXhV". Actual values in this output are highlighted: <em class="highlight">o<span>2</span>f<span>X</span>h<span>V</span></em>. Letters "f" and "h" are simply used as separators.</p>
-							<p>Letter "o" in this case is reserved for another type of job - it acts as a <i>lottery</i> character to randomize incremental input. Currently if we encode numbers as we increment them, the output is somewhat predictable:</p>
+							<p>Letter "o" in this case is reserved for another type of job - it acts as a <i>lottery</i> character to randomize incremental input. If we encode numbers as we increment them, the output is somewhat predictable:</p>
 							<table>
 								<thead>
 									<tr><td>Input</td><td>Output</td></tr>
 								</thead>
 								<tbody>
-									<tr><td>1, 2, 3</td><td>o2fXhV</td></tr>
-									<tr><td>1, 2, 4</td><td>o2fXhd</td></tr>
-									<tr><td>1, 2, 5</td><td>o2fXh6</td></tr>
-									<tr><td>1, 2, 6</td><td>o2fXhz</td></tr>
-									<tr><td>1, 2, 7</td><td>o2fXhR</td></tr>
+									<tr><td>1, 2, 3</td><td>2fXhV</td></tr>
+									<tr><td>1, 2, 4</td><td>2fXhd</td></tr>
+									<tr><td>1, 2, 5</td><td>2fXh6</td></tr>
+									<tr><td>1, 2, 6</td><td>2fXhz</td></tr>
+									<tr><td>1, 2, 7</td><td>2fXhR</td></tr>
 								</tbody>
 							</table>
 							<p>So the lottery character is used to do another iteration of consistent shuffle, before starting the actual encoding. The ids then end up looking more random (with a tiny disadvantage of having that extra lottery character):</p>
