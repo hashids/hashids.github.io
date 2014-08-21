@@ -335,7 +335,7 @@
 }</code></pre>
 						<center><button class="read-more" data-target="how-it-works-more">read more</button></center>
 						<div class="how-it-works-more hidden">
-							<p>If we try to convert to hex with <code class="inline">toHex(1234)</code>, we will get back "4d2" which is that integer's hex value.</p>
+							<p>If we try to convert integer 123 to hex with <code class="inline">toHex(1234)</code>, we will get back "4d2".</p>
 							<p>If we increase the alphabet to <code class="inline">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</code>, our output will now be shorter because there's more characters to work with now &mdash; so it becomes "t5".</p>
 							<p>If we take it one step further and shuffle the alphabet before encoding, we will get a different value. But how could we shuffle the alphabet consistently, so that with every shuffle the characters would keep the same order?</p>
 							<p>That's where Hashids uses a variation of <a href="http://en.wikipedia.org/wiki/Fisher-Yates_shuffle">Fisher-Yates algorithm</a>:</p>
@@ -406,9 +406,9 @@
 							</div>
 							<div>
 								<p>We need ids to be nice and friendly especially if they end up being in the URL. Therefore, the algorithm tries to avoid generating most common English curse words by never placing the following letters next to each other:</p>
-								<p><code class="inline">c,C,s,S,f,F,h,H,u,U,i,I,t,T</code></p>
-								<p>This is done by using them as <a href="#how-does-it-work">separators</a>.</p>
-								<p>So, since letters like <em>F</em> and <em>U</em> cannot be next to each other in a generated id, the f-bomb is not possible (no matter what your salt value is).</p>
+								<p><code class="inline">c,s,f,h,u,i,t</code></p>
+								<p>And their uppercase equivalents. This is done by using them as <a href="#how-does-it-work">separators</a>.</p>
+								<p>So, since letters like "F" and "u" cannot be next to each other in a generated id, the f-bomb is not possible (no matter what your salt value is).</p>
 							</div>
 						</div>
 					</div>
