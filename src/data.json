@@ -303,7 +303,12 @@
 				"abbr": "groovy",
 				"language": "Groovy",
 				"url": "https://github.com/Apploi/hashids-groovy",
-				"links": []
+				"links": [
+					{
+						"title": "Grails plugin",
+						"url": "http://grails.org/plugin/hashids"
+					}
+				]
 			},
 			"author": {
 				"name": "Chad Maron",
