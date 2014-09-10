@@ -46,7 +46,7 @@ button, .button {
 	white-space: nowrap;
 	text-decoration: none !important;
 	border: 0;
-	margin: 0; /* a little weird: sometimes <button> needs the margin reset to zero */
+	margin: 0 0 5px 0; /* a little weird: sometimes <button> needs the margin reset to zero */
 	letter-spacing: 0;
 	
 	.fa {
