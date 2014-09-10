@@ -10,7 +10,7 @@
 			{{/if}}
 		</title>
 		
-		<meta name="keywords" content="hashids{{^if _isHomepage}} {{title}}{{/if}}, hashid, hash, id, short hash, youtube hash, bitly hash">
+		<meta name="keywords" content="hashids, hashid, hash, id, short hash, youtube hash, bitly hash{{^if _isHomepage}}, {{_implementation.lib.language}}{{/if}}">
 		<meta name="description" content="Generate short obfuscated strings from integers. Use in url shortening or as unique ids.">
 		<meta name="author" content="{{_implementation.author.name}}">
 		<meta name="robots" content="noarchive">
