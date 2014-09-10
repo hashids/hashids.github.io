@@ -5,7 +5,7 @@
 }
 
 .table-list {
-	width: $page-width;
+	width: $page-width - 30px;
 	display: table;
 	table-layout: fixed;
 	margin: 0 0 15px 0;
