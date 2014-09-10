@@ -3,7 +3,8 @@ $(function() {
 	
 	/* hashids logo effect */
 	
-	var startTimer = 10000,
+	var $email = $('.e'),
+		startTimer = 10000,
 		hashids = new Hashids(':)', 7),
 		timeouts = [2000, 1700, 1400, 1100, 750, 750, 500, 400, 300, 300, 300, 200, 150, 130, 120, 110, 100, 100, 100, 100, 80, 70, 60, 50, 40, 30],
 		logo = function(isOriginal) {
@@ -66,6 +67,19 @@ $(function() {
 			text = $.data($el.get(0), 'text');
 		
 		$el.text(text);
+		
+	});
+	
+	/* replace email */
+	
+	$email.each(function() {
+		
+		var $el = $(this),
+			cut = $el.data('cut').split(','),
+			value = $el.text(),
+			email = value.slice(0, cut[0]) + '@' + value.slice(cut[0], cut[1]) + '.' + value.slice(cut[1]);
+		
+		$el.replaceWith('<a href="mailto:'+email+'?subject=Hi">'+email+'</a>');
 		
 	});
 	

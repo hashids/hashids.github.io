@@ -85,33 +85,33 @@
 								<i>md5</i> hashes are too long and <i>base64</i> is guessable. So, we made Hashids.
 							</p>
 							<p>Today it's used in url shortening, bundling integers into a short id, or simply as unique identifiers.</p>
-							<p><i class="fa fa-jsfiddle"></i> Check out the <a href="http://jsfiddle.net/ivanakimov/8z6d8o94/">fiddle</a>.</p>
+							<p><i class="fa fa-jsfiddle"></i> Check out the <a target="_blank" href="http://jsfiddle.net/ivanakimov/8z6d8o94/">fiddle</a>.</p>
 						</div>
 						<div class="in-use">
 							<ul class="slides">
 								<li>
-									<a href="http://www.bemyeyes.org/" class="no-effect"><img src="/public/img/screenshot1.png" /></a>
+									<a target="_blank" href="http://www.bemyeyes.org/" class="no-effect"><img src="/public/img/screenshot1.png" /></a>
 								</li>
 								<li>
-									<a href="http://hiresync.io/" class="no-effect"><img src="/public/img/screenshot2.png" /></a>
+									<a target="_blank" href="http://hiresync.io/" class="no-effect"><img src="/public/img/screenshot2.png" /></a>
 								</li>
 								<li>
-									<a href="http://pathbrite.com/" class="no-effect"><img src="/public/img/screenshot3.png" /></a>
+									<a target="_blank" href="http://pathbrite.com/" class="no-effect"><img src="/public/img/screenshot3.png" /></a>
 								</li>
 								<li>
-									<a href="http://laravel.fr/" class="no-effect"><img src="/public/img/screenshot4.png" /></a>
+									<a target="_blank" href="http://laravel.fr/" class="no-effect"><img src="/public/img/screenshot4.png" /></a>
+								</li>
+								<!--<li>
+									<a target="_blank" href="https://www.uscscia.com/" class="no-effect"><img src="/public/img/screenshot5.png" /></a>
+								</li>-->
+								<li>
+									<a target="_blank" href="http://htmlmuncher.com/" class="no-effect"><img src="/public/img/screenshot6.png" /></a>
 								</li>
 								<li>
-									<a href="https://www.uscscia.com/" class="no-effect"><img src="/public/img/screenshot5.png" /></a>
+									<a target="_blank" href="http://laravel.io/bin" class="no-effect"><img src="/public/img/screenshot7.png" /></a>
 								</li>
 								<li>
-									<a href="http://htmlmuncher.com/" class="no-effect"><img src="/public/img/screenshot6.png" /></a>
-								</li>
-								<li>
-									<a href="http://laravel.io/bin" class="no-effect"><img src="/public/img/screenshot7.png" /></a>
-								</li>
-								<li>
-									<a href="http://digestif.me/" class="no-effect"><img src="/public/img/screenshot8.png" /></a>
+									<a target="_blank" href="http://digestif.me/" class="no-effect"><img src="/public/img/screenshot8.png" /></a>
 								</li>
 							</ul>
 						</div>
@@ -124,13 +124,13 @@
 						<div class="float">
 							<pre class="inline"><code>{{_implementation.example}}</code></pre>
 							<div class="buttons">
-								<a href="{{_implementation.lib.url}}" class="button button-grey no-effect"><i class="fa fa-github-square"></i> github repo</a><br/>
+								<a target="_blank" href="{{_implementation.lib.url}}" class="button button-grey no-effect"><i class="fa fa-github-square"></i> github repo</a><br/>
 								<a href="{{_implementation.lib.url}}/zipball/master" class="button button-blue no-effect"><i class="fa fa-cloud-download"></i> download</a>
 							</div>
 						</div>
 						<div>
 							<p>
-								Implementation by <a href="https://twitter.com/{{_implementation.author.twitter}}">{{_implementation.author.name}}</a> &mdash; <a href="{{_implementation.lib.url}}">{{_implementation.lib.url}}</a>
+								Implementation by <a target="_blank" href="https://twitter.com/{{_implementation.author.twitter}}">{{_implementation.author.name}}</a> &mdash; <a target="_blank" href="{{_implementation.lib.url}}">{{_implementation.lib.url}}</a>
 								{{#if _implementation.lib.links}}
 									<br/>Also check out:
 								{{/if}}
@@ -138,7 +138,7 @@
 							{{#if _implementation.lib.links}}
 								<ul class="taglets">
 									{{#each _implementation.lib.links}}
-										<li><a href="{{url}}">{{title}}</a></li>
+										<li><a target="_blank" href="{{url}}">{{title}}</a></li>
 									{{/each}}
 								</ul>
 							{{/if}}
@@ -175,7 +175,7 @@
 							<li><em>Minor</em> is incremented when the algorithm changes (ids change).</li>
 							<li><em>Patch</em> is incremented when individual implementation has minor adjustments.</li>
 						</ul>
-						<p>As usual, be sure to check the changelog of each implementation. Since produced ids might differ after updates, be sure to include <em>exact version</em> of Hashids, so you are don't unknowingly change your existing ids. For example for <a href="https://www.npmjs.org/">npm</a>:</p>
+						<p>As usual, be sure to check the changelog of each implementation. Since produced ids might differ after updates, be sure to include <em>exact version</em> of Hashids, so you are don't unknowingly change your existing ids. For example for <a target="_blank" href="https://www.npmjs.org/">npm</a>:</p>
 						<pre><span>JSON</span><code class="json">"dependencies": {
   "hashids": "1.0.0"
 }</pre>
@@ -205,7 +205,7 @@
 									<em>1.0.*</em> <i>(current stable)</i>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/ivanakimov/hashids.js" class="no-effect"><i class="fa fa-check"></i></a>
+									<a target="_blank" href="https://github.com/ivanakimov/hashids.js" class="no-effect"><i class="fa fa-check"></i></a>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
 									<i class="fa fa-times"></i>
@@ -217,19 +217,13 @@
 									<i class="fa fa-times"></i>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/ivanakimov/hashids.php" class="no-effect"><i class="fa fa-check"></i></a>
+									<a target="_blank" href="https://github.com/ivanakimov/hashids.php" class="no-effect"><i class="fa fa-check"></i></a>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
 									<i class="fa fa-times"></i>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/ivanakimov/hashids.coffee" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
+									<a target="_blank" href="https://github.com/ivanakimov/hashids.coffee" class="no-effect"><i class="fa fa-check"></i></a>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
 									<i class="fa fa-times"></i>
@@ -247,7 +241,13 @@
 									<i class="fa fa-times"></i>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/ivanakimov/hashids.node.js" class="no-effect"><i class="fa fa-check"></i></a>
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a target="_blank" href="https://github.com/ivanakimov/hashids.node.js" class="no-effect"><i class="fa fa-check"></i></a>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
 									<i class="fa fa-times"></i>
@@ -261,49 +261,49 @@
 									<i class="fa fa-times"></i>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/peterhellberg/hashids.rb" class="no-effect"><i class="fa fa-check"></i></a>
+									<a target="_blank" href="https://github.com/peterhellberg/hashids.rb" class="no-effect"><i class="fa fa-check"></i></a>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/davidaurelio/hashids-python" class="no-effect"><i class="fa fa-check"></i></a>
+									<a target="_blank" href="https://github.com/davidaurelio/hashids-python" class="no-effect"><i class="fa fa-check"></i></a>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/jiecao-fm/hashids-java" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/zakame/hashids.pm" class="no-effect"><i class="fa fa-check"></i></a>
+									<a target="_blank" href="https://github.com/jiecao-fm/hashids-java" class="no-effect"><i class="fa fa-check"></i></a>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
 									<i class="fa fa-times"></i>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/jofell/hashids-objc" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/schoentoon/hashidsxx" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/speps/go-hashids" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/leihog/hashids.lua" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/alco/saltie" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/dswitzer/hashids.coldfusion" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/Apploi/hashids-groovy" class="no-effect"><i class="fa fa-check"></i></a>
+									<a target="_blank" href="https://github.com/zakame/hashids.pm" class="no-effect"><i class="fa fa-check"></i></a>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
 									<i class="fa fa-times"></i>
 								</div>
 								<div class="table-list-cell table-list-cell-padding">
-									<a href="https://github.com/ullmark/hashids.net" class="no-effect"><i class="fa fa-check"></i></a>
+									<a target="_blank" href="https://github.com/jofell/hashids-objc" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a target="_blank" href="https://github.com/schoentoon/hashidsxx" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a target="_blank" href="https://github.com/speps/go-hashids" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a target="_blank" href="https://github.com/leihog/hashids.lua" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a target="_blank" href="https://github.com/alco/saltie" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a target="_blank" href="https://github.com/dswitzer/hashids.coldfusion" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a target="_blank" href="https://github.com/Apploi/hashids-groovy" class="no-effect"><i class="fa fa-check"></i></a>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<i class="fa fa-times"></i>
+								</div>
+								<div class="table-list-cell table-list-cell-padding">
+									<a target="_blank" href="https://github.com/ullmark/hashids.net" class="no-effect"><i class="fa fa-check"></i></a>
 								</div>
 							</li>
 						</ul>
@@ -338,7 +338,7 @@
 							<p>If we try to convert integer 1234 to hex with <code class="inline">toHex(1234)</code>, we will get back "4d2".</p>
 							<p>If we increase the alphabet to <code class="inline">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</code>, our output will now be shorter because there's more characters to work with now &mdash; so it becomes "t5".</p>
 							<p>If we take it one step further and shuffle the alphabet before encoding, we will get a different value. But how could we shuffle the alphabet consistently, so that with every shuffle the characters would keep the same order?</p>
-							<p>That's where Hashids uses a variation of <a href="http://en.wikipedia.org/wiki/Fisher-Yates_shuffle">Fisher-Yates algorithm</a>:</p>
+							<p>That's where Hashids uses a variation of <a target="_blank" href="http://en.wikipedia.org/wiki/Fisher-Yates_shuffle">Fisher-Yates algorithm</a>:</p>
 							<pre><span>JavaScript</span><code class="javascript">function consistentShuffle(alphabet, salt) {
   
   var integer, j, temp, i, v, p;
@@ -401,8 +401,8 @@
 					<div>
 						<div class="octocat-split octocat-split-left">
 							<div>
-								<a href="https://octodex.github.com/" class="no-effect"><img src="/public/img/bouncercat.png" /></a>
-								<span class="subtext">bouncercat awesomed by <a href="https://github.com/cameronmcefee">cameronmcefee</a></span>
+								<a target="_blank" href="https://octodex.github.com/" class="no-effect"><img src="/public/img/bouncercat.png" /></a>
+								<span class="subtext">bouncercat awesomed by <a target="_blank" href="https://github.com/cameronmcefee">cameronmcefee</a></span>
 							</div>
 							<div>
 								<p>We need ids to be nice and friendly especially if they end up being in the URL. Therefore, the algorithm tries to avoid generating most common English curse words by never placing the following letters next to each other:</p>
@@ -420,17 +420,17 @@
 						<p>Yes, there are a few and you should pick the most appropriate for the job. Hashids is not a perfect solution for everything.</p>
 						<ol>
 							<li>
-								<em>Base64 encode</em>. This is the most straightforward approach &mdash; most languages have these functions. If you don't need all the fancy extras Hashids offers, this method will work just fine. It's faster too. <a href="http://en.wikipedia.org/wiki/Base64">Read more</a>.
+								<em>Base64 encode</em>. This is the most straightforward approach &mdash; most languages have these functions. If you don't need all the fancy extras Hashids offers, this method will work just fine. It's faster too. <a target="_blank" href="http://en.wikipedia.org/wiki/Base64">Read more</a>.
 							</li>
 							<li>
-								<em>Generate ids based on timestamp</em>. If you can afford certain degree of collisions, you could compose an id that's built on the fly. Use a counter (if you have one) + timestamp (even better if in milliseconds) + some system value (either an IP address or some machine id) + a random integer. Many big companies implement this approach because it works well in distributed systems. These ids are generated independently of each other and the risk of collisions is <a href="http://en.wikipedia.org/wiki/Universally_unique_identifier#Random_UUID_probability_of_duplicates">so tiny</a> it's negligible.
+								<em>Generate ids based on timestamp</em>. If you can afford certain degree of collisions, you could compose an id that's built on the fly. Use a counter (if you have one) + timestamp (even better if in milliseconds) + some system value (either an IP address or some machine id) + a random integer. Many big companies implement this approach because it works well in distributed systems. These ids are generated independently of each other and the risk of collisions is <a target="_blank" href="http://en.wikipedia.org/wiki/Universally_unique_identifier#Random_UUID_probability_of_duplicates">so tiny</a> it's negligible.
 							</li>
 							<li>
 								<em>Check out how others do it:</em>
-								<p>- <a href="http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram">How does Instagram generate ids?</a></p>
+								<p>- <a target="_blank" href="http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram">How does Instagram generate ids?</a></p>
 							</li>
 							<li>
-								<i>Know of another method?</i> Tell me <a href="https://twitter.com/IvanAkimov">@IvanAkimov</a>.
+								<i>Know of another method?</i> Tell me <a target="_blank" href="https://twitter.com/IvanAkimov">@IvanAkimov</a>.
 							</li>
 						</ol>
 					</div>
@@ -444,7 +444,7 @@
 								<em>Do not encode strings</em>. We've had several requests to add this feature &mdash; it seems so easy to add. We will not add this feature for security purposes, doing so encourages people to encode sensitive data, like passwords. This is the wrong tool for that.
 							</li>
 							<li>
-								<em>Do not encode sensitive data</em>. This means passwords, emails, any kind of personal user data. This is <i>not a true encryption algorithm</i>. There are people that dedicate their lives to cryptography and there are plenty of more appropriate algorithms: <a href="http://en.wikipedia.org/wiki/Bcrypt">bcrypt</a>, <a href="http://en.wikipedia.org/wiki/Md5">md5</a>, <a href="http://en.wikipedia.org/wiki/Advanced_Encryption_Standard">aes</a>, <a href="http://en.wikipedia.org/wiki/Sha1">sha1</a>, <a href="http://en.wikipedia.org/wiki/Blowfish_(cipher)">blowfish</a>. Here's <a href="http://en.wikipedia.org/wiki/List_of_algorithms#Cryptography">a full list</a>.
+								<em>Do not encode sensitive data</em>. This means passwords, emails, any kind of personal user data. This is <i>not a true encryption algorithm</i>. There are people that dedicate their lives to cryptography and there are plenty of more appropriate algorithms: <a target="_blank" href="http://en.wikipedia.org/wiki/Bcrypt">bcrypt</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Md5">md5</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Advanced_Encryption_Standard">aes</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Sha1">sha1</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Blowfish_(cipher)">blowfish</a>. Here's <a target="_blank" href="http://en.wikipedia.org/wiki/List_of_algorithms#Cryptography">a full list</a>.
 							</li>
 						</ol>
 					</div>
@@ -458,10 +458,18 @@
 					</div>
 				</section>
 				
+				<section id="collisions">
+					<h2>Why "hashids"?</h2>
+					<div>
+						<p>Originally the project referred to generated ids as <i>hashes</i>, and obviously the name hashids has the word <i>hash</i> in it. Technically, these generated ids cannot be called hashes since a cryptographic hash has one-way mapping (cannot be decrypted).</p>
+						<p>However, when people search for a solution, like a "youtube hash" or "bitly short id", they don't really care what's one-way and what's not. So <em>hashids</em> became a term on its own &mdash; an id that's used to obfuscate numbers.</p>
+					</div>
+				</section>
+				
 				<section id="decoding">
 					<h2>How to decode</h2>
 					<div>
-						<p>There is no way to decode the output without knowing the salt (refer to <a href="#how-does-it-work">how hashids works</a>). The only known way is to use a <a href="http://en.wikipedia.org/wiki/Brute-force_attack">brute-force attack</a>. However, since integers behind the ids are of so little value to an attacker, there's not much reason to try and extract them in the first place.</p>
+						<p>There is no way to decode the output without knowing the salt (refer to <a href="#how-does-it-work">how hashids works</a>). The only known way is to use a <a target="_blank" href="http://en.wikipedia.org/wiki/Brute-force_attack">brute-force attack</a>. However, since integers behind the ids are of so little value to an attacker, there's not much reason to try and extract them in the first place.</p>
 					</div>
 				</section>
 				
@@ -471,13 +479,13 @@
 						<div class="octocat-split octocat-split-right">
 							<div>
 								<p>If you've found a bug, please open a github issue in the <a href="#repo">appropriate repository</a>. Bonus points if you submit a pull request with it.</p>
-								<p>If an implementation in your favorite language is missing, feel free to port it over from one of the existing versions. There's still plenty of languages to contribute in: <a href="http://en.wikipedia.org/wiki/C_(programming_language)">C</a>, <a href="http://dlang.org/">D</a>, <a href="https://developer.apple.com/swift/">Swift</a>, <a href="http://www.rust-lang.org/">Rust</a>, <a href="http://julialang.org/">Julia</a>, <a href="http://www.erlang.org/">Erlang</a>, <a href="http://www.haskell.org/haskellwiki/Haskell">Haskell</a>, <a href="http://en.wikipedia.org/wiki/Scheme_(programming_language)">Scheme</a>, <a href="http://www.tcl.tk/">Tcl</a>, <a href="http://lolcode.org/">Lolcode?</a></p>
+								<p>If an implementation in your favorite language is missing, feel free to port it over from one of the existing versions. There's still plenty of languages to contribute in: <a target="_blank" href="http://en.wikipedia.org/wiki/C_(programming_language)">C</a>, <a target="_blank" href="http://dlang.org/">D</a>, <a target="_blank" href="https://developer.apple.com/swift/">Swift</a>, <a target="_blank" href="http://www.rust-lang.org/">Rust</a>, <a target="_blank" href="http://julialang.org/">Julia</a>, <a target="_blank" href="http://www.erlang.org/">Erlang</a>, <a target="_blank" href="http://www.haskell.org/haskellwiki/Haskell">Haskell</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Scheme_(programming_language)">Scheme</a>, <a target="_blank" href="http://www.tcl.tk/">Tcl</a>, <a target="_blank" href="http://lolcode.org/">Lolcode?</a></p>
 								<p>We try to keep the library versions compatible. If you see an outdated version in an existing implementation, please open a github issue in that repository &mdash; show your +1 support for that issue.</p>
-								<p>If you have a new library, plugin or extension ping me <a href="https://twitter.com/IvanAkimov">@IvanAkimov</a></p>
+								<p>If you have a new library, plugin or extension ping me <a target="_blank" href="https://twitter.com/IvanAkimov">@IvanAkimov</a>. You can also reach me at <span class="e" data-cut="4,-3">ivanbarreleyecom</span></p>
 							</div>
 							<div>
-								<a href="https://octodex.github.com/" class="no-effect"><img src="/public/img/codercat.jpg" /></a>
-								<span class="subtext">codercat awesomed by <a href="https://github.com/cameronmcefee">cameronmcefee</a></span>
+								<a target="_blank" href="https://octodex.github.com/" class="no-effect"><img src="/public/img/codercat.jpg" /></a>
+								<span class="subtext">codercat awesomed by <a target="_blank" href="https://github.com/cameronmcefee">cameronmcefee</a></span>
 							</div>
 						</div>
 					</div>
@@ -490,7 +498,7 @@
 						<ul class="people">
 							{{#each contributors}}
 								<li>
-									<a href="https://github.com/{{github}}" class="no-effect">
+									<a target="_blank" href="https://github.com/{{github}}" class="no-effect">
 										<img src="https://avatars.githubusercontent.com/{{github}}" width="90" height="90" />
 										<h2>{{name}}</h2>
 										<span>{{implementations}}</span>
@@ -504,7 +512,7 @@
 				<section id="license">
 					<h2>License</h2>
 					<div>
-						All hashids libraries are under <a href="http://opensource.org/licenses/MIT">MIT license</a>. You can use them in open source projects and commercial products. Don't break the Internet. Kthxbye.
+						All hashids libraries are under <a target="_blank" href="http://opensource.org/licenses/MIT">MIT license</a>. You can use them in open source projects and commercial products. Don't break the Internet. Kthxbye.
 					</div>
 				</section>
 				
@@ -519,7 +527,7 @@
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 				
 				<!-- facebook button -->
-				<div class="fb-like" data-href="http://hashids.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+				<div class="fb-like" data-href="http://hashids.org/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 				
 			</div>
 			<p>Hashids is under <a href="http://opensource.org/licenses/MIT">MIT license</a></p>
