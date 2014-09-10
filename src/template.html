@@ -41,7 +41,7 @@
 		<!--[if lt IE 10]><link href="/public/css/lib/retarded.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
 		<link href="//fonts.googleapis.com/css?family=Fira+Mono:400,700|Leckerli+One" rel="stylesheet" type="text/css" media="screen" />
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		
 	</head>
 	<body spellcheck="false" class="lang-{{_implementation.lib.abbr}}">
@@ -169,9 +169,9 @@
 				<section id="compatibility">
 					<h2>Compatibility table</h2>
 					<div>
-						<p>Current stable version across implementations is <em>1.0</em>.<br/>Versions are tagged as &lt;<em>major</em>&gt;.&lt;<em>minor</em>&gt;.&lt;<em>patch</em>&gt;:</p>
+						<p>Current stable version across implementations is <em>1.0</em>. We're in the process of updating all versions to 1.0, so please be patient. Versions are tagged as &lt;<em>major</em>&gt;.&lt;<em>minor</em>&gt;.&lt;<em>patch</em>&gt;:</p>
 						<ul class="iterate">
-							<li><em>Major</em> version is incremented when interface functions/parameters change.</li>
+							<li><em>Major</em> version is incremented when interface functions / parameters change.</li>
 							<li><em>Minor</em> is incremented when the algorithm changes (ids change).</li>
 							<li><em>Patch</em> is incremented when individual implementation has minor adjustments.</li>
 						</ul>
@@ -180,133 +180,135 @@
   "hashids": "1.0.0"
 }</pre>
 						<p>And not: <del>"hashids": "~1.0.0"</del></p>
-						<ul class="table-list">
-							<li class="table-header">
-								<div class="table-list-cell table-list-cell-header vertical-text table-list-cell-large"></div>
-								<div class="table-list-cell table-list-cell-header vertical-text">JavaScript</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">Ruby</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">Python</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">Java</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">PHP</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">Perl</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">CoffeeScript</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">Objective-C</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">C++11</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">Go</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">Lua</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">Elixir</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">ColdFusion</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">Groovy</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">Node.js</div>
-								<div class="table-list-cell table-list-cell-header vertical-text">.Net</div>
-							</li>
-							<li>
-								<div class="table-list-cell table-list-cell-large">
-									<em>1.0.*</em> <i>(current stable)</i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/ivanakimov/hashids.js" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/ivanakimov/hashids.php" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/ivanakimov/hashids.coffee" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/ivanakimov/hashids.node.js" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-							</li>
-							<li>
-								<div class="table-list-cell table-list-cell-large">
-									<em>0.3.*</em> <i>(old release)</i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/peterhellberg/hashids.rb" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/davidaurelio/hashids-python" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/jiecao-fm/hashids-java" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/zakame/hashids.pm" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/jofell/hashids-objc" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/schoentoon/hashidsxx" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/speps/go-hashids" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/leihog/hashids.lua" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/alco/saltie" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/dswitzer/hashids.coldfusion" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/Apploi/hashids-groovy" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<i class="fa fa-times"></i>
-								</div>
-								<div class="table-list-cell table-list-cell-padding">
-									<a target="_blank" href="https://github.com/ullmark/hashids.net" class="no-effect"><i class="fa fa-check"></i></a>
-								</div>
-							</li>
-						</ul>
+						<div class="table-list-wrapper">
+							<ul class="table-list">
+								<li class="table-header">
+									<div class="table-list-cell table-list-cell-header vertical-text table-list-cell-large"></div>
+									<div class="table-list-cell table-list-cell-header vertical-text">JavaScript</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Ruby</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Python</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Java</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">PHP</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Perl</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">CoffeeScript</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Objective-C</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">C++11</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Go</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Lua</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Elixir</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">ColdFusion</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Groovy</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Node.js</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">.Net</div>
+								</li>
+								<li>
+									<div class="table-list-cell table-list-cell-large">
+										<em>1.0.*</em> <i>(current stable)</i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/ivanakimov/hashids.js" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/ivanakimov/hashids.php" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/ivanakimov/hashids.coffee" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/ivanakimov/hashids.node.js" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+								</li>
+								<li>
+									<div class="table-list-cell table-list-cell-large">
+										<em>0.3.*</em> <i>(old release)</i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/peterhellberg/hashids.rb" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/davidaurelio/hashids-python" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/jiecao-fm/hashids-java" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/zakame/hashids.pm" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/jofell/hashids-objc" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/schoentoon/hashidsxx" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/speps/go-hashids" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/leihog/hashids.lua" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/alco/saltie" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/dswitzer/hashids.coldfusion" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/Apploi/hashids-groovy" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/ullmark/hashids.net" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</section>
 				
@@ -498,7 +500,7 @@
 						<ul class="people">
 							{{#each contributors}}
 								<li>
-									<a target="_blank" href="https://github.com/{{github}}" class="no-effect">
+									<a target="_blank" href="https://github.com/{{github}}">
 										<img src="https://avatars.githubusercontent.com/{{github}}" width="90" height="90" />
 										<h2>{{name}}</h2>
 										<span>{{implementations}}</span>

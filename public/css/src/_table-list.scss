@@ -1,8 +1,13 @@
 
+.table-list-wrapper {
+	width: 100%;
+	overflow: scroll;
+}
+
 .table-list {
+	width: $page-width;
 	display: table;
 	table-layout: fixed;
-	width: 100%;
 	margin: 0 0 15px 0;
 	padding-top: 50px;
 	

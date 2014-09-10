@@ -4,17 +4,15 @@
 	
 	& > li {
 		float: left;
-		width: 160px;
 	}
 	
 	a {
 		@extend %rounded-corners;
 		text-decoration: none;
-		color: #333;
-		font-family: $font-family;
+		font-family: $font-family-monospace;
 		text-align: center;
 		display: inline-block;
-		width: 140px;
+		width: 190px;
 		white-space: normal;
 		padding: 10px 5px;
 		
@@ -34,10 +32,12 @@
 		font-weight: normal;
 		font-size: 120%;
 		white-space: nowrap;
+		letter-spacing: -0.1em;
 	}
 	
 	span {
-		line-height: 1.4em;
+		font-family: $font-family;
+		line-height: 1.2em;
 		color: #777;
 		display: inline-block;
 		letter-spacing: 0;

@@ -43,10 +43,14 @@ $(function() {
 	
 	$('a:not(.no-effect)').hover(function(event) {
 		
-		var newText,
-			$el = $(this),
-			text = $el.text();
+		var newText, text,
+			$el = $(this);
 		
+		if ($('h2', $el).length) {
+			$el = $('h2', $el);
+		}
+		
+		text = $el.text();
 		$.data($el.get(0), 'text', text);
 		
 		newText = text
@@ -63,9 +67,14 @@ $(function() {
 		
 	}, function(event) {
 		
-		var $el = $(this),
-			text = $.data($el.get(0), 'text');
+		var text,
+			$el = $(this);
 		
+		if ($('h2', $el).length) {
+			$el = $('h2', $el);
+		}
+		
+		text = $.data($el.get(0), 'text');
 		$el.text(text);
 		
 	});

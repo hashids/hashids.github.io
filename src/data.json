@@ -72,7 +72,7 @@
 				"twitter": "ivanakimov",
 				"github": "ivanakimov"
 			},
-			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encrypt(1, 2, 3),\n  numbers = hashids.decrypt(id);"
+			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encode(1, 2, 3),\n  numbers = hashids.decode(id);"
 		},
 		"ruby": {
 			"lib": {
@@ -169,7 +169,7 @@
 				"twitter": "ivanakimov",
 				"github": "ivanakimov"
 			},
-			"example": "$hashids = new Hashids\\Hashids('this is my salt');\n$id = $hashids->encrypt(1, 2, 3);\n$numbers = $hashids->decrypt($id);"
+			"example": "$hashids = new Hashids\\Hashids('this is my salt');\n$id = $hashids->encode(1, 2, 3);\n$numbers = $hashids->decode($id);"
 		},
 		"perl": {
 			"lib": {
@@ -202,7 +202,7 @@
 				"twitter": "ivanakimov",
 				"github": "ivanakimov"
 			},
-			"example": "hashids = new Hashids \"this is my salt\"\nid = hashids.encrypt 1, 2, 3\nnumbers = hashids.decrypt id"
+			"example": "hashids = new Hashids \"this is my salt\"\nid = hashids.encode 1, 2, 3\nnumbers = hashids.decode id"
 		},
 		"objective-c": {
 			"lib": {
@@ -340,7 +340,7 @@
 				"twitter": "ivanakimov",
 				"github": "ivanakimov"
 			},
-			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encrypt(1, 2, 3),\n  numbers = hashids.decrypt(id);"
+			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encode(1, 2, 3),\n  numbers = hashids.decode(id);"
 		},
 		"net": {
 			"lib": {

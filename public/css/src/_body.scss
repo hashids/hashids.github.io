@@ -1,6 +1,10 @@
 
 * {	margin: 0; padding: 0; border: 0; }
 
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
 html {
 	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -24,6 +28,7 @@ html, body {
 	min-height: 100%;
 	width: $page-width;
 	margin: 0 auto;
+	padding: 0 10px;
 	
 	.wrap-inner {
 		overflow: hidden;

@@ -1,0 +1,48 @@
+
+/* when screen is smaller, adjust */
+
+@media (max-width: $page-width) {
+	
+	.wrap {
+		width: 100%;
+	}
+	
+	/* some elements become irrelevant */
+	
+	.in-use {
+		display: none;
+	}
+	
+	/* octocat images disappear */
+	
+	.octocat-split {
+		
+		&.octocat-split-left {
+			& > div:first-child { display: none; }
+			& > div:last-child { width: 100%; padding-left: 0; }
+		}
+		
+		&.octocat-split-right {
+			& > div:first-child { width: 100%; padding-right: 0; }
+			& > div:last-child { display: none; }
+		}
+		
+	}
+	
+	/* the slider disappears and text becomes full-width */
+	
+	section#uses > div > div:first-child {
+		width: 100%;
+	}
+	
+	/* the code example is full-width */
+	
+	pre.inline { width: 100%; }
+	
+	/* headers become smaller */
+	
+	section.header h2 {
+		font-size: 60px;
+	}
+	
+}

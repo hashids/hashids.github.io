@@ -90,7 +90,7 @@ pre {
 	
 	&.inline {
 		display: inline-block;
-		width: 630px;
+		width: 78%;
 		
 		code {
 			padding-right: 100px;
@@ -111,8 +111,8 @@ ul.iterate {
 		padding: 5px 1.5%;
 		border-top: 1px solid #eee;
 		font-size: 90%;
-		width: 30%;
-		min-height: 75px;
+		width: 33%;
+		min-height: 100px;
 		border-bottom: 1px solid #eee;
 		
 		&:nth-child(odd) { background: #f8f8f8; }
@@ -142,6 +142,7 @@ ul.iterate {
 .float {
 	@extend .clearfix;
 	position: relative;
+	width: 100%;
 	
 	& > * {
 		float: left;

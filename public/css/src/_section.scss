@@ -35,7 +35,7 @@ section {
 			float: left;
 			
 			&:first-child {
-				width: $page-width - $image-size;
+				width: $page-width - $image-size - ($page-padding-width * 2);
 				
 				p { padding-right: 15px; }
 				
