@@ -91,7 +91,7 @@
 				"twitter": "peterhellberg",
 				"github": "peterhellberg"
 			},
-			"example": "hashids = Hashids.new \"this is my salt\"\nid = hashids.encrypt 1, 2, 3\nnumbers = hashids.decrypt id"
+			"example": "hashids = Hashids.new \"this is my salt\"\nid = hashids.encode(1, 2, 3)\nnumbers = hashids.decode(id)"
 		},
 		"python": {
 			"lib": {
