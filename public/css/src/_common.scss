@@ -24,6 +24,11 @@ a {
 	
 }
 
+del {
+	text-decoration: none;
+	background: #f1cfcf;
+}
+
 em {
 	font-style: normal;
 	font-weight: bold;
@@ -95,27 +100,6 @@ pre {
 		code {
 			padding-right: 100px;
 		}
-		
-	}
-	
-}
-
-ul.iterate {
-	@extend .clearfix;
-	position: relative;
-	margin: 0 0 20px;
-	
-	li {
-		float: left;
-		margin: 0;
-		padding: 5px 1.5%;
-		border-top: 1px solid #eee;
-		font-size: 90%;
-		width: 33%;
-		min-height: 100px;
-		border-bottom: 1px solid #eee;
-		
-		&:nth-child(odd) { background: #f8f8f8; }
 		
 	}
 	

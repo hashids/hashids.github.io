@@ -52,7 +52,7 @@
 				<section class="header">
 					<h2><a href="/" class="no-effect">hashids</a></h2>
 					<div>
-						<p class="description">Generate short obfuscated ids from integers</p>
+						<p class="description">Generate short unique ids from integers</p>
 						<hr>
 						<p class="available">
 							available in
@@ -169,13 +169,8 @@
 				<section id="compatibility">
 					<h2>Compatibility table</h2>
 					<div>
-						<p>Current stable version across implementations is <em>1.0</em>. We're in the process of updating all versions to 1.0, so please be patient. Versions are tagged as &lt;<em>major</em>&gt;.&lt;<em>minor</em>&gt;.&lt;<em>patch</em>&gt;:</p>
-						<ul class="iterate">
-							<li><em>Major</em> version is incremented when interface functions / parameters change.</li>
-							<li><em>Minor</em> is incremented when the algorithm changes (ids change).</li>
-							<li><em>Patch</em> is incremented when individual implementation has minor adjustments.</li>
-						</ul>
-						<p>As usual, be sure to check the changelog of each implementation. Since produced ids might differ after updates, be sure to include <em>exact version</em> of Hashids, so you are don't unknowingly change your existing ids. For example for <a target="_blank" href="https://www.npmjs.org/">npm</a>:</p>
+						<p>Current stable version across implementations is <em>1.0</em>. We're in the process of updating all versions to 1.0, so please be patient. Versions are tagged as <em>major</em>.<em>minor</em>.<em>patch</em> &mdash; we try to follow <a target="_blank" href="http://semver.org/">SemVer</a>, but please always check the <em>changelog</em> of each library for details.</p>
+						<p>Since produced ids might differ after updates, be sure to include <em>exact version</em> of Hashids, so you are don't unknowingly change your existing ids. For example for <a target="_blank" href="https://www.npmjs.org/">npm</a>:</p>
 						<pre><span>JSON</span><code class="json">"dependencies": {
   "hashids": "1.0.0"
 }</pre>
@@ -236,7 +231,7 @@
 										<i class="fa fa-times"></i>
 									</div>
 									<div class="table-list-cell table-list-cell-padding">
-										<i class="fa fa-times"></i>
+										<a target="_blank" href="https://github.com/leihog/hashids.lua" class="no-effect"><i class="fa fa-check"></i></a>
 									</div>
 									<div class="table-list-cell table-list-cell-padding">
 										<i class="fa fa-times"></i>
@@ -289,7 +284,7 @@
 										<a target="_blank" href="https://github.com/speps/go-hashids" class="no-effect"><i class="fa fa-check"></i></a>
 									</div>
 									<div class="table-list-cell table-list-cell-padding">
-										<a target="_blank" href="https://github.com/leihog/hashids.lua" class="no-effect"><i class="fa fa-check"></i></a>
+										<i class="fa fa-times"></i>
 									</div>
 									<div class="table-list-cell table-list-cell-padding">
 										<a target="_blank" href="https://github.com/alco/saltie" class="no-effect"><i class="fa fa-check"></i></a>

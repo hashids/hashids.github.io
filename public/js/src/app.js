@@ -39,6 +39,19 @@ $(function() {
 	
 	setTimeout(loopLogo, startTimer);
 	
+	/* replace email */
+	
+	$email.each(function() {
+		
+		var $el = $(this),
+			cut = $el.data('cut').split(','),
+			value = $el.text(),
+			email = value.slice(0, cut[0]) + '@' + value.slice(cut[0], cut[1]) + '.' + value.slice(cut[1]);
+		
+		$el.replaceWith('<a href="mailto:'+email+'?subject=Hi">'+email+'</a>');
+		
+	});
+	
 	/* the mad h4x0r effect for links */
 	
 	$('a:not(.no-effect)').hover(function(event) {
@@ -76,19 +89,6 @@ $(function() {
 		
 		text = $.data($el.get(0), 'text');
 		$el.text(text);
-		
-	});
-	
-	/* replace email */
-	
-	$email.each(function() {
-		
-		var $el = $(this),
-			cut = $el.data('cut').split(','),
-			value = $el.text(),
-			email = value.slice(0, cut[0]) + '@' + value.slice(cut[0], cut[1]) + '.' + value.slice(cut[1]);
-		
-		$el.replaceWith('<a href="mailto:'+email+'?subject=Hi">'+email+'</a>');
 		
 	});
 	

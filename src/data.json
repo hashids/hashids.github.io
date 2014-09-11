@@ -263,7 +263,7 @@
 				"twitter": "leihog",
 				"github": "leihog"
 			},
-			"example": "local h = hashids.new(\"this is my salt\");\nlocal id = h:encrypt(1, 2, 3);\nlocal numbers = h:decrypt(id);"
+			"example": "local h = hashids.new(\"this is my salt\");\nlocal id = h:encode(1, 2, 3);\nlocal numbers = h:decode(id);"
 		},
 		"elixir": {
 			"lib": {
