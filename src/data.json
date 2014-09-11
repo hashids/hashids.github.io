@@ -188,7 +188,7 @@
 				"twitter": "zakame",
 				"github": "zakame"
 			},
-			"example": "my $hashids = Hashids->new('this is my salt');\nmy $id = $hashids->encrypt(1, 2, 3);\nmy $numbers = $hashids->decrypt($id);"
+			"example": "my $hashids = Hashids->new('this is my salt');\nmy $id = $hashids->encode(1, 2, 3);\nmy $numbers = $hashids->decode($id);"
 		},
 		"coffeescript": {
 			"lib": {
