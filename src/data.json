@@ -249,7 +249,7 @@
 				"twitter": "remigillig",
 				"github": "speps"
 			},
-			"example": "h := hashids.New()\nh.Salt = \"this is my salt\"\nid := h.Encrypt([]int{1, 2, 3})\nnumbers := h.Decrypt(id)"
+			"example": "h := hashids.New()\nh.Salt = \"this is my salt\"\nid := h.Encode([]int{1, 2, 3})\nnumbers := h.Decode(id)"
 		},
 		"lua": {
 			"lib": {
