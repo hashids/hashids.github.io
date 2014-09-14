@@ -362,7 +362,7 @@
 				"twitter": "ullmark",
 				"github": "ullmark"
 			},
-			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.Encrypt(1, 2, 3);\nvar numbers = hashids.Decrypt(id);"
+			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.Encode(1, 2, 3);\nvar numbers = hashids.Decode(id);"
 		}
 	}
 }
