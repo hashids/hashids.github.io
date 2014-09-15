@@ -296,7 +296,7 @@
 				"twitter": "dswitzer2",
 				"github": "dswitzer"
 			},
-			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.encrypt(1, 2, 3);\nvar numbers = hashids.decrypt(id);"
+			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.encode(1, 2, 3);\nvar numbers = hashids.decode(id);"
 		},
 		"groovy": {
 			"lib": {
