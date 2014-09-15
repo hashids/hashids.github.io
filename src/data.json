@@ -129,7 +129,7 @@
 				"twitter": "fanweixiao",
 				"github": "fanweixiao"
 			},
-			"example": "Hashids hashids = new Hashids(\"this is my salt\");\nString id = hashids.encrypt(1, 2, 3);\nlong[] numbers = hashids.decrypt(id);"
+			"example": "Hashids hashids = new Hashids(\"this is my salt\");\nString id = hashids.encode(1, 2, 3);\nlong[] numbers = hashids.decode(id);"
 		},
 		"php": {
 			"lib": {
