@@ -49,6 +49,10 @@
 			"github": "cmaron",
 			"implementations": "Groovy"
 		}, {
+			"name": "John Ky",
+			"github": "newhoggy",
+			"implementations": "Scala"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JavaScript, Node.js, CoffeeScript, PHP"
@@ -130,6 +134,20 @@
 				"github": "fanweixiao"
 			},
 			"example": "Hashids hashids = new Hashids(\"this is my salt\");\nString id = hashids.encode(1, 2, 3);\nlong[] numbers = hashids.decode(id);"
+		},
+		"scala": {
+			"lib": {
+				"abbr": "scala",
+				"language": "Scala",
+				"url": "https://github.com/newhoggy/hashids-scala",
+				"links": []
+			},
+			"author": {
+				"name": "John Ky",
+				"twitter": "newhoggy",
+				"github": "newhoggy"
+			},
+			"example": "val hashids = Hashids(\"this is my salt\")\nval id = hashids.encode(1L, 2L, 3L)\nval numbers = hashids.decode(id)"
 		},
 		"php": {
 			"lib": {
