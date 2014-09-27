@@ -53,6 +53,10 @@
 			"github": "newhoggy",
 			"implementations": "Scala"
 		}, {
+			"name": "Latchezar Tzvetkoff",
+			"github": "tzvetkoff",
+			"implementations": "C"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JavaScript, Node.js, CoffeeScript, PHP"
@@ -235,6 +239,20 @@
 				"github": "jofell"
 			},
 			"example": "Hashids *hashids = [Hashids hashidWithSalt:@\"this is my salt\"];\nNSString *id = [hashids encrypt:@1, @2, @3, nil];\nNSLog(@\"%@\", id);\nNSLog(@\"%@\", [hashids decrypt:id]);"
+		},
+		"c": {
+			"lib": {
+				"abbr": "c",
+				"language": "C",
+				"url": "https://github.com/tzvetkoff/hashids.c",
+				"links": []
+			},
+			"author": {
+				"name": "Latchezar Tzvetkoff",
+				"twitter": "tzvetkoff",
+				"github": "tzvetkoff"
+			},
+			"example": "struct hashids_t *\nhashids_init(const char *salt);\n\nunsigned int bytes_encoded;\nchar hash[512];\nunsigned long long numbers1[] = {1ull, 2ull, 3ull, 4ull, 5ull};\nbytes_encoded = hashids_encode(hashids, hash, sizeof(numbers1) / sizeof(unsigned long long), numbers1);\n/* hash => \"zoHWuNhktp\", bytes_encoded => 10 */\n\nunsigned long long numbers2[5];\nresult = hashids_decode(hashids, \"p2xkL3CK33JjcrrZ8vsw4YRZueZX9k\", numbers2);\n/* numbers2 = {21979508, 35563591, 57543099, 93106690, 150649789 }, result => 5 */\n"
 		},
 		"cpp": {
 			"lib": {
