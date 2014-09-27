@@ -252,7 +252,7 @@
 				"twitter": "tzvetkoff",
 				"github": "tzvetkoff"
 			},
-			"example": "struct hashids_t *\nhashids_init(const char *salt);\n\nunsigned int bytes_encoded;\nchar hash[512];\nunsigned long long numbers1[] = {1ull, 2ull, 3ull, 4ull, 5ull};\nbytes_encoded = hashids_encode(hashids, hash, sizeof(numbers1) / sizeof(unsigned long long), numbers1);\n/* hash => \"zoHWuNhktp\", bytes_encoded => 10 */\n\nunsigned long long numbers2[5];\nresult = hashids_decode(hashids, \"p2xkL3CK33JjcrrZ8vsw4YRZueZX9k\", numbers2);\n/* numbers2 = {21979508, 35563591, 57543099, 93106690, 150649789 }, result => 5 */\n"
+			"example": "struct hashids_t *hashids;\nunsigned int bytes_encoded;\nchar hash[512];\nunsigned long long numbers[] = {1ull};\n\nhashids = hashids_init3(\"this is my salt\", 0, HASHIDS_DEFAULT_ALPHABET);\n\nbytes_encoded = hashids_encode(hashids, hash, sizeof(numbers) / sizeof(unsigned long long), numbers);\n/* hash => \"NV\", bytes_encoded => 2 */\n\nbytes_encoded = hashids_encode_v(hashids, hash, 5, 1ull, 2ull, 3ull, 4ull, 5ull);\n/* hash => \"zoHWuNhktp\", bytes_encoded => 10 */\n"
 		},
 		"cpp": {
 			"lib": {
