@@ -266,7 +266,7 @@
 				"twitter": "Schoentoon",
 				"github": "schoentoon"
 			},
-			"example": "hashidsxx::Hashids hash(\"this is my salt\");\nstd::string id = hash.encrypt({1, 2, 3});\nstd::vector<uint32_t> numbers = hash.decrypt(id);"
+			"example": "hashidsxx::Hashids hash(\"this is my salt\");\nstd::string id = hash.encode({1, 2, 3});\nstd::vector<uint32_t> numbers = hash.decode(id);"
 		},
 		"go": {
 			"lib": {
