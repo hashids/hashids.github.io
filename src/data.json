@@ -245,7 +245,12 @@
 				"abbr": "c",
 				"language": "C",
 				"url": "https://github.com/tzvetkoff/hashids.c",
-				"links": []
+				"links": [
+					{
+						"title": "Another port by @desaiuditd",
+						"url": "https://github.com/desaiuditd/hashids.c"
+					}
+				]
 			},
 			"author": {
 				"name": "Latchezar Tzvetkoff",
