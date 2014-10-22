@@ -82,12 +82,10 @@
 				<section id="uses">
 					<div>
 						<div>
-							<p>
-								Hashids started from a need to have short unguessable ids.
-								<i>md5</i> hashes are too long and <i>base64</i> is guessable. So, we made Hashids.
-							</p>
-							<p>Today it's used in url shortening, bundling integers into a short id, or simply as unique identifiers.</p>
-							<p><i class="fa fa-jsfiddle"></i> Check out the <a target="_blank" href="http://jsfiddle.net/ivanakimov/8z6d8o94/">fiddle</a>.</p>
+							<p>Hashids is a <a target="_blank" href="{{_implementation.lib.url}}">small open-source library</a> that generates short unique ids from numbers.</p>
+							<p>You give it a 347 and it gives back “yr8”, you give it a [27, 986] and it returns “3kTMd”.</p>
+							<p>You can also decode those ids back. This is useful in url shorteners or simply as short unique strings.</p>
+							<!--<p><i class="fa fa-jsfiddle"></i> Check out the <a target="_blank" href="http://jsfiddle.net/ivanakimov/8z6d8o94/">fiddle</a>.</p>-->
 						</div>
 						<div class="in-use">
 							<ul class="slides">
@@ -504,8 +502,19 @@
 					</div>
 				</section>
 				
+				<section id="elsewhere">
+					<h2>Hashids elsewhere</h2>
+					<div>
+						<p>If you have a question about Hashids, a lot has already been answered elsewhere. Try checking those too:</p>
+						<ul>
+							<li><i class="fa fa-stack-overflow"></i> <a rel="nofollow" target="_blank" href="http://stackoverflow.com/search?q=%22hashids%22">StackOverflow</a></li>
+							<li><i class="fa fa-twitter"></i> <a rel="nofollow" target="_blank" href="https://twitter.com/search?f=realtime&q=%23hashids">Twitter</a></li>
+						</ul>
+					</div>
+				</section>
+				
 				<section id="contributors">
-					<h2>Contributors</h2>
+					<h2>Maintainers</h2>
 					<div>
 						<p>Many thanks to the numerous folks that have implemented the different versions, plugins, extensions as well as to those that have suggested general improvements.</p>
 						<ul class="people">
@@ -543,8 +552,8 @@
 				<div class="fb-like" data-href="http://hashids.org/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 				
 			</div>
-			<p>Hashids is under <a href="http://opensource.org/licenses/MIT">MIT license</a></p>
-			<p>Website <span class="copyleft">&copy;</span> 2014 &middot; <a href="https://github.com/hashids/hashids.github.io">Github</a> &middot; <a href="https://github.com/hashids/hashids.github.io/issues">Issues</a></p>
+			<p>Hashids is under <a target="_blank" href="http://opensource.org/licenses/MIT">MIT license</a></p>
+			<p>Website <span class="copyleft">&copy;</span> 2014 &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io">Github</a> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io/issues">Issues</a> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io/wiki/Who's-Using-Hashids">Are you using Hashids?</a></p>
 		</div>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
