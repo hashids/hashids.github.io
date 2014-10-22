@@ -310,7 +310,7 @@
 			"lib": {
 				"abbr": "elixir",
 				"language": "Elixir",
-				"url": "https://github.com/alco/saltie",
+				"url": "https://github.com/alco/hashids-elixir",
 				"links": [
 					{
 						"title": "Hex.pm package",
@@ -323,7 +323,7 @@
 				"twitter": "true_droid",
 				"github": "alco"
 			},
-			"example": "saltie = Saltie.new([ key: 'this is my salt' ])\nid = Saltie.encrypt(saltie, [1, 2, 3])\nnumbers = Saltie.decrypt(saltie, id)"
+			"example": "hashids = Hashids.new([ key: 'this is my salt' ])\nid = Hashids.encrypt(hashids, [1, 2, 3])\nnumbers = Hashids.decrypt(hashids, id)"
 		},
 		"coldfusion": {
 			"lib": {
