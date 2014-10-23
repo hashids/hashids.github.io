@@ -356,7 +356,7 @@
 				"twitter": "chadmaron",
 				"github": "cmaron"
 			},
-			"example": "Hashids hashids = new Hashids(\"this is my salt\")\nString id = hashids.encrypt(1, 2, 3)\nList<Long> numbers = hashids.decrypt(id)"
+			"example": "Hashids hashids = new Hashids(\"this is my salt\")\nString id = hashids.encode(1, 2, 3)\nList<Long> numbers = hashids.decode(id)"
 		},
 		"node-js": {
 			"lib": {
