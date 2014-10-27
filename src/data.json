@@ -314,7 +314,7 @@
 				"links": [
 					{
 						"title": "Hex.pm package",
-						"url": "https://hex.pm/packages/saltie"
+						"url": "https://hex.pm/packages/hashids"
 					}
 				]
 			},
@@ -323,7 +323,7 @@
 				"twitter": "true_droid",
 				"github": "alco"
 			},
-			"example": "hashids = Hashids.new([ key: 'this is my salt' ])\nid = Hashids.encrypt(hashids, [1, 2, 3])\nnumbers = Hashids.decrypt(hashids, id)"
+			"example": "hashids = Hashids.new(salt: 'this is my salt')\nid = Hashids.encode(hashids, [1, 2, 3])\nnumbers = Hashids.decode(hashids, id)"
 		},
 		"coldfusion": {
 			"lib": {
