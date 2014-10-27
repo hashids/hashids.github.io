@@ -80,7 +80,8 @@
 				"twitter": "ivanakimov",
 				"github": "ivanakimov"
 			},
-			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encode(1, 2, 3),\n  numbers = hashids.decode(id);"
+			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encode(1, 2, 3),\n  numbers = hashids.decode(id);",
+			"download": "https://github.com/ivanakimov/hashids.js/archive/1.0.1.zip"
 		},
 		"ruby": {
 			"lib": {
@@ -99,7 +100,8 @@
 				"twitter": "peterhellberg",
 				"github": "peterhellberg"
 			},
-			"example": "hashids = Hashids.new \"this is my salt\"\nid = hashids.encode(1, 2, 3)\nnumbers = hashids.decode(id)"
+			"example": "hashids = Hashids.new \"this is my salt\"\nid = hashids.encode(1, 2, 3)\nnumbers = hashids.decode(id)",
+			"download": "https://github.com/peterhellberg/hashids.rb/archive/v1.0.1.zip"
 		},
 		"python": {
 			"lib": {
@@ -118,7 +120,8 @@
 				"twitter": "void_0",
 				"github": "davidaurelio"
 			},
-			"example": "hashids = Hashids(salt=\"this is my salt\")\nid = hashids.encrypt(1, 2, 3)\nnumbers = hashids.decrypt(id)"
+			"example": "hashids = Hashids(salt=\"this is my salt\")\nid = hashids.encrypt(1, 2, 3)\nnumbers = hashids.decrypt(id)",
+			"download": "https://github.com/davidaurelio/hashids-python/archive/v1.0.1.zip"
 		},
 		"java": {
 			"lib": {
@@ -137,7 +140,8 @@
 				"twitter": "fanweixiao",
 				"github": "fanweixiao"
 			},
-			"example": "Hashids hashids = new Hashids(\"this is my salt\");\nString id = hashids.encode(1, 2, 3);\nlong[] numbers = hashids.decode(id);"
+			"example": "Hashids hashids = new Hashids(\"this is my salt\");\nString id = hashids.encode(1, 2, 3);\nlong[] numbers = hashids.decode(id);",
+			"download": "https://github.com/jiecao-fm/hashids-java/archive/v1.0.0.zip"
 		},
 		"scala": {
 			"lib": {
@@ -151,7 +155,8 @@
 				"twitter": "newhoggy",
 				"github": "newhoggy"
 			},
-			"example": "val hashids = Hashids(\"this is my salt\")\nval id = hashids.encode(1L, 2L, 3L)\nval numbers = hashids.decode(id)"
+			"example": "val hashids = Hashids(\"this is my salt\")\nval id = hashids.encode(1L, 2L, 3L)\nval numbers = hashids.decode(id)",
+			"download": "https://github.com/newhoggy/hashids-scala/archive/hashids-1.0.0.zip"
 		},
 		"php": {
 			"lib": {
@@ -191,7 +196,8 @@
 				"twitter": "ivanakimov",
 				"github": "ivanakimov"
 			},
-			"example": "$hashids = new Hashids\\Hashids('this is my salt');\n$id = $hashids->encode(1, 2, 3);\n$numbers = $hashids->decode($id);"
+			"example": "$hashids = new Hashids\\Hashids('this is my salt');\n$id = $hashids->encode(1, 2, 3);\n$numbers = $hashids->decode($id);",
+			"download": "https://github.com/ivanakimov/hashids.php/archive/1.0.1.zip"
 		},
 		"perl": {
 			"lib": {
@@ -210,7 +216,8 @@
 				"twitter": "zakame",
 				"github": "zakame"
 			},
-			"example": "my $hashids = Hashids->new('this is my salt');\nmy $id = $hashids->encode(1, 2, 3);\nmy $numbers = $hashids->decode($id);"
+			"example": "my $hashids = Hashids->new('this is my salt');\nmy $id = $hashids->encode(1, 2, 3);\nmy $numbers = $hashids->decode($id);",
+			"download": "https://github.com/zakame/hashids.pm/archive/1.000000.zip"
 		},
 		"coffeescript": {
 			"lib": {
@@ -224,7 +231,8 @@
 				"twitter": "ivanakimov",
 				"github": "ivanakimov"
 			},
-			"example": "hashids = new Hashids \"this is my salt\"\nid = hashids.encode 1, 2, 3\nnumbers = hashids.decode id"
+			"example": "hashids = new Hashids \"this is my salt\"\nid = hashids.encode 1, 2, 3\nnumbers = hashids.decode id",
+			"download": "https://github.com/ivanakimov/hashids.coffee/archive/1.0.0.zip"
 		},
 		"objective-c": {
 			"lib": {
@@ -238,7 +246,8 @@
 				"twitter": "jofell",
 				"github": "jofell"
 			},
-			"example": "Hashids *hashids = [Hashids hashidWithSalt:@\"this is my salt\"];\nNSString *id = [hashids encrypt:@1, @2, @3, nil];\nNSLog(@\"%@\", id);\nNSLog(@\"%@\", [hashids decrypt:id]);"
+			"example": "Hashids *hashids = [Hashids hashidWithSalt:@\"this is my salt\"];\nNSString *id = [hashids encrypt:@1, @2, @3, nil];\nNSLog(@\"%@\", id);\nNSLog(@\"%@\", [hashids decrypt:id]);",
+			"download": "https://github.com/jofell/hashids-objc/archive/v0.1.1.zip"
 		},
 		"c": {
 			"lib": {
@@ -257,7 +266,8 @@
 				"twitter": "tzvetkoff",
 				"github": "tzvetkoff"
 			},
-			"example": "struct hashids_t *hashids;\nunsigned int bytes_encoded;\nchar hash[512];\nunsigned long long numbers[] = {1ull};\n\nhashids = hashids_init3(\"this is my salt\", 0, HASHIDS_DEFAULT_ALPHABET);\n\nbytes_encoded = hashids_encode(hashids, hash, sizeof(numbers) / sizeof(unsigned long long), numbers);\n/* hash => \"NV\", bytes_encoded => 2 */\n\nbytes_encoded = hashids_encode_v(hashids, hash, 5, 1ull, 2ull, 3ull, 4ull, 5ull);\n/* hash => \"zoHWuNhktp\", bytes_encoded => 10 */\n"
+			"example": "struct hashids_t *hashids;\nunsigned int bytes_encoded;\nchar hash[512];\nunsigned long long numbers[] = {1ull};\n\nhashids = hashids_init3(\"this is my salt\", 0, HASHIDS_DEFAULT_ALPHABET);\n\nbytes_encoded = hashids_encode(hashids, hash, sizeof(numbers) / sizeof(unsigned long long), numbers);\n/* hash => \"NV\", bytes_encoded => 2 */\n\nbytes_encoded = hashids_encode_v(hashids, hash, 5, 1ull, 2ull, 3ull, 4ull, 5ull);\n/* hash => \"zoHWuNhktp\", bytes_encoded => 10 */\n",
+			"download": "https://github.com/tzvetkoff/hashids.c/archive/master.zip"
 		},
 		"cpp": {
 			"lib": {
@@ -271,7 +281,8 @@
 				"twitter": "Schoentoon",
 				"github": "schoentoon"
 			},
-			"example": "hashidsxx::Hashids hash(\"this is my salt\");\nstd::string id = hash.encode({1, 2, 3});\nstd::vector<uint32_t> numbers = hash.decode(id);"
+			"example": "hashidsxx::Hashids hash(\"this is my salt\");\nstd::string id = hash.encode({1, 2, 3});\nstd::vector<uint32_t> numbers = hash.decode(id);",
+			"download": "https://github.com/schoentoon/hashidsxx/archive/master.zip"
 		},
 		"go": {
 			"lib": {
@@ -290,7 +301,8 @@
 				"twitter": "remigillig",
 				"github": "speps"
 			},
-			"example": "h := hashids.New()\nh.Salt = \"this is my salt\"\nid := h.Encode([]int{1, 2, 3})\nnumbers := h.Decode(id)"
+			"example": "h := hashids.New()\nh.Salt = \"this is my salt\"\nid := h.Encode([]int{1, 2, 3})\nnumbers := h.Decode(id)",
+			"download": "https://github.com/speps/go-hashids/archive/master.zip"
 		},
 		"lua": {
 			"lib": {
@@ -304,7 +316,8 @@
 				"twitter": "leihog",
 				"github": "leihog"
 			},
-			"example": "local h = hashids.new(\"this is my salt\");\nlocal id = h:encode(1, 2, 3);\nlocal numbers = h:decode(id);"
+			"example": "local h = hashids.new(\"this is my salt\");\nlocal id = h:encode(1, 2, 3);\nlocal numbers = h:decode(id);",
+			"download": "https://github.com/leihog/hashids.lua/releases/tag/v1.0.0"
 		},
 		"elixir": {
 			"lib": {
@@ -323,7 +336,8 @@
 				"twitter": "true_droid",
 				"github": "alco"
 			},
-			"example": "hashids = Hashids.new(salt: 'this is my salt')\nid = Hashids.encode(hashids, [1, 2, 3])\nnumbers = Hashids.decode(hashids, id)"
+			"example": "hashids = Hashids.new(salt: 'this is my salt')\nid = Hashids.encode(hashids, [1, 2, 3])\nnumbers = Hashids.decode(hashids, id)",
+			"download": "https://github.com/alco/hashids-elixir/archive/v1.0.0.zip"
 		},
 		"coldfusion": {
 			"lib": {
@@ -337,7 +351,8 @@
 				"twitter": "dswitzer2",
 				"github": "dswitzer"
 			},
-			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.encode(1, 2, 3);\nvar numbers = hashids.decode(id);"
+			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.encode(1, 2, 3);\nvar numbers = hashids.decode(id);",
+			"download": "https://github.com/dswitzer/hashids.coldfusion/archive/v0.1.0.zip"
 		},
 		"groovy": {
 			"lib": {
@@ -356,7 +371,8 @@
 				"twitter": "chadmaron",
 				"github": "cmaron"
 			},
-			"example": "Hashids hashids = new Hashids(\"this is my salt\")\nString id = hashids.encode(1, 2, 3)\nList<Long> numbers = hashids.decode(id)"
+			"example": "Hashids hashids = new Hashids(\"this is my salt\")\nString id = hashids.encode(1, 2, 3)\nList<Long> numbers = hashids.decode(id)",
+			"download": "https://github.com/Apploi/hashids-groovy/archive/master.zip"
 		},
 		"node-js": {
 			"lib": {
@@ -381,7 +397,8 @@
 				"twitter": "ivanakimov",
 				"github": "ivanakimov"
 			},
-			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encode(1, 2, 3),\n  numbers = hashids.decode(id);"
+			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encode(1, 2, 3),\n  numbers = hashids.decode(id);",
+			"download": "https://github.com/ivanakimov/hashids.node.js/archive/1.0.0.zip"
 		},
 		"net": {
 			"lib": {
@@ -403,7 +420,8 @@
 				"twitter": "ullmark",
 				"github": "ullmark"
 			},
-			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.Encode(1, 2, 3);\nvar numbers = hashids.Decode(id);"
+			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.Encode(1, 2, 3);\nvar numbers = hashids.Decode(id);",
+			"download": "https://github.com/ullmark/hashids.net/archive/v1.0.0.zip"
 		}
 	}
 }
