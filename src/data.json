@@ -197,7 +197,7 @@
 				"github": "ivanakimov"
 			},
 			"example": "$hashids = new Hashids\\Hashids('this is my salt');\n$id = $hashids->encode(1, 2, 3);\n$numbers = $hashids->decode($id);",
-			"download": "https://github.com/ivanakimov/hashids.php/archive/1.0.1.zip"
+			"download": "https://github.com/ivanakimov/hashids.php/archive/1.0.2.zip"
 		},
 		"perl": {
 			"lib": {
