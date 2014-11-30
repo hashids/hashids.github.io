@@ -191,6 +191,9 @@
 					}, {
 						"title": "Silex package",
 						"url": "https://packagist.org/packages/redpanda/hashids-service-provider"
+					}, {
+						"title": "Craft plugin",
+						"url": "https://github.com/alecritson/Slugged"
 					}
 				]
 			},
