@@ -120,7 +120,7 @@
 				"twitter": "void_0",
 				"github": "davidaurelio"
 			},
-			"example": "hashids = Hashids(salt=\"this is my salt\")\nid = hashids.encrypt(1, 2, 3)\nnumbers = hashids.decrypt(id)",
+			"example": "hashids = Hashids(salt=\"this is my salt\")\nid = hashids.encode(1, 2, 3)\nnumbers = hashids.decode(id)",
 			"download": "https://github.com/davidaurelio/hashids-python/archive/v1.0.1.zip"
 		},
 		"java": {
