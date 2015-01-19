@@ -106,6 +106,7 @@ pre {
 }
 
 .vertical-text {
+	-webkit-transform: rotate(-80deg);
 	transform: rotate(-80deg);
 	white-space: nowrap;
 }
