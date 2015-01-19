@@ -57,6 +57,10 @@
 			"github": "tzvetkoff",
 			"implementations": "C"
 		}, {
+			"name": "Denis Korolev",
+			"github": "leprosus",
+			"implementations": "Kotlin"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JavaScript, Node.js, CoffeeScript, PHP"
@@ -121,7 +125,7 @@
 				"github": "davidaurelio"
 			},
 			"example": "hashids = Hashids(salt=\"this is my salt\")\nid = hashids.encode(1, 2, 3)\nnumbers = hashids.decode(id)",
-			"download": "https://github.com/davidaurelio/hashids-python/archive/v1.0.1.zip"
+			"download": "https://github.com/davidaurelio/hashids-python/archive/master.zip"
 		},
 		"java": {
 			"lib": {
@@ -428,6 +432,21 @@
 			},
 			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.Encode(1, 2, 3);\nvar numbers = hashids.Decode(id);",
 			"download": "https://github.com/ullmark/hashids.net/archive/v1.0.0.zip"
+		},
+		"kotlin": {
+			"lib": {
+				"abbr": "kotlin",
+				"language": "Kotlin",
+				"url": "https://github.com/leprosus/kotlin-hashids",
+				"links": []
+			},
+			"author": {
+				"name": "Denis Korolev",
+				"twitter": "",
+				"github": "leprosus"
+			},
+			"example": "import org.hashids;\n\nval hashids = Hashids(\"this is my salt\")\nval id: String = hashids.encode(1, 2, 3)\nval numbers: LongArray = hashids.decode(id)",
+			"download": "https://github.com/leprosus/kotlin-hashids/archive/master.zip"
 		}
 	}
 }

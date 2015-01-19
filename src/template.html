@@ -71,7 +71,8 @@
 							<a class="lua" href="/lua">Lua</a>,
 							<a class="elixir" href="/elixir">Elixir</a>,
 							<a class="coldfusion" href="/coldfusion">ColdFusion</a>,
-							<a class="groovy" href="/groovy">Groovy</a>
+							<a class="groovy" href="/groovy">Groovy</a>,
+							<a class="kotlin" href="/kotlin">Kotlin</a>
 							and for
 							<a class="node-js" href="/node-js">Node.js</a> &amp;
 							<a class="net" href="/net">.NET</a>
@@ -130,7 +131,9 @@
 						</div>
 						<div>
 							<p>
-								Implementation by <a target="_blank" href="https://twitter.com/{{_implementation.author.twitter}}">{{_implementation.author.name}}</a> &mdash; <a target="_blank" href="{{_implementation.lib.url}}">{{_implementation.lib.url}}</a>
+								Implementation by
+								<a target="_blank" href="{{#if _implementation.author.twitter}}https://twitter.com/{{_implementation.author.twitter}}{{else}}https://github.com/{{_implementation.author.github}}{{/if}}">{{_implementation.author.name}}</a>
+								&mdash; <a target="_blank" href="{{_implementation.lib.url}}">{{_implementation.lib.url}}</a>
 								{{#if _implementation.lib.links}}
 									<br/>Also check out:
 								{{/if}}
@@ -197,6 +200,7 @@
 									<div class="table-list-cell table-list-cell-header vertical-text">Groovy</div>
 									<div class="table-list-cell table-list-cell-header vertical-text">Node.js</div>
 									<div class="table-list-cell table-list-cell-header vertical-text">.Net</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Kotlin</div>
 								</li>
 								<li>
 									<div class="table-list-cell table-list-cell-large">
@@ -256,6 +260,9 @@
 									<div class="table-list-cell table-list-cell-padding">
 										<a target="_blank" href="https://github.com/ullmark/hashids.net" class="no-effect"><i class="fa fa-check"></i></a>
 									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/leprosus/kotlin-hashids" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
 								</li>
 								<li>
 									<div class="table-list-cell table-list-cell-large">
@@ -287,6 +294,9 @@
 									</div>
 									<div class="table-list-cell table-list-cell-padding">
 										<a target="_blank" href="https://github.com/jofell/hashids-objc" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
 									</div>
 									<div class="table-list-cell table-list-cell-padding">
 										<i class="fa fa-times"></i>
@@ -499,6 +509,13 @@
 								<span class="subtext">codercat by <a target="_blank" href="https://github.com/cameronmcefee">cameronmcefee</a></span>
 							</div>
 						</div>
+					</div>
+				</section>
+				
+				<section id="usage">
+					<h2>Are you using Hashids?</h2>
+					<div>
+						Whether it's an open-source project or a commercial product, tell us at <a href="https://github.com/hashids/hashids.github.io/wiki/Who's-Using-Hashids" target="_blank">https://github.com/hashids/hashids.github.io/wiki/Who's-Using-Hashids</a> !
 					</div>
 				</section>
 				

@@ -4,7 +4,6 @@
 section.header {
 	text-align: center;
 	margin: 40px auto;
-	width: 85%;
 	
 	h2 {
 		font-size: 100px;
@@ -64,7 +63,8 @@ body.lang-elixir .header .elixir,
 body.lang-coldfusion .header .coldfusion,
 body.lang-groovy .header .groovy,
 body.lang-node-js .header .node-js,
-body.lang-net .header .net {
+body.lang-net .header .net,
+body.lang-kotlin .header .kotlin {
 	color: #666;
 	font-weight: bold;
 }
