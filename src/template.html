@@ -72,7 +72,8 @@
 							<a class="elixir" href="/elixir">Elixir</a>,
 							<a class="coldfusion" href="/coldfusion">ColdFusion</a>,
 							<a class="groovy" href="/groovy">Groovy</a>,
-							<a class="kotlin" href="/kotlin">Kotlin</a>
+							<a class="kotlin" href="/kotlin">Kotlin</a>,
+							<a class="nim" href="/nim">Nim</a>
 							and for
 							<a class="node-js" href="/node-js">Node.js</a> &amp;
 							<a class="net" href="/net">.NET</a>
@@ -201,6 +202,7 @@
 									<div class="table-list-cell table-list-cell-header vertical-text">Node.js</div>
 									<div class="table-list-cell table-list-cell-header vertical-text">.Net</div>
 									<div class="table-list-cell table-list-cell-header vertical-text">Kotlin</div>
+									<div class="table-list-cell table-list-cell-header vertical-text">Nim</div>
 								</li>
 								<li>
 									<div class="table-list-cell table-list-cell-large">
@@ -263,6 +265,9 @@
 									<div class="table-list-cell table-list-cell-padding">
 										<a target="_blank" href="https://github.com/leprosus/kotlin-hashids" class="no-effect"><i class="fa fa-check"></i></a>
 									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<a target="_blank" href="https://github.com/achesak/nim-hashids" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
 								</li>
 								<li>
 									<div class="table-list-cell table-list-cell-large">
@@ -294,6 +299,9 @@
 									</div>
 									<div class="table-list-cell table-list-cell-padding">
 										<a target="_blank" href="https://github.com/jofell/hashids-objc" class="no-effect"><i class="fa fa-check"></i></a>
+									</div>
+									<div class="table-list-cell table-list-cell-padding">
+										<i class="fa fa-times"></i>
 									</div>
 									<div class="table-list-cell table-list-cell-padding">
 										<i class="fa fa-times"></i>
@@ -474,7 +482,7 @@
 				<section id="collisions">
 					<h2>Collisions</h2>
 					<div>
-						<p>There is no collisions because the method is based off of integer to hex conversion. As long as you don't change constructor arguments midway, the generated output will stay unique to your salt.</p>
+						<p>There are no collisions because the method is based on integer to hex conversion. As long as you don't change constructor arguments midway, the generated output will stay unique to your salt.</p>
 						<p>You can also test this by generating a billion ids and checking for collisions. Be sure to account for your alphabet, since default alphabet is <i>case-sensitive</i> (<em>aaa</em> is different than <em>AAA</em>).</p>
 					</div>
 				</section>

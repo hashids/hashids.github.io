@@ -61,9 +61,13 @@
 			"github": "leprosus",
 			"implementations": "Kotlin"
 		}, {
+			"name": "Adam Chesak",
+			"github": "achesak",
+			"implementations": "Nim"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
-			"implementations": "JavaScript, Node.js, CoffeeScript, PHP"
+			"implementations": "JS, CoffeeScript, PHP"
 		}
 	],
 	"implementations": {
@@ -445,8 +449,23 @@
 				"twitter": "",
 				"github": "leprosus"
 			},
-			"example": "import org.hashids;\n\nval hashids = Hashids(\"this is my salt\")\nval id: String = hashids.encode(1, 2, 3)\nval numbers: LongArray = hashids.decode(id)",
+			"example": "val hashids = Hashids(\"this is my salt\")\nval id: String = hashids.encode(1, 2, 3)\nval numbers: LongArray = hashids.decode(id)",
 			"download": "https://github.com/leprosus/kotlin-hashids/archive/master.zip"
+		},
+		"nim": {
+			"lib": {
+				"abbr": "nim",
+				"language": "Nim",
+				"url": "https://github.com/achesak/nim-hashids",
+				"links": []
+			},
+			"author": {
+				"name": "Adam Chesak",
+				"twitter": "",
+				"github": "achesak"
+			},
+			"example": "var hashids : Hashids = createHashids(\"this is my salt\")\nvar id : string = hashids.encode(@[1, 2, 3])\nvar numbers : seq[int] = hashids.decode(id)",
+			"download": "https://github.com/achesak/nim-hashids/archive/master.zip"
 		}
 	}
 }
