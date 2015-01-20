@@ -446,7 +446,7 @@
 			},
 			"author": {
 				"name": "Denis Korolev",
-				"twitter": "",
+				"twitter": "leprosus_ru",
 				"github": "leprosus"
 			},
 			"example": "val hashids = Hashids(\"this is my salt\")\nval id: String = hashids.encode(1, 2, 3)\nval numbers: LongArray = hashids.decode(id)",
