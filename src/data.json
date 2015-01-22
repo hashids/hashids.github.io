@@ -109,7 +109,7 @@
 				"github": "peterhellberg"
 			},
 			"example": "hashids = Hashids.new \"this is my salt\"\nid = hashids.encode(1, 2, 3)\nnumbers = hashids.decode(id)",
-			"download": "https://github.com/peterhellberg/hashids.rb/archive/v1.0.1.zip"
+			"download": "https://github.com/peterhellberg/hashids.rb/archive/v1.0.2.zip"
 		},
 		"python": {
 			"lib": {
@@ -211,7 +211,7 @@
 				"github": "ivanakimov"
 			},
 			"example": "$hashids = new Hashids\\Hashids('this is my salt');\n$id = $hashids->encode(1, 2, 3);\n$numbers = $hashids->decode($id);",
-			"download": "https://github.com/ivanakimov/hashids.php/archive/1.0.2.zip"
+			"download": "https://github.com/ivanakimov/hashids.php/archive/1.0.5.zip"
 		},
 		"perl": {
 			"lib": {
@@ -231,7 +231,7 @@
 				"github": "zakame"
 			},
 			"example": "my $hashids = Hashids->new('this is my salt');\nmy $id = $hashids->encode(1, 2, 3);\nmy $numbers = $hashids->decode($id);",
-			"download": "https://github.com/zakame/hashids.pm/archive/1.000000.zip"
+			"download": "https://github.com/zakame/hashids.pm/archive/1.000001.zip"
 		},
 		"coffeescript": {
 			"lib": {
@@ -331,7 +331,7 @@
 				"github": "leihog"
 			},
 			"example": "local h = hashids.new(\"this is my salt\");\nlocal id = h:encode(1, 2, 3);\nlocal numbers = h:decode(id);",
-			"download": "https://github.com/leihog/hashids.lua/releases/tag/v1.0.0"
+			"download": "https://github.com/leihog/hashids.lua/archive/v1.0.0.zip"
 		},
 		"elixir": {
 			"lib": {
