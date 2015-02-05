@@ -179,8 +179,11 @@
 						"title": "Composer package",
 						"url": "https://packagist.org/packages/hashids/hashids"
 					}, {
-						"title": "Laravel package",
+						"title": "Laravel 4 package",
 						"url": "https://github.com/mitchellvanw/hashids"
+					}, {
+						"title": "Laravel 5 package",
+						"url": "https://github.com/vinkla/hashids"
 					}, {
 						"title": "CodeIgniter spark",
 						"url": "http://getsparks.org/packages/sk-hashids/versions/HEAD/show"
