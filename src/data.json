@@ -486,7 +486,7 @@
 				"twitter": "helacopta",
 				"github": "tmorehouse"
 			},
-			"example": "Dim hid As hashids\nSet hid = new Hashids\nhid->Params(\"this is my salt\")\nid = hid.Encode(1, 2, 3)\nnumbers = hid.Decode(id)",
+			"example": "Dim hid As hashids\nSet hid = new Hashids\nhid.Params(\"this is my salt\")\nid = hid.Encode(1, 2, 3)\nnumbers = hid.Decode(id)",
 			"download": "https://github.com/tmorehouse/hashids.vba/archive/master.zip"
 		}
 	}
