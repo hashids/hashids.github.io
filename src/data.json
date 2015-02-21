@@ -65,6 +65,10 @@
 			"github": "achesak",
 			"implementations": "Nim"
 		}, {
+			"name": "Troy Morehouse",
+			"github": "tmorehouse",
+			"implementations": "VBA"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -469,6 +473,21 @@
 			},
 			"example": "var hashids : Hashids = createHashids(\"this is my salt\")\nvar id : string = hashids.encode(@[1, 2, 3])\nvar numbers : seq[int] = hashids.decode(id)",
 			"download": "https://github.com/achesak/nim-hashids/archive/master.zip"
+		},
+		"vba": {
+			"lib": {
+				"abbr": "vba",
+				"language": "VBA",
+				"url": "https://github.com/tmorehouse/hashids.vba",
+				"links": []
+			},
+			"author": {
+				"name": "Troy Morehouse",
+				"twitter": "helacopta",
+				"github": "tmorehouse"
+			},
+			"example": "Dim hid As hashids\nSet hid = new Hashids\nhid->Params(\"this is my salt\")\nid = hid.Encode(1, 2, 3)\nnumbers = hid.Decode(id)",
+			"download": "https://github.com/tmorehouse/hashids.vba/archive/master.zip"
 		}
 	}
 }
