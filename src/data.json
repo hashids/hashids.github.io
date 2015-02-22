@@ -69,6 +69,10 @@
 			"github": "tmorehouse",
 			"implementations": "VBA"
 		}, {
+			"name": "Mateusz Małczak",
+			"github": "malczak",
+			"implementations": "Swift"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -488,6 +492,21 @@
 			},
 			"example": "Dim hid As hashids\nSet hid = new Hashids\nhid.Params(\"this is my salt\")\nid = hid.Encode(1, 2, 3)\nnumbers = hid.Decode(id)",
 			"download": "https://github.com/tmorehouse/hashids.vba/archive/master.zip"
+		},
+		"swift": {
+			"lib": {
+				"abbr": "swift",
+				"language": "Swift",
+				"url": "https://github.com/malczak/hashids",
+				"links": []
+			},
+			"author": {
+				"name": "Mateusz Małczak",
+				"twitter": "",
+				"github": "malczak"
+			},
+			"example": "var hashids = Hashids(salt:\"this is my salt\");\nvar hash = hashids.encode(1, 2, 3);\nvar values = hashids.decode(s!);",
+			"download": "https://github.com/malczak/hashids/archive/master.zip"
 		}
 	}
 }

@@ -25,31 +25,37 @@ section {
 		
 	}
 	
-	&#uses > div {
-		@extend .clearfix;
-		position: relative;
-		
-		$image-size: 400px;
+	&#uses {
+		margin: 0;
 		
 		& > div {
-			float: left;
+			@extend .clearfix;
+			position: relative;
 			
-			&:first-child {
-				width: $page-width - $image-size - ($page-padding-width * 2);
+			$image-size: 480px;
+			
+			& > div {
+				float: left;
 				
-				p { padding-right: 15px; }
+				&:first-child {
+					width: $page-width - $image-size - ($page-padding-width * 2);
+					margin-top: 20px;
+					
+					p { padding-right: 15px; }
+					
+				}
+				&:last-child { width: $image-size; }
 				
 			}
-			&:last-child { width: $image-size; }
 			
-		}
-		
-		.in-use {
-			position: relative;
-			width: $image-size;
-			
-			img {
+			.in-use {
+				position: relative;
 				width: $image-size;
+				
+				img {
+					width: $image-size;
+				}
+				
 			}
 			
 		}

@@ -101,7 +101,7 @@ $(function() {
 	$('.in-use').flexslider({
 		animation: 'slide',
 		animationLoop: true,
-		itemWidth: 400,
+		itemWidth: 480,
 		itemMargin: 1,
 		animationSpeed: 750
 	});
