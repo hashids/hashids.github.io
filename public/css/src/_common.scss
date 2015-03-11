@@ -140,8 +140,19 @@ pre {
 }
 
 .add-your-project {
+	text-align: center;
 	font-size: 90%;
 	color: #666;
 	font-style: italic;
 	letter-spacing: -0.04em;
+}
+
+.demo-button {
+	text-align: center;
+	margin: 30px 0 0;
+	
+	.fa {
+		margin-right: 2px;
+	}
+	
 }

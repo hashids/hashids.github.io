@@ -15,7 +15,7 @@ $(function() {
 			if (isOriginal) {
 				$logo.text('hashids');
 			} else {
-				id = hashids.encrypt(Math.floor(Math.random() * 1000));
+				id = hashids.encode(Math.floor(Math.random() * 1000));
 				$logo.text(id);
 			}
 			
