@@ -43,6 +43,10 @@
 			border-bottom: 1px solid #dde7ee;
 		}
 		
+		&:first-child .table-list-cell {
+			border-bottom: 0;
+		}
+		
 		&:last-child .table-list-cell {
 			border-bottom: 0;
 		}

@@ -73,6 +73,10 @@
 			"github": "malczak",
 			"implementations": "Swift"
 		}, {
+			"name": "Jason Strutz",
+			"github": "jstrutz",
+			"implementations": "Clojure"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -507,6 +511,21 @@
 			},
 			"example": "var hashids = Hashids(salt:\"this is my salt\");\nvar hash = hashids.encode(1, 2, 3);\nvar values = hashids.decode(s!);",
 			"download": "https://github.com/malczak/hashids/archive/master.zip"
+		},
+		"clojure": {
+			"lib": {
+				"abbr": "clojure",
+				"language": "Clojure",
+				"url": "https://github.com/jstrutz/hashids.clj",
+				"links": []
+			},
+			"author": {
+				"name": "Jason Strutz",
+				"twitter": "",
+				"github": "jstrutz"
+			},
+			"example": "(require '[hashids.core :as h])\n(def hashids-opts {:salt \"this is my salt\"})\n(h/encode hashids-opts 1, 2, 3)\n(h/decode hashids-opts \"laHquq\")",
+			"download": "https://github.com/jstrutz/hashids.clj/archive/1.0.0.zip"
 		}
 	}
 }
