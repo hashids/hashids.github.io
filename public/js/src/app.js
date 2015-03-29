@@ -118,4 +118,8 @@ $(function() {
 		
 	});
 	
+	/* set the year */
+	
+	$('.copyright-year').text((new Date()).getFullYear());
+	
 });

@@ -12,7 +12,7 @@
 		font-family: $font-family-monospace;
 		text-align: center;
 		display: inline-block;
-		width: 190px;
+		width: 165px;
 		white-space: normal;
 		padding: 10px 5px;
 		
@@ -23,14 +23,14 @@
 	}
 	
 	img {
-		@include border-radius(40px);
+		@include border-radius(30px);
 		border: 5px solid #fff;
 	}
 	
 	h2 {
-		margin: 5px 0;
+		margin: 5px 0 0;
+		font-size: 100%;
 		font-weight: normal;
-		font-size: 120%;
 		white-space: nowrap;
 		letter-spacing: -0.1em;
 	}

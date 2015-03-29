@@ -77,6 +77,10 @@
 			"github": "jstrutz",
 			"implementations": "Clojure"
 		}, {
+			"name": "Lee GiTack",
+			"github": "snaiper80",
+			"implementations": "Erlang"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -526,6 +530,21 @@
 			},
 			"example": "(require '[hashids.core :as h])\n(def hashids-opts {:salt \"this is my salt\"})\n(h/encode hashids-opts 1, 2, 3)\n(h/decode hashids-opts \"laHquq\")",
 			"download": "https://github.com/jstrutz/hashids.clj/archive/1.0.0.zip"
+		},
+		"erlang": {
+			"lib": {
+				"abbr": "erlang",
+				"language": "Erlang",
+				"url": "https://github.com/snaiper80/hashids-erlang",
+				"links": []
+			},
+			"author": {
+				"name": "Lee GiTack",
+				"twitter": "justdevelop",
+				"github": "snaiper80"
+			},
+			"example": "Ctx = hashids:new([{salt, \"this is my salt\"}]).\nId = hashids:encode(Ctx, [1, 2, 3]).\nNumbers = hashids:decode(Ctx, Id).",
+			"download": "https://github.com/snaiper80/hashids-erlang/archive/master.zip"
 		}
 	}
 }
