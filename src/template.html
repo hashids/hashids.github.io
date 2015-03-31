@@ -162,7 +162,7 @@
 					<div>
 						<ol>
 							<li>
-								Create short unique ids.
+								Create short unique ids from numbers (positive numbers &amp; zero).
 							</li>
 							<li>
 								Allow custom alphabet as well as salt &mdash; so ids are unique only to you.
@@ -504,6 +504,9 @@
 					<h2>What not to do</h2>
 					<div>
 						<ol>
+							<li>
+								<em>Do not try to encode negative numbers</em>. It won't work. The library currently supports only positive numbers and zero. If you're trying to use numbers as flags for something, simply designate the first <i>N</i> number of digits as internal flags.
+							</li>
 							<li>
 								<em>Do not encode strings</em>. We've had several requests to add this feature &mdash; "it seems so easy to add". We will not add this feature for security purposes, doing so encourages people to encode sensitive data, like passwords. This is the wrong tool for that.
 							</li>
