@@ -81,6 +81,10 @@
 			"github": "snaiper80",
 			"implementations": "Erlang"
 		}, {
+			"name": "Char Syam",
+			"github": "charsyam",
+			"implementations": "Rust"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -545,6 +549,26 @@
 			},
 			"example": "Ctx = hashids:new([{salt, \"this is my salt\"}]).\nId = hashids:encode(Ctx, [1, 2, 3]).\nNumbers = hashids:decode(Ctx, Id).",
 			"download": "https://github.com/snaiper80/hashids-erlang/archive/master.zip"
+		},
+		"rust": {
+			"lib": {
+				"abbr": "rust",
+				"language": "Rust",
+				"url": "https://github.com/charsyam/hashids_rust",
+				"links": [
+					{
+						"title": "Cargo Crate",
+						"url": "https://crates.io/crates/hashids"
+					}
+				]
+			},
+			"author": {
+				"name": "Char Syam",
+				"twitter": "charsyam",
+				"github": "charsyam"
+			},
+			"example": "let ids = HashIds::new_with_salt(\"this is my salt\");\nlet n: Vec<i64> = vec![1, 2, 3];\nlet id = ids.encode(&n);\nlet numbers = ids.decode(id);",
+			"download": "https://github.com/charsyam/hashids_rust/archive/master.zip"
 		}
 	}
 }
