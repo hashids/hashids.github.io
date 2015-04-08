@@ -567,7 +567,7 @@
 				"twitter": "charsyam",
 				"github": "charsyam"
 			},
-			"example": "let ids = HashIds::new_with_salt(\"this is my salt\");\nlet n: Vec<i64> = vec![1, 2, 3];\nlet id = ids.encode(&n);\nlet numbers = ids.decode(id);",
+			"example": "let ids_some = HashIds::new_with_salt(\"this is my salt\".to_string());\nlet ids = match ids_some {\n  Ok(v) => { v }\n  Err(e) => {\n    println!(\"error\");\n    return;\n  }\n};\nlet n: Vec<i64> = vec![1, 2, 3];\nlet id = ids.encode(&n);\nlet numbers = ids.decode(id);",
 			"download": "https://github.com/charsyam/hashids_rust/archive/master.zip"
 		}
 	}
