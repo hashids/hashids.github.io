@@ -109,7 +109,7 @@
 				"github": "ivanakimov"
 			},
 			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encode(1, 2, 3),\n  numbers = hashids.decode(id);",
-			"download": "https://github.com/ivanakimov/hashids.js/archive/1.0.1.zip"
+			"download": "https://github.com/ivanakimov/hashids.js/archive/1.0.2.zip"
 		},
 		"ruby": {
 			"lib": {
@@ -119,7 +119,10 @@
 				"links": [
 					{
 						"title": "Ruby gem",
-						"url": "http://rubygems.org/gems/hashids"
+						"url": "https://rubygems.org/gems/hashids"
+					}, {
+						"title": "Rails plugin",
+						"url": "https://rubygems.org/gems/hashids_rails"
 					}
 				]
 			},
@@ -149,7 +152,7 @@
 				"github": "davidaurelio"
 			},
 			"example": "hashids = Hashids(salt=\"this is my salt\")\nid = hashids.encode(1, 2, 3)\nnumbers = hashids.decode(id)",
-			"download": "https://github.com/davidaurelio/hashids-python/archive/master.zip"
+			"download": "https://github.com/davidaurelio/hashids-python/archive/v1.1.0.zip"
 		},
 		"java": {
 			"lib": {
@@ -254,7 +257,7 @@
 				"github": "zakame"
 			},
 			"example": "my $hashids = Hashids->new('this is my salt');\nmy $id = $hashids->encode(1, 2, 3);\nmy $numbers = $hashids->decode($id);",
-			"download": "https://github.com/zakame/hashids.pm/archive/1.000001.zip"
+			"download": "https://github.com/zakame/hashids.pm/archive/1.000002.zip"
 		},
 		"coffeescript": {
 			"lib": {
@@ -533,7 +536,7 @@
 				"github": "jstrutz"
 			},
 			"example": "(require '[hashids.core :as h])\n(def hashids-opts {:salt \"this is my salt\"})\n(h/encode hashids-opts 1, 2, 3)\n(h/decode hashids-opts \"laHquq\")",
-			"download": "https://github.com/jstrutz/hashids.clj/archive/1.0.0.zip"
+			"download": "https://github.com/jstrutz/hashids.clj/archive/1.0.1.zip"
 		},
 		"erlang": {
 			"lib": {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/">
+<html lang="en">
 	<head>
 		
 		<title>
@@ -24,8 +24,7 @@
 		<meta name="twitter:domain" content="hashids.org">
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta http-equiv="cleartype" content="on" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		
@@ -38,9 +37,9 @@
 		<link rel="icon" type="image/png" href="/public/img/favicon.16.png" />
 		
 		<link href="/public/css/lib/app-{{_website.version}}.min.css" rel="stylesheet" type="text/css" media="screen" />
-		<link href="//fonts.googleapis.com/css?family=Fira+Mono:400,700|Leckerli+One" rel="stylesheet" type="text/css" media="screen" />
+		<link href="http://fonts.googleapis.com/css?family=Fira+Mono:400,700|Leckerli+One" rel="stylesheet" type="text/css" media="screen" />
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 		
 	</head>
 	<body spellcheck="false" class="lang-{{_implementation.lib.abbr}}">
@@ -97,37 +96,37 @@
 						<div class="in-use">
 							<ul class="slides">
 								<li>
-									<a target="_blank" href="http://codepen.io/" class="no-effect"><img src="/public/img/screenshot-codepen.png" /></a>
+									<a target="_blank" href="http://codepen.io/" class="no-effect"><img src="/public/img/screenshot-codepen.png" alt="Codepen" /></a>
 								</li>
 								<li>
-									<a target="_blank" href="http://www.bemyeyes.org/" class="no-effect"><img src="/public/img/screenshot-bemyeyes.png" /></a>
+									<a target="_blank" href="http://www.bemyeyes.org/" class="no-effect"><img src="/public/img/screenshot-bemyeyes.png" alt="Be My Eyes" /></a>
 								</li>
 								<li>
-									<a target="_blank" href="https://pathbrite.com/" class="no-effect"><img src="/public/img/screenshot-pathbrite.png" /></a>
+									<a target="_blank" href="https://pathbrite.com/" class="no-effect"><img src="/public/img/screenshot-pathbrite.png" alt="Pathbrite" /></a>
 								</li>
 								<li>
-									<a target="_blank" href="http://foodshootr.com/" class="no-effect"><img src="/public/img/screenshot-foodshootr.png" /></a>
+									<a target="_blank" href="http://foodshootr.com/" class="no-effect"><img src="/public/img/screenshot-foodshootr.png" alt="Foodshootr" /></a>
 								</li>
 								<li>
-									<a target="_blank" href="https://zenstorelocator.com/" class="no-effect"><img src="/public/img/screenshot-zenstorelocator.png" /></a>
+									<a target="_blank" href="https://zenstorelocator.com/" class="no-effect"><img src="/public/img/screenshot-zenstorelocator.png" alt="Zen Store Locator" /></a>
 								</li>
 								<li>
-									<a target="_blank" href="http://hiresync.io/" class="no-effect"><img src="/public/img/screenshot-hiresync.png" /></a>
+									<a target="_blank" href="http://hiresync.io/" class="no-effect"><img src="/public/img/screenshot-hiresync.png" alt="Hiresync" /></a>
 								</li>
 								<li>
-									<a target="_blank" href="http://laravel.io/bin" class="no-effect"><img src="/public/img/screenshot-laravelio.png" /></a>
+									<a target="_blank" href="http://laravel.io/bin" class="no-effect"><img src="/public/img/screenshot-laravelio.png" alt="Laravel bin" /></a>
 								</li>
 								<li>
-									<a target="_blank" href="http://htmlmuncher.com/" class="no-effect"><img src="/public/img/screenshot-htmlmuncher.png" /></a>
+									<a target="_blank" href="http://htmlmuncher.com/" class="no-effect"><img src="/public/img/screenshot-htmlmuncher.png" alt="HTML Muncher" /></a>
 								</li>
 								<li>
-									<a target="_blank" href="http://digestif.me/" class="no-effect"><img src="/public/img/screenshot-digestif.png" /></a>
+									<a target="_blank" href="http://digestif.me/" class="no-effect"><img src="/public/img/screenshot-digestif.png" alt="Digestif" /></a>
 								</li>
 								<li>
-									<a target="_blank" href="http://laravel.fr/" class="no-effect"><img src="/public/img/screenshot-laravelfr.png" /></a>
+									<a target="_blank" href="http://laravel.fr/" class="no-effect"><img src="/public/img/screenshot-laravelfr.png" alt="Laravel.fr" /></a>
 								</li>
 								<li>
-									<a target="_blank" href="http://jiecao.fm/" class="no-effect"><img src="/public/img/screenshot-jiecao.png" /></a>
+									<a target="_blank" href="http://jiecao.fm/" class="no-effect"><img src="/public/img/screenshot-jiecao.png" alt="Jiecao.fm" /></a>
 								</li>
 							</ul>
 						</div>
@@ -411,7 +410,9 @@
   return hash;
   
 }</code></pre>
-						<center><button class="read-more" data-target="how-it-works-more">read more</button></center>
+						<div class="read-more">
+							<button data-target="how-it-works-more">read more</button>
+						</div>
 						<div class="how-it-works-more hidden">
 							<p>If we try to convert integer 1234 to hex with <code class="inline">toHex(1234)</code>, we will get back "4d2".</p>
 							<p>If we increase the alphabet to <code class="inline">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</code>, our output will now be shorter because there's more characters to work with &mdash; so it becomes "t5".</p>
@@ -479,7 +480,7 @@
 					<div>
 						<div class="octocat-split octocat-split-left">
 							<div>
-								<a target="_blank" href="https://octodex.github.com/" class="no-effect"><img src="/public/img/bouncercat.png" /></a>
+								<a target="_blank" href="https://octodex.github.com/" class="no-effect"><img src="/public/img/bouncercat.png" alt="" /></a>
 								<span class="subtext">bouncercat awesomed by <a target="_blank" href="https://github.com/cameronmcefee">cameronmcefee</a></span>
 							</div>
 							<div>
@@ -540,7 +541,7 @@
 					</div>
 				</section>
 				
-				<section id="collisions">
+				<section id="why-hashids">
 					<h2>Why "hashids"?</h2>
 					<div>
 						<p>Originally the project referred to generated ids as <i>hashes</i>, and obviously the name hashids has the word <i>hash</i> in it. Technically, these generated ids cannot be called hashes since a cryptographic hash has one-way mapping (cannot be decrypted).</p>
@@ -580,7 +581,7 @@
 								<p>If you have a new library, plugin or extension ping me <a target="_blank" href="https://twitter.com/IvanAkimov">@IvanAkimov</a>. You can also reach me at <span class="e" data-cut="4,-3">ivanbarreleyecom</span></p>
 							</div>
 							<div>
-								<a target="_blank" href="https://octodex.github.com/" class="no-effect"><img src="/public/img/codercat.jpg" /></a>
+								<a target="_blank" href="https://octodex.github.com/" class="no-effect"><img src="/public/img/codercat.jpg" alt="" /></a>
 								<span class="subtext">codercat by <a target="_blank" href="https://github.com/cameronmcefee">cameronmcefee</a></span>
 							</div>
 						</div>
@@ -613,7 +614,7 @@
 							{{#each contributors}}
 								<li>
 									<a target="_blank" href="https://github.com/{{github}}">
-										<img src="https://avatars.githubusercontent.com/{{github}}" width="100" height="100" />
+										<img src="https://avatars.githubusercontent.com/{{github}}" width="100" height="100" alt="" />
 										<h2>{{name}}</h2>
 										<span>{{implementations}}</span>
 									</a>
@@ -645,7 +646,7 @@
 				
 			</div>
 			<p>Hashids is under <a target="_blank" href="http://opensource.org/licenses/MIT">MIT license</a></p>
-			<p>Website <span class="copyleft">&copy;</span> <span class="copyright-year"></span> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io">Github</a> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io/issues">Issues</a> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io/wiki/Who's-Using-Hashids">Are you using Hashids?</a></p>
+			<p>Website <span class="copyleft">&copy;</span> <a href="http://ivanakimov.com/">Ivan</a> <span class="copyright-year"></span> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io">Github</a> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io/issues">Issues</a> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io/wiki/Who's-Using-Hashids">Are you using Hashids?</a></p>
 		</div>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>

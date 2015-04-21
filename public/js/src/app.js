@@ -108,7 +108,7 @@ $(function() {
 	
 	/* read more button -- how does it work section */
 	
-	$('.read-more').click(function(event) {
+	$('.read-more button').click(function(event) {
 		
 		var $el = $(this),
 			$target = $('.'+$el.data('target'));
