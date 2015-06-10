@@ -380,7 +380,7 @@
 				"twitter": "true_droid",
 				"github": "alco"
 			},
-			"example": "hashids = Hashids.new(salt: 'this is my salt')\nid = Hashids.encode(hashids, [1, 2, 3])\nnumbers = Hashids.decode(hashids, id)",
+			"example": "hashids = Hashids.new(salt: \"this is my salt\")\nid = Hashids.encode(hashids, [1, 2, 3])\nnumbers = Hashids.decode!(hashids, id)",
 			"download": "https://github.com/alco/hashids-elixir/archive/v1.0.0.zip"
 		},
 		"coldfusion": {
