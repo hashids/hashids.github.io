@@ -513,6 +513,9 @@
 								<em>Generate ids based on timestamp</em>. If you can afford certain degree of collisions, you could compose an id that's built on the fly. Use a counter (if you have one) + timestamp (even better if in milliseconds) + some system value (either an IP address or some machine id) + a random integer. Many big companies implement this approach because it works well in distributed systems. These ids are generated independently of each other and the risk of collisions is <a target="_blank" href="http://en.wikipedia.org/wiki/Universally_unique_identifier#Random_UUID_probability_of_duplicates">so tiny</a> it's negligible.
 							</li>
 							<li>
+								<em>If you need your ids to consist of only numbers</em>, check out Optimus. It's based on Knuth's integer hash method and produces obfuscated integer ids (and does it faster too). There are <a target="_blank" href="https://github.com/jenssegers/optimus">PHP</a> and <a target="_blank" href="https://github.com/pjebs/optimus-go">Go</a> implementations.
+							</li>
+							<li>
 								<em>Check out how others do it:</em>
 								<p>- <a target="_blank" href="http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram">How does Instagram generate ids?</a></p>
 							</li>
