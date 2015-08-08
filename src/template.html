@@ -563,7 +563,12 @@
 				<section id="decoding">
 					<h2>Decoding without salt</h2>
 					<div>
-						<p>There is no way to decode the output without knowing the salt (refer to <a href="#how-does-it-work">how hashids works</a>). The only known way is to use a <a target="_blank" href="http://en.wikipedia.org/wiki/Brute-force_attack">brute-force attack</a>.</p>
+						<p>Do you have a question or comment that involves "security" and "hashids" in the same sentence? <em>Don't use Hashids</em>. Here are some ways to decode:</p>
+						<ol>
+							<li>Use a <a target="_blank" href="http://en.wikipedia.org/wiki/Brute-force_attack">brute-force attack</a>. These ids are short, get a big dictionary and this shouldn't be too hard.</li>
+							<li>Use an even faster method <a target="_blank" href="http://carnage.github.io/2015/08/cryptanalysis-of-hashids/">with this blog post</a>.</li>
+							<li><i>Know of another method?</i> Tell me <a target="_blank" href="https://twitter.com/IvanAkimov">@IvanAkimov</a> and I'll post it here.</li>
+						</ol>
 					</div>
 				</section>
 				
