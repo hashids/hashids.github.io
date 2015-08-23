@@ -89,6 +89,10 @@
 			"github": "johanneshilden",
 			"implementations": "Haskell"
 		}, {
+			"name": "Jovan Nikolić",
+			"github": "jovanpn",
+			"implementations": "ActionScript"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -596,6 +600,21 @@
 			},
 			"example": "let hashids = hashidsSimple \"this is my salt\"\n    _id = encodeList hashids [1, 2, 3]\n    numbers = decode hashids _id",
 			"download": "https://github.com/johanneshilden/hashids-haskell/archive/master.zip"
+		},
+		"actionscript": {
+			"lib": {
+				"abbr": "actionscript",
+				"language": "ActionScript",
+				"url": "https://github.com/jovanpn/hashids.as",
+				"links": []
+			},
+			"author": {
+				"name": "Jovan Nikolić",
+				"twitter": "",
+				"github": "jovanpn"
+			},
+			"example": "var hashids:Hashids = new Hashids(\"this is my salt\");\nvar id:String = hashids.encode(1, 2, 3);\nvar numbers:Vector.<Number> = hashids.decode(id);",
+			"download": "https://github.com/jovanpn/hashids.as/archive/master.zip"
 		}
 	}
 }
