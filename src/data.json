@@ -93,6 +93,10 @@
 			"github": "jovanpn",
 			"implementations": "ActionScript"
 		}, {
+			"name": "Ben Wilber",
+			"github": "benwilber",
+			"implementations": "Bash"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -615,6 +619,21 @@
 			},
 			"example": "var hashids:Hashids = new Hashids(\"this is my salt\");\nvar id:String = hashids.encode(1, 2, 3);\nvar numbers:Vector.<Number> = hashids.decode(id);",
 			"download": "https://github.com/jovanpn/hashids.as/archive/master.zip"
+		},
+		"bash": {
+			"lib": {
+				"abbr": "bash",
+				"language": "Bash",
+				"url": "https://github.com/benwilber/bashids",
+				"links": []
+			},
+			"author": {
+				"name": "Ben Wilber",
+				"twitter": "benwilber",
+				"github": "benwilber"
+			},
+			"example": "bashids -e -s MySalt 1 2 3\nbashids -d -s MySalt laHquq",
+			"download": "https://github.com/benwilber/bashids/archive/v1.0.zip"
 		}
 	}
 }
