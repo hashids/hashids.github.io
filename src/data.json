@@ -97,6 +97,10 @@
 			"github": "benwilber",
 			"implementations": "Bash"
 		}, {
+			"name": "Alex Shum",
+			"github": "ALShum",
+			"implementations": "R"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -634,6 +638,26 @@
 			},
 			"example": "bashids -e -s MySalt 1 2 3\nbashids -d -s MySalt laHquq",
 			"download": "https://github.com/benwilber/bashids/archive/v1.0.zip"
+		},
+		"r": {
+			"lib": {
+				"abbr": "r",
+				"language": "R",
+				"url": "https://github.com/ALShum/hashids-r",
+				"links": [
+					{
+						"title": "CRAN package",
+						"url": "https://cran.r-project.org/web/packages/hashids/"
+					}
+				]
+			},
+			"author": {
+				"name": "Alex Shum",
+				"twitter": "NotAlexShum",
+				"github": "ALShum"
+			},
+			"example": "h = hashid_settings(salt = 'this is my salt')\nencode(c(1, 2, 3), h) #\"laHquq\"\ndecode(\"laHquq\", h) #c(1, 2, 3)",
+			"download": "https://github.com/ALShum/hashids-r/archive/master.zip"
 		}
 	}
 }

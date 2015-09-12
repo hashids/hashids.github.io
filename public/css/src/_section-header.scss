@@ -72,7 +72,8 @@ body.lang-erlang .header .erlang,
 body.lang-rust .header .rust,
 body.lang-haskell .header .haskell,
 body.lang-actionscript .header .actionscript,
-body.lang-bash .header .bash {
+body.lang-bash .header .bash,
+body.lang-r .header .r {
 	color: #666;
 	font-weight: bold;
 }

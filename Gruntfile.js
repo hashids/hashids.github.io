@@ -39,7 +39,7 @@ module.exports = function(grunt) {
 				options: {
 					mangle: true,
 					preserveComments: false,
-					compress: true
+					compress: {}
 				},
 				files: {
 					'public/js/lib/app-<%= pkg.version %>.min.js': [
