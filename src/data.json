@@ -101,6 +101,10 @@
 			"github": "ALShum",
 			"implementations": "R"
 		}, {
+			"name": "Viking Edström",
+			"github": "Actimia",
+			"implementations": "D"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -658,6 +662,26 @@
 			},
 			"example": "h = hashid_settings(salt = 'this is my salt')\nencode(c(1, 2, 3), h) #\"laHquq\"\ndecode(\"laHquq\", h) #c(1, 2, 3)",
 			"download": "https://github.com/ALShum/hashids-r/archive/master.zip"
+		},
+		"d": {
+			"lib": {
+				"abbr": "d",
+				"language": "D",
+				"url": "https://github.com/actimia/hashids-dlang",
+				"links": [
+					{
+						"title": "Hashids package",
+						"url": "http://code.dlang.org/packages/hashids"
+					}
+				]
+			},
+			"author": {
+				"name": "Viking Edström",
+				"twitter": "",
+				"github": "Actimia"
+			},
+			"example": "auto h = new Hashids(\"this is my salt\");\nstring id = h.encode(1, 2, 3); // \"laHquq\"\nulong[] numbers = h.decode(id); // [1, 2, 3]",
+			"download": "https://github.com/Actimia/hashids-dlang/archive/v1.0.0.zip"
 		}
 	}
 }
