@@ -105,6 +105,10 @@
 			"github": "Actimia",
 			"implementations": "D"
 		}, {
+			"name": "Rob Bertels",
+			"github": "rbertels",
+			"implementations": "F#"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -682,6 +686,21 @@
 			},
 			"example": "auto h = new Hashids(\"this is my salt\");\nstring id = h.encode(1, 2, 3); // \"laHquq\"\nulong[] numbers = h.decode(id); // [1, 2, 3]",
 			"download": "https://github.com/Actimia/hashids-dlang/archive/v1.0.0.zip"
+		},
+		"f-sharp": {
+			"lib": {
+				"abbr": "f-sharp",
+				"language": "F#",
+				"url": "https://github.com/rbertels/hashids-fs",
+				"links": []
+			},
+			"author": {
+				"name": "Rob Bertels",
+				"twitter": "",
+				"github": "rbertels"
+			},
+			"example": "let config = HashidConfiguration.withSalt \"this is my salt\"\nlet id = Hashid.encode config [| 1; 2; 3 |]\nlet numbers = Hashid.decode config id",
+			"download": "https://github.com/rbertels/hashids-fs/archive/master.zip"
 		}
 	}
 }
