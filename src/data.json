@@ -718,7 +718,7 @@
 				"twitter": "",
 				"github": "waynebloss"
 			},
-			"example": "insert into `my_table` set `id` = encode1(1)\ninsert into `my_table` set `id` = encode2(1, 2)",
+			"example": "insert into my_table(id) values(dbo.encode1(1));\ninsert into my_table(id) values(dbo.encode2(1, 2));",
 			"download": "https://github.com/waynebloss/hashids-tsql/archive/master.zip"
 		}
 	}
