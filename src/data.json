@@ -109,6 +109,10 @@
 			"github": "rbertels",
 			"implementations": "F#"
 		}, {
+			"name": "Wayne Bloss",
+			"github": "waynebloss",
+			"implementations": "TSQL"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -701,6 +705,21 @@
 			},
 			"example": "let config = HashidConfiguration.withSalt \"this is my salt\"\nlet id = Hashid.encode config [| 1; 2; 3 |]\nlet numbers = Hashid.decode config id",
 			"download": "https://github.com/rbertels/hashids-fs/archive/master.zip"
+		},
+		"tsql": {
+			"lib": {
+				"abbr": "tsql",
+				"language": "TSQL",
+				"url": "https://github.com/waynebloss/hashids-tsql",
+				"links": []
+			},
+			"author": {
+				"name": "Wayne Bloss",
+				"twitter": "",
+				"github": "waynebloss"
+			},
+			"example": "insert into `my_table` set `id` = encode1(1)\ninsert into `my_table` set `id` = encode2(1, 2)",
+			"download": "https://github.com/waynebloss/hashids-tsql/archive/master.zip"
 		}
 	}
 }

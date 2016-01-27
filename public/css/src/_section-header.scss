@@ -36,7 +36,8 @@ section.header {
 	}
 	
 	.available {
-		line-height: 28px;
+		font-size: 90%;
+		line-height: 26px;
 		margin-top: 10px;
 		color: #999;
 	}
@@ -75,7 +76,8 @@ body.lang-actionscript .header .actionscript,
 body.lang-bash .header .bash,
 body.lang-r .header .r,
 body.lang-d .header .d,
-body.lang-f-sharp .header .f-sharp {
+body.lang-f-sharp .header .f-sharp,
+body.lang-tsql .header .tsql {
 	color: #666;
 	font-weight: bold;
 }
