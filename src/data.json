@@ -369,7 +369,7 @@
 				"twitter": "remigillig",
 				"github": "speps"
 			},
-			"example": "h := hashids.New()\nh.Salt = \"this is my salt\"\nid := h.Encode([]int{1, 2, 3})\nnumbers := h.Decode(id)",
+			"example": "hd := hashids.NewData()\nhd.Salt = \"this is my salt\"\nh := hashids.NewWithData(hd)\nid, _ := h.Encode([]int{1, 2, 3})\nnumbers := h.Decode(id)",
 			"download": "https://github.com/speps/go-hashids/archive/master.zip"
 		},
 		"lua": {
