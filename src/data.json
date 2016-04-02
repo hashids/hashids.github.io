@@ -113,6 +113,10 @@
 			"github": "waynebloss",
 			"implementations": "TSQL"
 		}, {
+			"name": "Kevin Leung",
+			"github": "kevinresol",
+			"implementations": "Haxe"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -720,6 +724,21 @@
 			},
 			"example": "insert into my_table(id) values(dbo.encode1(1));\ninsert into my_table(id) values(dbo.encode2(1, 2));",
 			"download": "https://github.com/waynebloss/hashids-tsql/archive/master.zip"
+		},
+		"haxe": {
+			"lib": {
+				"abbr": "haxe",
+				"language": "Haxe",
+				"url": "https://github.com/kevinresol/hashids",
+				"links": []
+			},
+			"author": {
+				"name": "Kevin Leung",
+				"twitter": "",
+				"github": "kevinresol"
+			},
+			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.encode([1, 2, 3]);\nvar numbers = hashids.decode(id);",
+			"download": "https://github.com/kevinresol/hashids/archive/master.zip"
 		}
 	}
 }
