@@ -117,6 +117,10 @@
 			"github": "kevinresol",
 			"implementations": "Haxe"
 		}, {
+			"name": "Petre Damoc",
+			"github": "pdamoc",
+			"implementations": "Elm"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -739,6 +743,26 @@
 			},
 			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.encode([1, 2, 3]);\nvar numbers = hashids.decode(id);",
 			"download": "https://github.com/kevinresol/hashids/archive/master.zip"
+		},
+		"elm": {
+			"lib": {
+				"abbr": "elm",
+				"language": "Elm",
+				"url": "https://github.com/pdamoc/elm-hashids",
+				"links": [
+					{
+						"title": "Elm package",
+						"url": "http://package.elm-lang.org/packages/pdamoc/elm-hashids/1.0.1/"
+					}
+				]
+			},
+			"author": {
+				"name": "Petre Damoc",
+				"twitter": "",
+				"github": "pdamoc"
+			},
+			"example": "hashids = hashidsSimple \"this is my salt\"\nid = encodeList hashids [1, 2, 3]\nnumbers = decode hashids id",
+			"download": "https://github.com/pdamoc/elm-hashids/archive/1.0.1.tar.gz"
 		}
 	}
 }
