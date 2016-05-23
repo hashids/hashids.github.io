@@ -780,7 +780,7 @@
 				"twitter": "",
 				"github": "alacap"
 			},
-			"example": "| hasher|\nhasher := HidHasher newSalt: 'this is my salt'.\nhasher encode: #(1 2 3)\nhasher decode: 'laHquq'",
+			"example": "| hasher|\nhasher := HidHasher newSalt: 'this is my salt'.\nhasher encode: #(1 2 3).\nhasher decode: 'laHquq'",
 			"download": "https://github.com/alacap/hashids-pharo/archive/v1.0.1.tar.gz"
 		}
 	}
