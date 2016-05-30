@@ -17,10 +17,6 @@
 			"github": "ullmark",
 			"implementations": ".NET"
 		}, {
-			"name": "Jofell Gallardo",
-			"github": "jofell",
-			"implementations": "Objective-C"
-		}, {
 			"name": "Zak B. Elep",
 			"github": "zakame",
 			"implementations": "Perl"
@@ -124,6 +120,10 @@
 			"name": "Alan Capewell",
 			"github": "alacap",
 			"implementations": "Smalltalk"
+		}, {
+			"name": "Carl D. Benson",
+			"github": "DrGodCarl",
+			"implementations": "Objective-C"
 		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
@@ -318,16 +318,21 @@
 			"lib": {
 				"abbr": "objective-c",
 				"language": "Objective-C",
-				"url": "https://github.com/jofell/hashids-objc",
-				"links": []
+				"url": "https://github.com/DrGodCarl/hashids-objc",
+				"links": [
+					{
+						"title": "Older v0.3",
+						"url": "https://github.com/jofell/hashids-objc"
+					}
+				]
 			},
 			"author": {
-				"name": "Jofell Gallardo",
-				"twitter": "jofell",
-				"github": "jofell"
+				"name": "Carl D. Benson",
+				"twitter": "",
+				"github": "DrGodCarl"
 			},
-			"example": "Hashids *hashids = [Hashids hashidWithSalt:@\"this is my salt\"];\nNSString *id = [hashids encrypt:@1, @2, @3, nil];\nNSLog(@\"%@\", id);\nNSLog(@\"%@\", [hashids decrypt:id]);",
-			"download": "https://github.com/jofell/hashids-objc/archive/v0.1.1.zip"
+			"example": "NNLHashids *hashids = [[NNLHashids alloc] initWithSalt:@\"this is my salt\"];\nNSString *id = [hashids encodeMany:@[@1, @2, @3]]; // @\"laHquq\"\nNSArray<NSNumber*> *decoded = [hashids decode:@\"laHquq\"]; // @[@1, @2, @3]",
+			"download": "https://github.com/DrGodCarl/hashids-objc/archive/master.zip"
 		},
 		"c": {
 			"lib": {
