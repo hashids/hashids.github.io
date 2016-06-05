@@ -125,6 +125,10 @@
 			"github": "DrGodCarl",
 			"implementations": "Objective-C"
 		}, {
+			"name": "Bahtiar Gadimov",
+			"github": "kalkin",
+			"implementations": "Perl 6"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JS, CoffeeScript, PHP"
@@ -787,6 +791,21 @@
 			},
 			"example": "| hasher|\nhasher := HidHasher newSalt: 'this is my salt'.\nhasher encode: #(1 2 3).\nhasher decode: 'laHquq'",
 			"download": "https://github.com/alacap/hashids-pharo/archive/v1.0.1.tar.gz"
+		},
+		"perl6": {
+			"lib": {
+				"abbr": "perl6",
+				"language": "Perl 6",
+				"url": "https://github.com/kalkin/perl6-hashids",
+				"links": []
+			},
+			"author": {
+				"name": "Bahtiar Gadimov",
+				"twitter": "",
+				"github": "kalkin"
+			},
+			"example": "my $hashids = Hashids.new('this is my salt');\nmy $id = $hashids.encode(1, 2, 3); # 'laHquq'\nmy @numbers = $hashids.decode($id); # (1, 2, 3)",
+			"download": "https://github.com/kalkin/perl6-hashids/archive/0.1.zip"
 		}
 	}
 }
