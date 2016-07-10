@@ -131,7 +131,7 @@
 		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
-			"implementations": "JS, CoffeeScript, PHP"
+			"implementations": "JavaScript, PHP"
 		}
 	],
 	"implementations": {
@@ -142,6 +142,9 @@
 				"url": "https://github.com/ivanakimov/hashids.js",
 				"links": [
 					{
+						"title": "NPM package",
+						"url": "https://www.npmjs.com/package/hashids"
+					}, {
 						"title": "Bower package",
 						"url": "http://bower.io/search/?q=hashids"
 					}
@@ -462,32 +465,6 @@
 			},
 			"example": "Hashids hashids = new Hashids(\"this is my salt\")\nString id = hashids.encode(1, 2, 3)\nList<Long> numbers = hashids.decode(id)",
 			"download": "https://github.com/Apploi/hashids-groovy/archive/master.zip"
-		},
-		"node-js": {
-			"lib": {
-				"abbr": "node-js",
-				"language": "Node.js",
-				"url": "https://github.com/ivanakimov/hashids.node.js",
-				"links": [
-					{
-						"title": "npm package",
-						"url": "https://npmjs.org/package/hashids"
-					},	{
-						"title": "Meteor package",
-						"url": "https://github.com/crapthings/meteor-hashids"
-					}, {
-						"title": "Node.js tutorial",
-						"url": "http://nodeexamples.com/2012/09/28/hashing-numbers-using-the-hashids-module-in-node-js/"
-					}
-				]
-			},
-			"author": {
-				"name": "Ivan Akimov",
-				"twitter": "ivanakimov",
-				"github": "ivanakimov"
-			},
-			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encode(1, 2, 3),\n  numbers = hashids.decode(id);",
-			"download": "https://github.com/ivanakimov/hashids.node.js/archive/1.0.0.zip"
 		},
 		"net": {
 			"lib": {
