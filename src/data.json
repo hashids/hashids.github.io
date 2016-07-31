@@ -129,6 +129,10 @@
 			"github": "kalkin",
 			"implementations": "Perl 6"
 		}, {
+			"name": "Peter Suschlik",
+			"github": "splattael",
+			"implementations": "Crystal"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JavaScript, PHP"
@@ -783,6 +787,21 @@
 			},
 			"example": "my $hashids = Hashids.new('this is my salt');\nmy $id = $hashids.encode(1, 2, 3); # 'laHquq'\nmy @numbers = $hashids.decode($id); # (1, 2, 3)",
 			"download": "https://github.com/kalkin/perl6-hashids/archive/0.1.zip"
+		},
+		"crystal": {
+			"lib": {
+				"abbr": "crystal",
+				"language": "Crystal",
+				"url": "https://github.com/splattael/hashids.cr",
+				"links": []
+			},
+			"author": {
+				"name": "Peter Suschlik",
+				"twitter": "",
+				"github": "splattael"
+			},
+			"example": "hashids = Hashids.new(salt: \"this is my salt\")\nid = hashids.encode([1, 2, 3]) # => laHquq\nnumbers = hashids.decode(id) # => [1, 2, 3]",
+			"download": "https://github.com/splattael/hashids.cr/archive/v0.1.0.zip"
 		}
 	}
 }
