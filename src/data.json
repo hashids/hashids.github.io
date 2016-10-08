@@ -194,6 +194,9 @@
 					{
 						"title": "Python package",
 						"url": "https://pypi.python.org/pypi/hashids/"
+					}, {
+						"title": "Django Hashid Field",
+						"url": "https://github.com/nshafer/django-hashid-field"
 					}
 				]
 			},
