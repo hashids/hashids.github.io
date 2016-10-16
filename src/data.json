@@ -136,6 +136,10 @@
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JavaScript, PHP"
+		}, {
+			"name": "Vincent Klaiber",
+			"github": "vinkla",
+			"implementations": "PHP"
 		}
 	],
 	"implementations": {
@@ -256,10 +260,7 @@
 						"title": "Composer package",
 						"url": "https://packagist.org/packages/hashids/hashids"
 					}, {
-						"title": "Laravel 4 package",
-						"url": "https://github.com/mitchellvanw/hashids"
-					}, {
-						"title": "Laravel 5 package",
+						"title": "Laravel package",
 						"url": "https://github.com/vinkla/hashids"
 					}, {
 						"title": "CodeIgniter spark",
@@ -808,4 +809,3 @@
 		}
 	}
 }
-
