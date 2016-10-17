@@ -133,13 +133,13 @@
 			"github": "splattael",
 			"implementations": "Crystal"
 		}, {
-			"name": "Ivan Akimov",
-			"github": "ivanakimov",
-			"implementations": "JavaScript, PHP"
-		}, {
 			"name": "Vincent Klaiber",
 			"github": "vinkla",
 			"implementations": "PHP"
+		}, {
+			"name": "Ivan Akimov",
+			"github": "ivanakimov",
+			"implementations": "JavaScript, PHP"
 		}
 	],
 	"implementations": {
