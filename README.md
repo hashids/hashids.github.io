@@ -10,12 +10,12 @@ This is a static website that auto-generates pages for different implementations
 
 	src/data.json
 	src/template.html
-	
+
 `data.json` contains majority of the implementation data that populates the site. `template.html` is the template.
 
 Run the following in your git repo:
-	
-	grunt
+
+	npm run production
 
 This will keep watching your files for changes and updating whatever's needed. When done, `git push` your changes.
 
@@ -46,5 +46,5 @@ Hashids website either uses or is built with the following. Muchas gracias to th
 [Google Fonts](https://www.google.com/fonts) used:
 
 1. [Leckerli One](https://www.google.com/fonts/specimen/Leckerli+One)
-	
+
 2. [Fira Mono](http://www.google.com/fonts/specimen/Fira+Mono)
