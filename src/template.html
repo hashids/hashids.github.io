@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		
+
 		<title>
 			{{#if _isHomepage}}
 				Hashids - generate short unique ids from integers
@@ -9,7 +9,7 @@
 				{{_implementation.lib.language}} - Hashids
 			{{/if}}
 		</title>
-		
+
 		<meta name="keywords" content="hashids, hashid, hash, id, short hash, youtube hash, bitly hash{{^if _isHomepage}}, {{_implementation.lib.language}}{{/if}}">
 		<meta name="description" content="Generate short unique ids from integers. Use in url shortening or as unique ids.">
 		<meta name="author" content="{{_implementation.author.name}}">
@@ -17,36 +17,36 @@
 		<meta name="twitter:title" content="Hashids">
 		<meta name="twitter:creator" content="{{_implementation.author.twitter}}">
 		<meta name="twitter:description" content="Generate short obfuscated strings from integers{{#if title}} in {{_implementation.lib.language}}{{/if}}. Use in url shorteners or as unique ids.">
-		
+
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@ivanakimov">
 		<meta name="twitter:image:src" content="http://hashids.org/public/img/hashids.250x250.png">
 		<meta name="twitter:domain" content="hashids.org">
-		
+
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		
+
 		<meta property="og:title" content="Hashids" />
 		<meta property="og:site_name" content="Hashids" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://hashids.org/" />
 		<meta property="og:image" content="http://hashids.org/public/img/hashids-screenshot.png" />
-		
+
 		<link rel="icon" type="image/png" href="/public/img/favicon.16.png" />
-		
+
 		<link href="/public/css/lib/app-{{_website.version}}.min.css" rel="stylesheet" type="text/css" media="screen" />
 		<link href="http://fonts.googleapis.com/css?family=Fira+Mono:400,700|Leckerli+One" rel="stylesheet" type="text/css" media="screen" />
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-		
+
 	</head>
 	<body spellcheck="false" class="lang-{{_implementation.lib.abbr}}">
-		
+
 		<div class="wrap">
 			<div class="wrap-inner">
-				
+
 				<section class="header">
 					<h2><a href="/" class="no-effect">hashids</a></h2>
 					<div>
@@ -94,7 +94,7 @@
 						</p>
 					</div>
 				</section>
-				
+
 				<section id="uses">
 					<div>
 						<div>
@@ -114,9 +114,6 @@
 								</li>
 								<li>
 									<a target="_blank" href="https://pathbrite.com/" class="no-effect"><img src="/public/img/screenshot-pathbrite.png" alt="Pathbrite" /></a>
-								</li>
-								<li>
-									<a target="_blank" href="http://foodshootr.com/" class="no-effect"><img src="/public/img/screenshot-foodshootr.png" alt="Foodshootr" /></a>
 								</li>
 								<li>
 									<a target="_blank" href="https://zenlocator.com/" class="no-effect"><img src="/public/img/screenshot-zenlocator.png" alt="ZenLocator" /></a>
@@ -140,7 +137,7 @@
 						</div>
 					</div>
 				</section>
-				
+
 				<section id="repo">
 					<h2>{{_implementation.lib.language}} version</h2>
 					<div>
@@ -170,7 +167,7 @@
 						</div>
 					</div>
 				</section>
-				
+
 				<section id="features">
 					<h2>Features</h2>
 					<div>
@@ -190,7 +187,7 @@
 						</ol>
 					</div>
 				</section>
-				
+
 				<section id="compatibility">
 					<h2>Compatibility table</h2>
 					<div>
@@ -471,7 +468,7 @@
 						</div>
 					</div>
 				</section>
-				
+
 				<section id="how-does-it-work">
 					<h2>How does it work?</h2>
 					<div>
@@ -482,18 +479,18 @@
 						</ol>
 						<p>This JavaScript function shows regular conversion of integers to hex. It's part of Hashids (although this is a modified example):</p>
 						<pre><span>JavaScript</span><code class="javascript">function toHex(input) {
-  
+
   var hash = "",
     alphabet = "0123456789abcdef",
     alphabetLength = alphabet.length;
-  
+
   do {
     hash = alphabet[input % alphabetLength] + hash;
     input = parseInt(input / alphabetLength, 10);
   } while (input);
-  
+
   return hash;
-  
+
 }</code></pre>
 						<div class="read-more">
 							<button data-target="how-it-works-more">read more</button>
@@ -504,24 +501,24 @@
 							<p>If we take it one step further and shuffle the alphabet before encoding, we will get a different value. But how could we shuffle the alphabet consistently, so that with every shuffle the characters would keep the same order?</p>
 							<p>That's where Hashids uses a variation of <a target="_blank" href="http://en.wikipedia.org/wiki/Fisher-Yates_shuffle">Fisher-Yates algorithm</a>:</p>
 							<pre><span>JavaScript</span><code class="javascript">function consistentShuffle(alphabet, salt) {
-  
+
   var integer, j, temp, i, v, p;
-  
+
   for (i = alphabet.length - 1, v = 0, p = 0; i > 0; i--, v++) {
-  
+
     v %= salt.length;
     p += integer = salt[v].charCodeAt(0);
     j = (integer + v + p) % i;
-    
+
     temp = alphabet[j];
     alphabet = alphabet.substr(0, j) + alphabet[i] + alphabet.substr(j + 1);
     alphabet = alphabet.substr(0, i) + temp + alphabet.substr(i + 1);
-    
+
   }
-  
+
   return alphabet;
-  
-}</code></pre>	
+
+}</code></pre>
 							<p>The code above might look complicated, but it does one simple thing &mdash; shuffles the alphabet based on user's salt.</p>
 							<p>That way when one user passes the salt "abc1", our alphabet becomes <code class="inline">cUpI6isqCa0brWZnJA8wNTzDHEtLXOYgh5fQm2uRj4deM91oB7FkSGKxvyVP3l</code></p>
 							<p>And when another user passes "abc2", the alphabet becomes <code class="inline">tRvkhHx0ZefcF46YuaAqGLDKgM1W5Vp2T8n9s7BSoCjiQOdrEbJmUINywzXP3l</code></p>
@@ -559,7 +556,7 @@
 						</div>
 					</div>
 				</section>
-				
+
 				<section id="cursing">
 					<h2>#%@&amp;$!!11</h2>
 					<div>
@@ -577,7 +574,7 @@
 						</div>
 					</div>
 				</section>
-				
+
 				<section id="alternatives">
 					<h2>Are there any alternatives?</h2>
 					<div>
@@ -602,7 +599,7 @@
 						</ol>
 					</div>
 				</section>
-				
+
 				<section id="what-not-to-do">
 					<h2>What not to do</h2>
 					<div>
@@ -619,7 +616,7 @@
 						</ol>
 					</div>
 				</section>
-				
+
 				<section id="collisions">
 					<h2>Collisions</h2>
 					<div>
@@ -628,7 +625,7 @@
 						<p>Please note that generated ids are <i>case-sensitive</i> by default ("Aaa" is not the same id as "aaa").</p>
 					</div>
 				</section>
-				
+
 				<section id="why-hashids">
 					<h2>Why "hashids"?</h2>
 					<div>
@@ -636,7 +633,7 @@
 						<p>However, when people search for a solution, like a "youtube hash" or "bitly short id", they usually don't really care of the technical details. So <em>hashids</em> stuck as a term &mdash; an algorithm to obfuscate numbers.</p>
 					</div>
 				</section>
-				
+
 				<section id="decoding">
 					<h2>Decoding without salt</h2>
 					<div>
@@ -648,7 +645,7 @@
 						</ol>
 					</div>
 				</section>
-				
+
 				<section id="contributing">
 					<h2>How to contribute</h2>
 					<div>
@@ -676,14 +673,14 @@
 						</div>
 					</div>
 				</section>
-				
+
 				<section id="usage">
 					<h2>Are you using Hashids?</h2>
 					<div>
 						Whether it's an open-source project or a commercial product, tell us at <a href="https://github.com/hashids/hashids.github.io/wiki/Who's-Using-Hashids" target="_blank">https://github.com/hashids/hashids.github.io/wiki/Who's-Using-Hashids</a> !
 					</div>
 				</section>
-				
+
 				<section id="elsewhere">
 					<h2>Hashids elsewhere</h2>
 					<div>
@@ -694,7 +691,7 @@
 						</ul>
 					</div>
 				</section>
-				
+
 				<section id="contributors">
 					<h2>Maintainers</h2>
 					<div>
@@ -712,50 +709,50 @@
 						</ul>
 					</div>
 				</section>
-				
+
 				<section id="license">
 					<h2>License</h2>
 					<div>
 						All hashids libraries are under <a target="_blank" href="http://opensource.org/licenses/MIT">MIT license</a>. You can use them in open source projects and commercial products. Don't break the Internet. Kthxbye.
 					</div>
 				</section>
-				
+
 			</div>
 		</div>
-		
+
 		<div class="footer">
 			<div class="social-buttons">
-				
+
 				<!-- twitter button -->
 				<a href="https://twitter.com/intent/tweet?button_hashtag=hashids&text=Generate%20short%20unique%20ids%20from%20integers%20#{{_implementation.lib.abbr}}" class="twitter-hashtag-button" data-url="http://hashids.org">Tweet #hashids</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-				
+
 				<!-- facebook button -->
 				<div class="fb-like" data-href="http://hashids.org/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-				
+
 			</div>
 			<p>Hashids is under <a target="_blank" href="http://opensource.org/licenses/MIT">MIT license</a></p>
 			<p>Website <span class="copyleft">&copy;</span> <a href="http://ivanakimov.com/">Ivan</a> <span class="copyright-year"></span> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io">Github</a> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io/issues">Issues</a> &middot; <a target="_blank" href="https://github.com/hashids/hashids.github.io/wiki/Who's-Using-Hashids">Are you using Hashids?</a></p>
 		</div>
-		
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 		<script src="/public/js/lib/highlight-pack-1.0.1.min.js"></script>
 		<script src="/public/js/lib/jquery.flexslider-min.js"></script>
 		<script src="/public/js/lib/hashids.min.js"></script>
 		<script src="/public/js/lib/app-{{_website.version}}.min.js"></script>
-		
+
 		<!-- facebook og -->
-		
+
 		<div id="fb-root"></div>
 		<script>(function(e,t,n){var r,i=e.getElementsByTagName(t)[0];if(e.getElementById(n))return;r=e.createElement(t);r.id=n;r.src="//connect.facebook.net/en_US/all.js#xfbml=1";i.parentNode.insertBefore(r,i)})(document,"script","facebook-jssdk")</script>
-		
+
 		<!-- twitter card widget -->
-		
+
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-		
+
 		<!-- google analytics -->
-		
+
 		<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-31950226-1"]);_gaq.push(["_trackPageview"]);(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script>
-		
+
 	</body>
 </html>
