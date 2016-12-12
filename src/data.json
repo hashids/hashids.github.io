@@ -219,11 +219,14 @@
 				"url": "https://github.com/jiecao-fm/hashids-java",
 				"links": [
 					{
+						"title": "Implementation by @arcticicestudio",
+						"url": "https://github.com/arcticicestudio/icecore-hashids"
+					}, {
+						"title": "Implementation by @dkay",
+						"url": "https://github.com/dkay/jhashids"
+					}, {
 						"title": "Hashids v0.1.4",
 						"url": "https://github.com/peet/hashids.java"
-					}, {
-						"title": "Another implementation by @dkay",
-						"url": "https://github.com/dkay/jhashids"
 					}
 				]
 			},
