@@ -4,14 +4,14 @@
 section.header {
 	text-align: center;
 	margin: 40px auto;
-	
+
 	h2 {
 		font-size: 100px;
 		margin: 20px 0;
 		line-height: 1;
 		border: 0;
 		box-shadow: none;
-		
+
 		a {
 			font-family: $font-family-cursive;
 			letter-spacing: -0.01em;
@@ -19,29 +19,29 @@ section.header {
 			text-shadow: 1px 5px 0 #aaa;
 			text-decoration: none;
 		}
-		
+
 	}
-	
+
 	div {
 		font-size: 22px;
 		line-height: 30px;
 		color: #666;
 	}
-	
+
 	.description {
 		margin-bottom: 10px;
 		font-size: 30px;
 		text-transform: lowercase;
 		margin-top: 10px;
 	}
-	
+
 	.available {
 		font-size: 80%;
 		line-height: 24px;
 		margin-top: 10px;
 		color: #999;
 	}
-	
+
 }
 
 /* highlighted implementation */
@@ -81,7 +81,8 @@ body.lang-haxe .header .haxe,
 body.lang-crystal .header .crystal,
 body.lang-elm .header .elm,
 body.lang-smalltalk .header .smalltalk,
-body.lang-perl6 .header .perl6 {
+body.lang-perl6 .header .perl6,
+body.lang-postgresql .header .postgresql {
 	color: #666;
 	font-weight: bold;
 }
