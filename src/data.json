@@ -137,6 +137,10 @@
 			"github": "vinkla",
 			"implementations": "PHP"
 		}, {
+			"name": "Vahagn Mkrtchyan",
+			"github": "iCyberon",
+			"implementations": "PostgreSQL"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JavaScript, PHP"
@@ -809,6 +813,21 @@
 			},
 			"example": "hashids = Hashids.new(salt: \"this is my salt\")\nid = hashids.encode([1, 2, 3]) # => laHquq\nnumbers = hashids.decode(id) # => [1, 2, 3]",
 			"download": "https://github.com/splattael/hashids.cr/archive/v0.1.0.zip"
+		},
+		"postgresql": {
+			"lib": {
+				"abbr": "postgresql",
+				"language": "PostgreSQL",
+				"url": "https://github.com/iCyberon/pg_hashids",
+				"links": []
+			},
+			"author": {
+				"name": "Vahagn Mkrtchyan",
+				"twitter": "iCyber0n",
+				"github": "iCyberon"
+			},
+			"example": "SELECT hash_encode(123, 'this is my salt', 10); -- Result: 4xpAYDx0mQ\nSELECT hash_decode('4xpAYDx0mQ', 'this is my salt', 10); -- Result: 123",
+			"download": "https://github.com/iCyberon/pg_hashids/archive/master.zip"
 		}
 	}
 }
