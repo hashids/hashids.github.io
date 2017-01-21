@@ -168,7 +168,7 @@
 				"github": "ivanakimov"
 			},
 			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encode(1, 2, 3),\n  numbers = hashids.decode(id);",
-			"download": "https://github.com/ivanakimov/hashids.js/archive/1.0.2.zip"
+			"download": "https://github.com/ivanakimov/hashids.js/archive/1.1.1.zip"
 		},
 		"ruby": {
 			"lib": {
