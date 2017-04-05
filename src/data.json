@@ -129,7 +129,7 @@
 			"github": "kalkin",
 			"implementations": "Perl 6"
 		}, {
-			"name": "Peter Suschlik",
+			"name": "Peter Leitzen",
 			"github": "splattael",
 			"implementations": "Crystal"
 		}, {
@@ -807,7 +807,7 @@
 				"links": []
 			},
 			"author": {
-				"name": "Peter Suschlik",
+				"name": "Peter Leitzen",
 				"twitter": "",
 				"github": "splattael"
 			},
