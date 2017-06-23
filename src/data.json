@@ -661,7 +661,7 @@
 				"twitter": "benwilber",
 				"github": "benwilber"
 			},
-			"example": "bashids -e -s MySalt 1 2 3\nbashids -d -s MySalt laHquq",
+			"example": "bashids -e -s \"this is my salt\" 1 2 3\nbashids -d -s \"this is my salt\" laHquq",
 			"download": "https://github.com/benwilber/bashids/archive/v1.0.zip"
 		},
 		"r": {
