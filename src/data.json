@@ -144,6 +144,10 @@
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JavaScript, PHP"
+		}, {
+			"name": "Vincent Jacques",
+			"github": "jacquev6",
+			"implementations": "OCaml"
 		}
 	],
 	"implementations": {
@@ -828,6 +832,26 @@
 			},
 			"example": "SELECT hash_encode(123, 'this is my salt', 10); -- Result: 4xpAYDx0mQ\nSELECT hash_decode('4xpAYDx0mQ', 'this is my salt', 10); -- Result: 123",
 			"download": "https://github.com/iCyberon/pg_hashids/archive/master.zip"
+		},
+		"ocaml": {
+			"lib": {
+				"abbr": "ocaml",
+				"language": "OCaml",
+				"url": "https://github.com/jacquev6/hashids-ocaml",
+				"links": [
+					{
+						"title": "OPAM package",
+						"url": "https://opam.ocaml.org/packages/hashids"
+					}
+				]
+			},
+			"author": {
+				"name": "Vincent Jacques",
+				"twitter": "jacquev6",
+				"github": "jacquev6"
+			},
+			"example": "let config = Hashids.make ~salt:\"this is my salt\" ();;\nlet id = Hashids.encode config [1; 2; 3];;\nlet numbers = Hashids.decode config id;;",
+			"download": "https://github.com/jacquev6/hashids-ocaml/archive/1.0.0.zip"
 		}
 	}
 }
