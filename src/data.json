@@ -81,8 +81,8 @@
 			"github": "charsyam",
 			"implementations": "Rust"
 		}, {
-			"name": "Johannes Hilden",
-			"github": "johanneshilden",
+			"name": "Johannes Hildén",
+			"github": "laserpants",
 			"implementations": "Haskell"
 		}, {
 			"name": "Jovan Nikolić",
@@ -618,7 +618,7 @@
 			"lib": {
 				"abbr": "haskell",
 				"language": "Haskell",
-				"url": "https://github.com/johanneshilden/hashids-haskell",
+				"url": "https://github.com/laserpants/hashids-haskell",
 				"links": [
 					{
 						"title": "Haskell Package",
@@ -627,12 +627,12 @@
 				]
 			},
 			"author": {
-				"name": "Johannes Hilden",
+				"name": "Johannes Hildén",
 				"twitter": "",
-				"github": "johanneshilden"
+				"github": "laserpants"
 			},
 			"example": "let hashids = hashidsSimple \"this is my salt\"\n    _id = encodeList hashids [1, 2, 3]\n    numbers = decode hashids _id",
-			"download": "https://github.com/johanneshilden/hashids-haskell/archive/master.zip"
+			"download": "https://github.com/laserpants/hashids-haskell/archive/master.zip"
 		},
 		"actionscript": {
 			"lib": {
