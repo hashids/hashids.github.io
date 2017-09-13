@@ -141,13 +141,13 @@
 			"github": "iCyberon",
 			"implementations": "PostgreSQL"
 		}, {
-			"name": "Ivan Akimov",
-			"github": "ivanakimov",
-			"implementations": "JavaScript, PHP"
-		}, {
 			"name": "Vincent Jacques",
 			"github": "jacquev6",
 			"implementations": "OCaml"
+		}, {
+			"name": "Ivan Akimov",
+			"github": "ivanakimov",
+			"implementations": "JavaScript, PHP"
 		}
 	],
 	"implementations": {
