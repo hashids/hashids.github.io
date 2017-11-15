@@ -185,7 +185,7 @@
 						"url": "https://rubygems.org/gems/hashids"
 					}, {
 						"title": "Rails plugin",
-						"url": "https://rubygems.org/gems/hashids_rails"
+						"url": "https://rubygems.org/gems/hashid-rails"
 					}
 				]
 			},
