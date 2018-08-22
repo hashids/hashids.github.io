@@ -535,7 +535,7 @@
 				"twitter": "",
 				"github": "achesak"
 			},
-			"example": "var hashids : Hashids = createHashids(\"this is my salt\")\nvar id : string = hashids.encode(@[1, 2, 3])\nvar numbers : seq[int] = hashids.decode(id)",
+			"example": "let hashids: Hashids = createHashids(\"this is my salt\")\nlet id: string = hashids.encode(@[1, 2, 3])\nlet numbers: seq[int] = hashids.decode(id)",
 			"download": "https://github.com/achesak/nim-hashids/archive/master.zip"
 		},
 		"vba": {
