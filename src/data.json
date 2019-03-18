@@ -145,6 +145,10 @@
 			"github": "jacquev6",
 			"implementations": "OCaml"
 		}, {
+			"name": "Oleksandr Leuschenko",
+			"github": "olexale",
+			"implementations": "Dart"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JavaScript, PHP"
@@ -852,6 +856,29 @@
 			},
 			"example": "let config = Hashids.make ~salt:\"this is my salt\" ();;\nlet id = Hashids.encode config [1; 2; 3];;\nlet numbers = Hashids.decode config id;;",
 			"download": "https://github.com/jacquev6/hashids-ocaml/archive/1.0.0.zip"
+		},
+		"dart": {
+			"lib": {
+				"abbr": "dart",
+				"language": "Dart",
+				"url": "https://github.com/olexale/hashids",
+				"links": [
+					{
+						"title": "Package",
+						"url": "https://pub.dartlang.org/packages/hashids2"
+					}, {
+						"title": "Dart 1 Implementation",
+						"url": "https://github.com/isapoetra/hashids"
+					}
+				]
+			},
+			"author": {
+				"name": "Oleksandr Leuschenko",
+				"twitter": "olexale",
+				"github": "olexale"
+			},
+			"example": "final hashids = HashIds('this is my salt');\nfinal id = hashids.encode([1,2,3]);\nfinal numbers = hashids.decode(id);",
+			"download": "https://github.com/olexale/hashids/archive/v1.0.1.zip"
 		}
 	}
 }
