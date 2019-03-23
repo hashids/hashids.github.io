@@ -896,7 +896,7 @@
 				"twitter": "",
 				"github": "KennethanCeyer"
 			},
-			"example": "salt := \"this is my salt key\"\nh := hashids(salt)\nid := h encode(1, 2, 3)\nnumbers := h decode(id)",
+			"example": "salt := \"this is my salt\"\nh := hashids(salt)\nid := h encode(1, 2, 3)\nnumbers := h decode(id)",
 			"download": "https://github.com/KennethanCeyer/hashids-io"
 		}
 	}
