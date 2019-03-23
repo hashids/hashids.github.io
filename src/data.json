@@ -149,6 +149,10 @@
 			"github": "olexale",
 			"implementations": "Dart"
 		}, {
+			"name": "Kennethan Ceyer",
+			"github": "KennethanCeyer",
+			"implementations": "Io"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JavaScript, PHP"
@@ -879,6 +883,21 @@
 			},
 			"example": "final hashids = HashIds('this is my salt');\nfinal id = hashids.encode([1,2,3]);\nfinal numbers = hashids.decode(id);",
 			"download": "https://github.com/olexale/hashids/archive/v1.0.1.zip"
+		},
+		"io": {
+			"lib": {
+				"abbr": "io",
+				"language": "Io",
+				"url": "https://github.com/KennethanCeyer/hashids-io",
+				"links": []
+			},
+			"author": {
+				"name": "Kennethan Ceyer",
+				"twitter": "",
+				"github": "KennethanCeyer"
+			},
+			"example": "salt := \"this is my salt key\"\nh := hashids(salt)\nid := h encode(1, 2, 3)\nnumbers := h decode(id)",
+			"download": "https://github.com/KennethanCeyer/hashids-io"
 		}
 	}
 }
