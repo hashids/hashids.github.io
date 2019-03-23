@@ -83,7 +83,9 @@ body.lang-crystal .header .crystal,
 body.lang-elm .header .elm,
 body.lang-smalltalk .header .smalltalk,
 body.lang-perl6 .header .perl6,
-body.lang-postgresql .header .postgresql {
+body.lang-postgresql .header .postgresql,
+body.lang-dart .header .dart,
+body.lang-io .header .io {
 	color: #666;
 	font-weight: bold;
 }
