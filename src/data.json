@@ -41,10 +41,6 @@
 			"github": "schoentoon",
 			"implementations": "C++11"
 		}, {
-			"name": "Chad Maron",
-			"github": "cmaron",
-			"implementations": "Groovy"
-		}, {
 			"name": "John Ky",
 			"github": "newhoggy",
 			"implementations": "Scala"
@@ -472,26 +468,6 @@
 			},
 			"example": "var hashids = new Hashids(\"this is my salt\");\nvar id = hashids.encode(1, 2, 3);\nvar numbers = hashids.decode(id);",
 			"download": "https://github.com/dswitzer/hashids.coldfusion/archive/v0.1.0.zip"
-		},
-		"groovy": {
-			"lib": {
-				"abbr": "groovy",
-				"language": "Groovy",
-				"url": "https://github.com/Apploi/hashids-groovy",
-				"links": [
-					{
-						"title": "Grails plugin",
-						"url": "http://grails.org/plugin/hashids"
-					}
-				]
-			},
-			"author": {
-				"name": "Chad Maron",
-				"twitter": "chadmaron",
-				"github": "cmaron"
-			},
-			"example": "Hashids hashids = new Hashids(\"this is my salt\")\nString id = hashids.encode(1, 2, 3)\nList<Long> numbers = hashids.decode(id)",
-			"download": "https://github.com/Apploi/hashids-groovy/archive/master.zip"
 		},
 		"net": {
 			"lib": {
