@@ -149,6 +149,10 @@
 			"github": "KennethanCeyer",
 			"implementations": "Io"
 		}, {
+			"name": "Robert Hux",
+			"github": "rhux",
+			"implementations": "PLpgSQL"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
 			"implementations": "JavaScript, PHP"
@@ -874,6 +878,21 @@
 			},
 			"example": "salt := \"this is my salt\"\nh := hashids(salt)\nid := h encode(1, 2, 3)\nnumbers := h decode(id)",
 			"download": "https://github.com/KennethanCeyer/hashids-io"
+		},
+		"plpgsql": {
+			"lib": {
+				"abbr": "plpgsql",
+				"language": "PLpgSQL",
+				"url": "https://github.com/array-analytics/plpg_hashids",
+				"links": []
+			},
+			"author": {
+				"name": "Robert Hux",
+				"twitter": "",
+				"github": "rhux"
+			},
+			"example": "SELECT hashids.encode(1234567, 'This is my salt', 10); -- Result: PlRPdzxpR7\nSELECT unnest(hashids.decode('PlRPdzxpR7', 'This is my salt', 10)); -- Result: 1234567",
+			"download": "https://github.com/array-analytics/plpg_hashids"
 		}
 	}
 }
