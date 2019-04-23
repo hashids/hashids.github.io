@@ -1,7 +1,7 @@
 {
 	"name": "hashids-website",
 	"description": "Hashids website",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"private": true,
 	"scripts": {
 		"production": "grunt templates"
