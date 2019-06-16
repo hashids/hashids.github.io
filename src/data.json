@@ -333,21 +333,6 @@
 			"example": "my $hashids = Hashids->new('this is my salt');\nmy $id = $hashids->encode(1, 2, 3);\nmy $numbers = $hashids->decode($id);",
 			"download": "https://github.com/zakame/hashids.pm/archive/1.000002.zip"
 		},
-		"coffeescript": {
-			"lib": {
-				"abbr": "coffeescript",
-				"language": "CoffeeScript",
-				"url": "https://github.com/ivanakimov/hashids.coffee",
-				"links": []
-			},
-			"author": {
-				"name": "Ivan Akimov",
-				"twitter": "ivanakimov",
-				"github": "ivanakimov"
-			},
-			"example": "hashids = new Hashids \"this is my salt\"\nid = hashids.encode 1, 2, 3\nnumbers = hashids.decode id",
-			"download": "https://github.com/ivanakimov/hashids.coffee/archive/1.0.0.zip"
-		},
 		"objective-c": {
 			"lib": {
 				"abbr": "objective-c",
