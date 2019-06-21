@@ -153,9 +153,13 @@
 			"github": "rhux",
 			"implementations": "PLpgSQL"
 		}, {
+			"name": "Bazyli Brzóska",
+			"github": "niieani",
+			"implementations": "JavaScript"
+		}, {
 			"name": "Ivan Akimov",
 			"github": "ivanakimov",
-			"implementations": "JavaScript, PHP"
+			"implementations": "PHP"
 		}
 	],
 	"implementations": {
@@ -163,7 +167,7 @@
 			"lib": {
 				"abbr": "javascript",
 				"language": "JavaScript",
-				"url": "https://github.com/ivanakimov/hashids.js",
+				"url": "https://github.com/niieani/hashids.js",
 				"links": [
 					{
 						"title": "NPM package",
@@ -175,12 +179,12 @@
 				]
 			},
 			"author": {
-				"name": "Ivan Akimov",
-				"twitter": "ivanakimov",
-				"github": "ivanakimov"
+				"name": "Bazyli Brzóska",
+				"twitter": "",
+				"github": "niieani"
 			},
 			"example": "var hashids = new Hashids(\"this is my salt\"),\n  id = hashids.encode(1, 2, 3),\n  numbers = hashids.decode(id);",
-			"download": "https://github.com/ivanakimov/hashids.js/archive/1.1.1.zip"
+			"download": "https://github.com/niieani/hashids.js"
 		},
 		"ruby": {
 			"lib": {
