@@ -156,10 +156,6 @@
 			"name": "Bazyli Brzóska",
 			"github": "niieani",
 			"implementations": "JavaScript"
-		}, {
-			"name": "Ivan Akimov",
-			"github": "ivanakimov",
-			"implementations": "PHP"
 		}
 	],
 	"implementations": {
@@ -277,7 +273,7 @@
 			"lib": {
 				"abbr": "php",
 				"language": "PHP",
-				"url": "https://github.com/ivanakimov/hashids.php",
+				"url": "https://github.com/vinkla/hashids.php",
 				"links": [
 					{
 						"title": "Composer package",
@@ -310,12 +306,12 @@
 				]
 			},
 			"author": {
-				"name": "Ivan Akimov",
-				"twitter": "ivanakimov",
-				"github": "ivanakimov"
+				"name": "Vincent Klaiber",
+				"twitter": "",
+				"github": "vinkla"
 			},
 			"example": "$hashids = new Hashids\\Hashids('this is my salt');\n$id = $hashids->encode(1, 2, 3);\n$numbers = $hashids->decode($id);",
-			"download": "https://github.com/ivanakimov/hashids.php/archive/1.0.5.zip"
+			"download": "https://github.com/vinkla/hashids.php/archive/1.0.5.zip"
 		},
 		"perl": {
 			"lib": {
