@@ -153,6 +153,10 @@
 			"github": "rhux",
 			"implementations": "PLpgSQL"
 		}, {
+			"name": "GOTOH Shunsuke",
+			"github": "antimon2",
+			"implementations": "Julia"
+		}, {
 			"name": "Bazyli Brzóska",
 			"github": "niieani",
 			"implementations": "JavaScript"
@@ -878,6 +882,21 @@
 			},
 			"example": "SELECT hashids.encode(1234567, 'This is my salt', 10); -- Result: PlRPdzxpR7\nSELECT unnest(hashids.decode('PlRPdzxpR7', 'This is my salt', 10)); -- Result: 1234567",
 			"download": "https://github.com/array-analytics/plpg_hashids"
+		},
+		"julia": {
+			"lib": {
+				"abbr": "julia",
+				"language": "Julia",
+				"url": "https://github.com/antimon2/Hashids.jl",
+				"links": []
+			},
+			"author": {
+				"name": "GOTOH Shunsuke",
+				"twitter": "antimon2",
+				"github": "antimon2"
+			},
+			"example": "config = Hashids.configure(\"this is my salt\")\nid = encode(config, 1, 2, 3)\nnumbers = decode(config, id)",
+			"download": "https://github.com/antimon2/Hashids.jl"
 		}
 	}
 }
