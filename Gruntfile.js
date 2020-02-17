@@ -1,9 +1,17 @@
-
 module.exports = function(grunt) {
-	
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		
+
+		connect: {
+			server: {
+				options: {
+					port: 9001,
+					open : true,
+					livereload : true
+				}
+			}
+		},
+
 		jshint: {
 			options: {
 				curly: true,
@@ -13,7 +21,7 @@ module.exports = function(grunt) {
 			},
 			files: 'public/js/src/*.js'
 		},
-		
+
 		bump: {
 			options: {
 				files: 'package.json',
@@ -22,24 +30,26 @@ module.exports = function(grunt) {
 				push: false
 			}
 		},
-		
+
 		sass: {
+			options: {
+				implementation: require('node-sass'),
+				outputStyle: 'compressed',
+				sourceMap: true
+			},
 			dist: {
-				options: {
-					style: 'compressed'
-				},
 				files: {
 					'public/css/lib/app-<%= pkg.version %>.min.css': 'public/css/src/app.scss'
 				}
 			}
 		},
-		
+
 		uglify: {
 			watch: {
 				options: {
 					mangle: true,
 					preserveComments: false,
-					compress: {}
+					compress: false
 				},
 				files: {
 					'public/js/lib/app-<%= pkg.version %>.min.js': [
@@ -48,7 +58,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		
+
 		watch: {
 			lint: {
 				files: 'public/js/src/app.js',
@@ -67,14 +77,12 @@ module.exports = function(grunt) {
 				tasks: 'templates'
 			}
 		}
-		
 	});
-	
+
 	/* a custom task to create static html files */
-	
 	grunt.registerTask('templates', 'Compiles html templates for all implementations.', function() {
-		
-		var implementation, html,
+		var implementation,
+		  html,
 			done = this.async(),
 			Handlebars = require('handlebars'),
 			minifier = require('html-minifier').minify,
@@ -82,65 +90,54 @@ module.exports = function(grunt) {
 			source = grunt.file.read('src/template.html'),
 			template = Handlebars.compile(source),
 			getHtml = function(data, implementation, isHomepage) {
-				
 				var html;
-				
+
 				data._implementation = data.implementations[implementation];
 				data._isHomepage = isHomepage;
 				data._website = {
 					version: grunt.config.data.pkg.version
 				};
-				
-				//data._implementation.example = data._implementation.example.join(
-				
+
 				html = template(data);
-				
+
 				/* try to minify */
-				
 				try {
-					
 					html = minifier(html, {
 						removeComments: true,
 						collapseWhitespace: true
 					});
-					
 				} catch (err) {
 					grunt.warn('Could not minify "'+implementation+'"');
 				}
-				
+
 				return html;
-				
 			};
-		
+
 		grunt.log.writeln('Compiling templates...');
-		
+
 		/* for each implementation, create a folder with an index.html in it */
-		
 		for (implementation in data.implementations) {
-			
 			/* produce html for the implementation */
-			
 			html = getHtml(data, implementation, false);
 			grunt.file.write(implementation+'/index.html', html);
-			
+
 			/* also create the main `index.html` for the root directory (from javascript version) */
-			
 			if (implementation === 'javascript') {
-				
 				html = getHtml(data, implementation, true);
 				grunt.file.write('index.html', html);
-				
 			}
-			
 		}
-		
+
 		return done();
-		
 	});
-	
+
 	/* auto-load all tasks that start with `grunt-` */
-	
 	require('load-grunt-tasks')(grunt);
-	grunt.registerTask('default', ['watch']);
-	
+	grunt.registerTask('default', [
+		'sass',
+		'uglify',
+		'templates',
+		'connect',
+		'watch'
+	]);
 };
