@@ -160,7 +160,12 @@
 			"name": "Bazyli Brzóska",
 			"github": "niieani",
 			"implementations": "JavaScript"
+		}, {
+			"name": "Simon Sawert",
+			"github": "bombsimon",
+			"implementations": "V"
 		}
+
 	],
 	"implementations": {
 		"javascript": {
@@ -892,6 +897,21 @@
 			},
 			"example": "config = Hashids.configure(\"this is my salt\")\nid = encode(config, 1, 2, 3)\nnumbers = decode(config, id)",
 			"download": "https://github.com/antimon2/Hashids.jl"
+		},
+		"v": {
+			"lib": {
+				"abbr": "v",
+				"language": "V",
+				"url": "https://github.com/bombsimon/v-hashids",
+				"links": []
+			},
+			"author": {
+				"name": "Simon Sawert",
+				"twitter": "bombsimon",
+				"github": "bombsimon"
+			},
+			"example": "hid := hashids.new()\nencoded := hid.encode([1, 2, 3])\ndecoded := hid.decode(encoded)",
+			"download": "https://github.com/bombsimon/v-hashids/archive/master.zip"
 		}
 	}
 }
