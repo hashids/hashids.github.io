@@ -1,3 +1,4 @@
+#An amazing Hashids website 
 ## [Hashids website](http://hashids.org)
 
 Website documentation for Hashids.
