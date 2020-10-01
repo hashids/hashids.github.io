@@ -1,4 +1,4 @@
-## [Hashids website](http://hashids.org)
+## [Hashids amazing website](http://hashids.org)
 
 Website documentation for Hashids.
 
