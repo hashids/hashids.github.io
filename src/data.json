@@ -262,7 +262,7 @@
 			"lib": {
 				"abbr": "scala",
 				"language": "Scala",
-				"url": "https://github.com/newhoggy/hashids-scala",
+				"url": "https://github.com/pico-works/pico-hashids",
 				"links": []
 			},
 			"author": {
@@ -271,7 +271,7 @@
 				"github": "newhoggy"
 			},
 			"example": "val hashids = Hashids(\"this is my salt\")\nval id = hashids.encode(1L, 2L, 3L)\nval numbers = hashids.decode(id)",
-			"download": "https://github.com/newhoggy/hashids-scala/archive/hashids-1.0.0.zip"
+			"download": "https://github.com/pico-works/pico-hashids"
 		},
 		"php": {
 			"lib": {
