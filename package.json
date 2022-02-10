@@ -19,7 +19,7 @@
 		"handlebars": "4.7.3",
 		"html-minifier": "4.0.0",
 		"load-grunt-tasks": "5.1.0",
-		"node-sass": "4.13.1"
+		"node-sass": "7.0.0"
 	},
 	"engines": {
 		"node": "0.10.*"
