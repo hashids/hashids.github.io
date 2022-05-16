@@ -157,6 +157,10 @@
 			"github": "antimon2",
 			"implementations": "Julia"
 		}, {
+			"name": "Oleh Berehovskyi",
+			"github": "berehovskyi",
+			"implementations": "Apex"
+		}, {
 			"name": "Bazyli Brzóska",
 			"github": "niieani",
 			"implementations": "JavaScript"
@@ -892,6 +896,21 @@
 			},
 			"example": "config = Hashids.configure(\"this is my salt\")\nid = encode(config, 1, 2, 3)\nnumbers = decode(config, id)",
 			"download": "https://github.com/antimon2/Hashids.jl"
+		},
+		"apex": {
+			"lib": {
+				"abbr": "apex",
+				"language": "Apex",
+				"url": "https://github.com/berehovskyi/apex-hashids",
+				"links": []
+			},
+			"author": {
+				"name": "Oleh Berehovskyi",
+				"twitter": "",
+				"github": "berehovskyi"
+			},
+			"example": "Hashids hashids = new Hashids('this is my salt');\nString hash = hashids.encode(new List<Long>{ 1, 2, 3 });\nList<Long> numbers = hashids.decode(hash);",
+			"download": "https://github.com/berehovskyi/apex-hashids"
 		}
 	}
 }
