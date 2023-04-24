@@ -1,6 +1,11 @@
 {
 	"contributors": [
 		{
+			"name": "kokic",
+			"github": "kokic",
+			"implementations": "Lean4"
+		},
+		{
 			"name": "Remi Gillig",
 			"github": "speps",
 			"implementations": "Go"
@@ -100,7 +105,8 @@
 			"name": "Rob Bertels",
 			"github": "rbertels",
 			"implementations": "F#"
-		}, {
+		}, 
+		{
 			"name": "Wayne Bloss",
 			"github": "waynebloss",
 			"implementations": "TSQL"
@@ -892,6 +898,20 @@
 			},
 			"example": "config = Hashids.configure(\"this is my salt\")\nid = encode(config, 1, 2, 3)\nnumbers = decode(config, id)",
 			"download": "https://github.com/antimon2/Hashids.jl"
-		}
+		}, 
+		"lean4": {
+			"lib": {
+				"abbr": "lean4",
+				"language": "Lean4",
+				"url": "https://github.com/kokic/hashids-lean4",
+				"links": []
+			},
+			"author": {
+				"name": "kokic",
+				"github": "kokic"
+			},
+			"example": "def hashids : Hashids := Hashids.fromSalt \"this is my salt\"\n#eval hashids.encode [12345]\n#eval hashids.decode \"NkK9\"",
+			"download": "https://github.com/kokic/hashids-lean4/archive/refs/heads/main.zip"
+		},
 	}
 }
