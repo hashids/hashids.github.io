@@ -912,6 +912,6 @@
 			},
 			"example": "config = Hashids.configure(\"this is my salt\")\nid = encode(config, 1, 2, 3)\nnumbers = decode(config, id)",
 			"download": "https://github.com/antimon2/Hashids.jl"
-		}, 
+		}
 	}
 }
